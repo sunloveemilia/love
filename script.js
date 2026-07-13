@@ -6,10 +6,40 @@ const greetings = ['Добро пожаловать, любимая ❤️','Д�
 const challenges = [
 'Скинь последнее фото из галереи (не скрин).','Скинь последний скриншот, который ты делал(а).','Скинь самое старое своё фото, которое сохранилось в телефоне.','Отправь мне последнюю песню, которая играла в наушниках.','Скинь фото того, что сейчас лежит рядом с тобой (кроме телефона).','Сфоткай то, что видишь сейчас за окном.','Скинь свою любимую гифку, которая описывает твоё настроение.','Отправь мне одно голосовое — без слов, просто дыши 10 секунд.','Скини фото своей старой игрушки из детства.','Сфоткай свою ладонь и скинь мне.','Что ты чувствуешь, когда я долго не отвечаю на сообщение — тревогу, раздражение или всё равно?','Ты когда-нибудь хотел(а), чтобы я приревновал(а) тебя? Если да — то когда и зачем?','Если бы я честно признался(лась), что мне не хватает одной вещи в наших отношениях, — что бы, по-твоему, я назвал(а)?','Ты помнишь самый первый момент, когда ты понял(а), что тебе не всё равно, как я на тебя смотрю? Опиши его.','Было ли такое, что ты хотел(а) от меня чего-то прямо сейчас, но не попросил(а), потому что боялся(ась) выглядеть глупо?','Если бы я спросил(а) тебя: «Чего ты боишься в нас больше всего?» — что бы ты ответила честно, без фильтра?','Ты чувствуешь, когда я устал(а) от тебя, даже если я не показываю? Или тебе кажется, что я всегда рад(а) тебя видеть?','Что я делаю, когда злюсь, что тебя одновременно пугает и заводит?','Ты когда-нибудь думала, что у нас может не получиться, просто потому что мы слишком похожи или слишком разные?','Если бы сейчас я попросил(а) тебя сказать одну фразу, которая определит наш вечер, — что бы это была за фраза?','Что я сказал(а) сегодня такого, что ты запомнил(а)?','Какое моё сообщение ты перечитал(а) больше 2 раз?','Когда ты смотришь на мои фото, что ты чувствуешь первым?','Что я делаю чаще: смешу тебя или бешу?','О чём ты думаешь, когда я долго не отвечаю?','Как зовут твоего лучшего друга (и сколько лет знакомы)?','Какой фильм я тебе советовал(а), а ты так и не посмотрел(а)?','Что тебе нравится во мне больше всего, когда я молчу?','Кто первый сказал «спокойной ночи» вчера?','Как часто ты проверяешь мои новые фото?','Напиши мне комплимент, которого ты никогда не говорил(а).','Опиши цвет моих глаз тремя словами.','Напиши одно слово, которое ассоциируется со мной.','Скинь мне песню, которая напоминает тебе обо мне.','Придумай мне прозвище, которое будешь использовать только ты.','Напиши мне первое, что пришло в голову за 3 секунды.','Напиши мне, чего ты сегодня ждал(а) от меня, но не сказал(а).','Отправь мне эмодзи, которые описывают твоё настроение сейчас.','Нарисуй что-нибудь пальцем на экране и скинь скрин.','Напиши мне 3 вещи, которые ты любишь во мне (без внешности).','Что ты чувствуешь, когда мы молчим в переписке и никто не пишет первым?','Было ли тебе когда-нибудь стыдно за меня при других?','Что я мог(ла) бы сделать, чтобы ты чувствовал(а) себя со мной спокойнее?','Ты боишься, что я могу измениться? Если да — то как?','Что для тебя хуже: когда я слишком холоден(на) или слишком навязчив(а)?','Что ты хотел(а) бы услышать от меня прямо сейчас?','Какую одну вещь я мог(ла) бы делать чаще, чтобы ты чувствовал(а) себя любимым(ой)?','Есть ли у тебя вопрос, который ты боишься мне задать?','Ты чувствуешь, что мы подходим друг другу по темпу жизни или кто-то быстрее/медленнее?','Что бы ты хотела изменить в наших отношениях прямо сейчас, если бы могла одним движением?'
 ];
+
+const sentencePrompts = [
+'«Когда я скучаю по тебе, я первым делом...»',
+'«Иногда мне кажется, что ты не замечаешь, как я...»',
+'«Если честно, я ревную тебя, когда ты...»',
+'«Моё любимое время суток с тобой — это... потому что...»',
+'«Одна вещь, которую я никогда не скажу тебе в лицо, но думаю о ней — это...»',
+'«Я перечитываю наши старые переписки, когда...»',
+'«Если бы я был(а) чуть смелее, я бы сделал(а) с тобой...»',
+'«Меня бесит в тебе, что ты... но это же и нравится больше всего...»',
+'«Я понимаю, что влюбился(ась) в тебя по-настоящему, когда...»',
+'«Мне хочется обнять тебя сильнее всего, когда ты...»',
+'«Одна фраза, которую я хочу услышать от тебя перед сном сегодня — это...»',
+'«Если бы я мог(ла) показать тебе одно место, где я вырос(ла), это было бы... потому что...»',
+'«Я стесняюсь попросить тебя о том, чтобы ты...»',
+'«Самый неловкий момент с тобой случился, когда мы...»',
+'«Мне кажется, что мы слишком мало делаем вместе...»',
+'«Одна вещь, которую я хочу сделать с тобой, но боюсь предложить — это...»',
+'«Когда ты задерживаешься с ответом, я думаю...»',
+'«Самое тёплое, что я чувствую рядом с тобой — это...»',
+'«Я бы хотел(а), чтобы ты запомнил(а) навсегда, как я...»',
+'«Если бы мы встретились на 5 лет позже, я бы сказал(а) тебе...»',
+'«Когда я злюсь, я больше всего хочу, чтобы ты...»',
+'«Моё самое тёплое воспоминание за эту неделю связано с тем, что ты...»',
+'«Если бы я мог(ла) сейчас загадать одно желание, которое касается только нас двоих, я бы загадал(а)...»',
+'«Одна вещь, которую я делаю, когда думаю о тебе, но никому не рассказываю — это...»',
+'«Самое глупое, что я хотел(а) бы сделать с тобой в ближайшее время — это...»'
+];
 let state = JSON.parse(localStorage.getItem(STORE) || '{"done":[],"memories":[]}');
+state.sentenceGame ||= { index: 0, completed: false };
 let visitStarted = Date.now();
 let timers = [];
 const save = () => localStorage.setItem(STORE, JSON.stringify(state));
+const sentenceProgressLabel = () => state.sentenceGame.completed ? 'Готово' : `${Math.min((state.sentenceGame.index || 0) + 1, sentencePrompts.length)} / ${sentencePrompts.length}`;
 const clearTimers = () => { timers.forEach(clearInterval); timers = []; };
 const fmtDate = d => new Intl.DateTimeFormat('ru-RU',{day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(d));
 const fmtDay = d => new Intl.DateTimeFormat('ru-RU',{day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(d));
@@ -61,7 +91,7 @@ function floatingHearts(count=34){
 function screen(html){ clearTimers(); app.innerHTML = `<section class="screen">${html}</section>`; }
 function intro(){ screen(`<div class="center"><div class="glass hero"><div class="kicker">маленький секрет</div><h1 class="title">Считаешь ли ты себя красивой? ❤️</h1><p class="subtitle">Ответь честно, моя самая нежная звёздочка.</p><div class="actions"><button class="btn" id="yes">❤️ Да</button><button class="btn secondary" id="no">🙈 Нет</button></div></div></div>`); document.querySelector('#yes').onclick=yesIntro; const no=document.querySelector('#no'); const move=()=>{ const r=no.getBoundingClientRect(), m=20; no.classList.add('runaway'); no.style.left=m+Math.random()*(innerWidth-r.width-m*2)+'px'; no.style.top=m+Math.random()*(innerHeight-r.height-m*2)+'px'; }; ['pointerenter','pointerdown','touchstart','click'].forEach(ev=>no.addEventListener(ev,e=>{e.preventDefault();move();})); }
 function yesIntro(){ document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>'); floatingHearts(42); sparkles(28); screen(`<div class="center"><div class="glass hero"><div class="type" id="type"></div><button class="btn" id="start" hidden>Начать наше приключение ❤️</button></div></div>`); const text='Я тоже так считаю.\n\nДля меня ты самая красивая, любимое солнышко.\n\n❤️ Спасибо, что ты есть у меня.'; let i=0; const t=setInterval(()=>{ type.textContent=text.slice(0,++i); if(i>=text.length){ clearInterval(t); setTimeout(()=>start.hidden=false,650); }},55); timers.push(t); start.onclick=menu; setTimeout(()=>document.querySelector('.dark')?.remove(),1400); }
-function menu(){ const done=state.done.length; const greet=greetings[Math.floor(Math.random()*greetings.length)]; screen(`<div class="menuHead"><div><div class="kicker">${greet}</div><h1>Наш маленький мир</h1></div><button class="btn secondary" onclick="intro()">В начало</button></div><div class="grid"><article class="glass card" onclick="game()"><h2>❤️ Сердце любви</h2><p class="small">Главная магия для нас двоих.</p><div class="metric">${done} / 50 ❤️</div><p>Выполнено</p></article><article class="glass card" onclick="completedChallenges()"><h2>❤️ Пройденные испытания</h2><p class="small">История выполненных заданий с датой и временем.</p><div class="metric">${state.memories.length}</div></article><article class="glass card" onclick="memories()"><h2>📷 Наши воспоминания</h2><p class="small">Тёплое место для будущих фото, видео и общих моментов.</p><div class="metric">♡</div></article><article class="glass card"><h2>⏳ Мы вместе</h2><div class="timer" id="loveTimer"></div></article><article class="glass card"><h2>⏱ Время на сайте</h2><p>Ты уже здесь</p><div class="metric" id="siteTimer">0 минут 0 секунд</div></article><article class="glass card" onclick="achievements()"><h2>🏆 Наши достижения</h2><p class="small">Нежные награды открываются по мере приключения.</p><div class="metric">${unlocked().length} / 7</div></article></div>`); tickTimers(); const id=setInterval(tickTimers,1000); timers.push(id); }
+function menu(){ const done=state.done.length; const greet=greetings[Math.floor(Math.random()*greetings.length)]; screen(`<div class="menuHead"><div><div class="kicker">${greet}</div><h1>Наш маленький мир</h1></div><button class="btn secondary" onclick="intro()">В начало</button></div><div class="grid"><article class="glass card" onclick="game()"><h2>❤️ Сердце любви</h2><p class="small">Главная магия для нас двоих.</p><div class="metric">${done} / 50 ❤️</div><p>Выполнено</p></article><article class="glass card" onclick="completedChallenges()"><h2>❤️ Пройденные испытания</h2><p class="small">История выполненных заданий с датой и временем.</p><div class="metric">${state.memories.length}</div></article><article class="glass card" onclick="memories()"><h2>📷 Наши воспоминания</h2><p class="small">Тёплое место для будущих фото, видео и общих моментов.</p><div class="metric">♡</div></article><article class="glass card" onclick="stripDurak()"><h2>🃏 Дурак на раздевание</h2><p class="small">Место для будущей онлайн-игры.</p><div class="metric">🃏❤️</div></article><article class="glass card" onclick="sentenceIntro()"><h2>💌 Незаконченные предложения</h2><p class="small">Романтичная игра для честных фраз по очереди.</p><div class="metric">${sentenceProgressLabel()}</div></article><article class="glass card"><h2>⏳ Мы вместе</h2><div class="timer" id="loveTimer"></div></article><article class="glass card"><h2>⏱ Время на сайте</h2><p>Ты уже здесь</p><div class="metric" id="siteTimer">0 минут 0 секунд</div></article><article class="glass card" onclick="achievements()"><h2>🏆 Наши достижения</h2><p class="small">Нежные награды открываются по мере приключения.</p><div class="metric">${unlocked().length} / 7</div></article></div>`); tickTimers(); const id=setInterval(tickTimers,1000); timers.push(id); }
 function relationshipParts(start, end=new Date()){
   let y=end.getFullYear()-start.getFullYear(), mo=end.getMonth()-start.getMonth(), d=end.getDate()-start.getDate(), h=end.getHours()-start.getHours(), mi=end.getMinutes()-start.getMinutes(), s=end.getSeconds()-start.getSeconds();
   if(s<0){s+=60;mi--} if(mi<0){mi+=60;h--} if(h<0){h+=24;d--}
@@ -87,7 +117,38 @@ function complete(i){
 }
 function completedChallenges(){ screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero historyPanel"><h1>❤️ Пройденные испытания</h1><p class="small">Здесь хранится история нашего прогресса.</p><div class="list">${state.memories.length?state.memories.map(m=>`<div class="memory"><b>✅ Испытание №${m.number}</b><p>${m.text}</p><div class="historyMeta"><span>📅 ${fmtDay(m.date)}</span><span>🕒 ${fmtTime(m.date)}</span></div></div>`).join(''):'<p class="small">Пока нет пройденных испытаний. Нажми на сердце любви, чтобы создать первое.</p>'}</div></div>`); }
 function memories(){ screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero historyPanel"><h1>📷 Наши воспоминания</h1><div class="emptyMemory"><div class="emptyIcon">❤️</div><p>Здесь будут храниться наши самые теплые воспоминания.</p><span class="small">Сюда позже можно будет добавить фото, видео и особенные моменты.</span></div></div>`); }
+
+function stripDurak(){ screen(`<div class="center"><div class="glass hero placeholderPage"><div class="placeholderIcon">🃏❤️</div><h1>Дурак на раздевание</h1><p class="subtitle">Пока рано. ❤️</p><div class="tinyPulse">❤️</div><button class="btn backHome" onclick="menu()">← Вернуться назад</button></div></div>`); }
+function sentenceIntro(){
+  if(state.sentenceGame.completed) return sentenceComplete(false);
+  screen(`<div class="center"><div class="glass hero sentenceIntro"><h1>💌 Незаконченные предложения</h1><p class="subtitle">Мы будем по очереди заканчивать предложения.<br><br>Здесь нет правильных ответов.<br><br>Только честность, искренность и немного смелости. ❤️</p><button class="btn backHome" onclick="sentenceGame()">✨ Начать</button><button class="btn secondary" onclick="menu()">← Вернуться назад</button></div></div>`);
+}
+function sentenceGame(){
+  if(state.sentenceGame.completed) return sentenceComplete(false);
+  const index = Math.min(state.sentenceGame.index || 0, sentencePrompts.length - 1);
+  screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="center"><div class="glass sentenceCard" id="sentenceCard"><p>${sentencePrompts[index]}</p><div class="sentenceProgress">${index + 1} / ${sentencePrompts.length}</div><button class="btn" onclick="nextSentence()">Следующее предложение ❤️</button></div></div>`);
+}
+function nextSentence(){
+  const card=document.querySelector('#sentenceCard');
+  card?.classList.add('sentenceFlip');
+  setTimeout(()=>{
+    const next=(state.sentenceGame.index || 0) + 1;
+    if(next >= sentencePrompts.length){
+      state.sentenceGame = { index: sentencePrompts.length, completed: true };
+      save();
+      sentenceComplete(true);
+      return;
+    }
+    state.sentenceGame.index = next;
+    save();
+    sentenceGame();
+  }, 360);
+}
+function sentenceComplete(withEffects=true){
+  if(withEffects){ burst(70); sparkles(26); }
+  screen(`<div class="center"><div class="glass hero sentenceDone"><div class="tinyPulse big">❤️</div><h1>✨ Поздравляю!</h1><p class="subtitle">❤️ Вы закончили все предложения.<br><br>Иногда самые важные разговоры начинаются именно с таких маленьких фраз.</p><button class="btn backHome" onclick="menu()">← Вернуться в главное меню</button></div></div>`);
+}
 function unlocked(){ const d=state.done.length; return [['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]].filter(a=>a[1]).map(a=>a[0]); }
 function achievements(){ const d=state.done.length; const all=[['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]]; screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero" style="width:min(720px,100%)"><h1>🏆 Наши достижения</h1><div class="list">${all.map(a=>`<div class="ach ${a[1]?'':'locked'}">${a[1]?'✨':'🔒'} ${a[0]}</div>`).join('')}</div></div>`); }
 function completeAll(){ screen(`<div class="center"><div class="glass hero"><h1>❤️ Всё пройдено</h1><p class="subtitle">Все 50 воспоминаний уже созданы. Это только начало нашей истории.</p><button class="btn" onclick="menu()">Вернуться в наш мир</button></div></div>`); }
-window.intro=intro; window.menu=menu; window.game=game; window.memories=memories; window.completedChallenges=completedChallenges; window.achievements=achievements; intro();
+window.intro=intro; window.menu=menu; window.game=game; window.memories=memories; window.completedChallenges=completedChallenges; window.stripDurak=stripDurak; window.sentenceIntro=sentenceIntro; window.sentenceGame=sentenceGame; window.nextSentence=nextSentence; window.achievements=achievements; intro();

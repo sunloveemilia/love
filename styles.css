@@ -275,3 +275,76 @@ body {
   .historyMeta span { flex: 1 1 128px; text-align: center; }
   .emptyMemory { min-height: 230px; padding: 20px 14px; }
 }
+
+.placeholderPage, .sentenceIntro, .sentenceDone { text-align: center; }
+.placeholderIcon {
+  font-size: clamp(58px, 16vw, 96px);
+  line-height: 1;
+  margin-bottom: 14px;
+  animation: itemIn .7s var(--spring) both;
+}
+.tinyPulse {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin: 24px auto 4px;
+  border-radius: 50%;
+  font-size: 25px;
+  background: rgba(255,255,255,.56);
+  box-shadow: 0 0 34px rgba(255,63,147,.26), inset 0 1px 0 rgba(255,255,255,.82);
+  animation: tinyHeartPulse 2.2s ease-in-out infinite;
+}
+.tinyPulse.big {
+  width: 86px;
+  height: 86px;
+  font-size: 42px;
+  margin-top: 0;
+}
+.backHome { margin-top: 30px; }
+.sentenceIntro .subtitle { margin-bottom: 30px; }
+.sentenceCard {
+  width: min(680px, 100%);
+  padding: clamp(26px, 6vw, 44px);
+  text-align: center;
+  animation: sentenceIn .7s var(--spring) both;
+  transform-style: preserve-3d;
+}
+.sentenceCard p {
+  margin: 0 0 28px;
+  font-size: clamp(26px, 7vw, 44px);
+  line-height: 1.18;
+  font-weight: 850;
+  text-wrap: balance;
+}
+.sentenceProgress {
+  display: inline-flex;
+  margin-bottom: 26px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  color: var(--hot);
+  font-weight: 900;
+  background: rgba(255,255,255,.58);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+}
+.sentenceFlip { animation: sentenceFlip .36s ease-in forwards; }
+.sentenceDone .subtitle { margin-top: 10px; }
+
+@keyframes tinyHeartPulse {
+  0%, 100% { transform: translate3d(0,0,0) scale(1); box-shadow: 0 0 28px rgba(255,63,147,.22), inset 0 1px 0 rgba(255,255,255,.82); }
+  50% { transform: translate3d(0,-4px,0) scale(1.08); box-shadow: 0 0 44px rgba(255,63,147,.38), inset 0 1px 0 rgba(255,255,255,.9); }
+}
+@keyframes sentenceIn {
+  from { opacity: 0; transform: translate3d(0,18px,0) scale(.965) rotateX(3deg); }
+  to { opacity: 1; transform: translate3d(0,0,0) scale(1) rotateX(0); }
+}
+@keyframes sentenceFlip {
+  to { opacity: 0; transform: translate3d(0,-10px,0) scale(.97) rotateY(8deg); }
+}
+
+@media (max-width: 760px) {
+  .placeholderPage, .sentenceIntro, .sentenceDone { padding-inline: 18px; }
+  .sentenceCard { padding: 28px 18px; }
+  .sentenceCard p { font-size: clamp(25px, 8vw, 34px); }
+  .backHome { width: min(100%, 340px); }
+}
