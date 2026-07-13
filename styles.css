@@ -77,7 +77,8 @@ body {
 .btn.secondary { color: var(--text); background: rgba(255,255,255,.74); box-shadow: 0 12px 26px rgba(156,77,119,.13); }
 .runaway { position: fixed; z-index: 20; transition: left .36s var(--spring), top .36s var(--spring), transform .28s var(--spring); }
 .dark { position: fixed; inset: 0; background: rgba(80,20,52,.18); z-index: 2; pointer-events: none; animation: softFade .36s ease both; }
-.type { white-space: pre-line; min-height: 128px; font-size: clamp(24px,6vw,38px); font-weight: 850; line-height: 1.22; }
+.type { white-space: pre-line; min-height: 178px; font-size: clamp(23px,5.8vw,38px); font-weight: 850; line-height: 1.24; }
+#start { margin-top: 34px; }
 
 .menuHead { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 18px; }
 .menuHead h1 { margin: 0; font-size: clamp(28px,7vw,52px); }
@@ -154,14 +155,17 @@ body {
 .orbit i:nth-child(2) { right: 10%; bottom: 19%; transform: scale(.7); }
 .orbit i:nth-child(3) { left: 9%; bottom: 24%; transform: scale(.55); }
 
-.challenge { width: min(620px,100%); padding: 28px; text-align: center; }
+.challenge { width: min(620px,100%); padding: 28px; text-align: center; animation: challengeReveal .68s var(--spring) both; }
 .challenge p { font-size: 22px; line-height: 1.45; }
 .list { display: grid; gap: 10px; max-height: 60dvh; overflow: auto; padding-right: 4px; }
 .memory, .ach { padding: 14px; border-radius: 20px; background: rgba(255,255,255,.5); animation: itemIn .6s var(--spring) both; }
+.completionCard { animation: completionPop .74s var(--spring) both; }
+.nextChallenge { margin-top: 30px; }
 .locked { opacity: .48; }
 
-.burst, .twinkle { position: fixed; left: var(--x); top: var(--y); z-index: 30; pointer-events: none; will-change: transform, opacity; }
+.burst, .twinkle, .floatingHeart { position: fixed; left: var(--x); top: var(--y); z-index: 30; pointer-events: none; will-change: transform, opacity; backface-visibility: hidden; }
 .burst { font-size: var(--s); opacity: var(--o); animation: confettiDrift var(--d) var(--spring) forwards; }
+.floatingHeart { top: 104dvh; font-size: var(--s); opacity: 0; animation: floatingHeart var(--d) cubic-bezier(.22,.74,.2,1) var(--delay) forwards; }
 .sparkConfetti { color: #fff; text-shadow: 0 0 12px rgba(255,255,255,.95); }
 .twinkle {
   width: var(--s);
@@ -178,6 +182,8 @@ body {
 @keyframes softFade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes cardFloat { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(0,-7px,0); } }
 @keyframes itemIn { from { opacity: 0; transform: translate3d(0,12px,0) scale(.985); } to { opacity: 1; transform: translate3d(0,0,0); } }
+@keyframes challengeReveal { from { opacity: 0; transform: translate3d(0,22px,0) scale(.965); } to { opacity: 1; transform: translate3d(0,0,0) scale(1); } }
+@keyframes completionPop { from { opacity: 0; transform: translate3d(0,18px,0) scale(.94); } to { opacity: 1; transform: translate3d(0,0,0) scale(1); } }
 @keyframes heartBreathe { 0%,100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(0,-8px,0) scale(1.045); } }
 @keyframes auraPulse { 50% { transform: scale(1.12); opacity: .72; } }
 @keyframes reflection { 0%, 48% { opacity: 0; transform: rotate(-18deg) translateX(-48%); } 58% { opacity: .78; } 78%,100% { opacity: 0; transform: rotate(-18deg) translateX(42%); } }
@@ -185,6 +191,7 @@ body {
 @keyframes ring { to { opacity: 0; transform: scale(1.9); } 20% { opacity: .86; } }
 @keyframes orbitSpin { to { transform: rotate(360deg); } }
 @keyframes confettiDrift { 0% { transform: translate3d(0,0,0) rotate(0) scale(.75); opacity: 0; } 12% { opacity: var(--o); } 100% { transform: translate3d(var(--tx), var(--ty), 0) rotate(var(--rot)) scale(1); opacity: 0; } }
+@keyframes floatingHeart { 0% { transform: translate3d(0,0,0) rotate(calc(var(--r) * -1)) scale(.7); opacity: 0; } 12% { opacity: var(--o); } 48% { transform: translate3d(calc(var(--drift) * .42), -48dvh, 0) rotate(0deg) scale(1); opacity: var(--o); } 100% { transform: translate3d(var(--drift), -116dvh, 0) rotate(var(--r)) scale(1.08); opacity: 0; } }
 @keyframes twinkle { 0% { opacity: 0; transform: translate3d(0,8px,0) scale(.3); } 35% { opacity: .95; transform: translate3d(0,0,0) scale(1); } 70% { opacity: .55; transform: scale(.72); } 100% { opacity: 0; transform: translate3d(0,-10px,0) scale(.15); } }
 
 @media (max-width: 760px) {
@@ -193,8 +200,15 @@ body {
   .menuHead { display: block; }
   .card { min-height: 132px; }
   .timer { grid-template-columns: repeat(2,1fr); }
-  .hero { padding: 28px 18px; }
+  .hero { padding: 30px 18px; }
+  .type { min-height: 210px; }
+  #start { margin-top: 40px; width: min(100%, 330px); }
+  .heartWrap { min-height: 70dvh; }
+  .magicHeart { width: clamp(168px, 58vw, 214px); }
   .orbit { width: 232px; height: 232px; }
+  .challenge { padding: 24px 18px; }
+  .challenge p { font-size: 20px; }
+  .burst { animation-timing-function: cubic-bezier(.18,.72,.22,1); }
 }
 
 @media (prefers-reduced-motion: reduce) {

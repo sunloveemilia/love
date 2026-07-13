@@ -31,6 +31,7 @@ function burst(count=36, origin={x:50,y:78}){
   document.body.append(fragment);
 }
 function sparkles(count=22, area=document.body){
+  count = Math.min(count, matchMedia('(max-width: 760px)').matches ? 22 : 34);
   const fragment = document.createDocumentFragment();
   for(let i=0;i<count;i++){
     const e=document.createElement('span');
@@ -42,9 +43,22 @@ function sparkles(count=22, area=document.body){
   area.append(fragment);
 }
 
+function floatingHearts(count=34){
+  const fragment = document.createDocumentFragment();
+  const total = Math.min(count, matchMedia('(max-width: 760px)').matches ? 28 : 46);
+  for(let i=0;i<total;i++){
+    const e=document.createElement('span');
+    e.className='floatingHeart';
+    e.textContent='❤️';
+    e.style.cssText=`--x:${Math.random()*100}vw;--drift:${(Math.random()-.5)*46}vw;--s:${12+Math.random()*22}px;--o:${.28+Math.random()*.52};--r:${(Math.random()-.5)*70}deg;--d:${5.8+Math.random()*5.6}s;--delay:${Math.random()*1.6}s`;
+    fragment.append(e);
+    setTimeout(()=>e.remove(),13000);
+  }
+  document.body.append(fragment);
+}
 function screen(html){ clearTimers(); app.innerHTML = `<section class="screen">${html}</section>`; }
 function intro(){ screen(`<div class="center"><div class="glass hero"><div class="kicker">маленький секрет</div><h1 class="title">Считаешь ли ты себя красивой? ❤️</h1><p class="subtitle">Ответь честно, моя самая нежная звёздочка.</p><div class="actions"><button class="btn" id="yes">❤️ Да</button><button class="btn secondary" id="no">🙈 Нет</button></div></div></div>`); document.querySelector('#yes').onclick=yesIntro; const no=document.querySelector('#no'); const move=()=>{ const r=no.getBoundingClientRect(), m=20; no.classList.add('runaway'); no.style.left=m+Math.random()*(innerWidth-r.width-m*2)+'px'; no.style.top=m+Math.random()*(innerHeight-r.height-m*2)+'px'; }; ['pointerenter','pointerdown','touchstart','click'].forEach(ev=>no.addEventListener(ev,e=>{e.preventDefault();move();})); }
-function yesIntro(){ document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>'); burst(70); sparkles(34); screen(`<div class="center"><div class="glass hero"><div class="type" id="type"></div><button class="btn" id="start" hidden>Начать наше приключение ❤️</button></div></div>`); const text='Я тоже так считаю.\n\nДля меня ты самая красивая, любимое солнышко. ❤️'; let i=0; const t=setInterval(()=>{ type.textContent=text.slice(0,++i); if(i>=text.length){ clearInterval(t); setTimeout(()=>start.hidden=false,650); }},55); timers.push(t); start.onclick=menu; setTimeout(()=>document.querySelector('.dark')?.remove(),1400); }
+function yesIntro(){ document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>'); floatingHearts(42); sparkles(28); screen(`<div class="center"><div class="glass hero"><div class="type" id="type"></div><button class="btn" id="start" hidden>Начать наше приключение ❤️</button></div></div>`); const text='Я тоже так считаю.\n\nДля меня ты самая красивая, любимое солнышко.\n\nСпасибо, что ты есть у меня. ❤️'; let i=0; const t=setInterval(()=>{ type.textContent=text.slice(0,++i); if(i>=text.length){ clearInterval(t); setTimeout(()=>start.hidden=false,650); }},55); timers.push(t); start.onclick=menu; setTimeout(()=>document.querySelector('.dark')?.remove(),1400); }
 function menu(){ const done=state.done.length; const greet=greetings[Math.floor(Math.random()*greetings.length)]; screen(`<div class="menuHead"><div><div class="kicker">${greet}</div><h1>Наш маленький мир</h1></div><button class="btn secondary" onclick="intro()">В начало</button></div><div class="grid"><article class="glass card" onclick="game()"><h2>❤️ Сердце любви</h2><p class="small">Главная магия для нас двоих.</p><div class="metric">${done} / 50 ❤️</div><p>Выполнено</p></article><article class="glass card" onclick="memories()"><h2>📷 Наши воспоминания</h2><p class="small">Здесь появляются выполненные испытания и важные моменты.</p><div class="metric">${state.memories.length}</div></article><article class="glass card"><h2>⏳ Мы вместе</h2><div class="timer" id="loveTimer"></div></article><article class="glass card"><h2>⏱ Время на сайте</h2><p>Ты уже здесь</p><div class="metric" id="siteTimer">0 минут 0 секунд</div></article><article class="glass card" onclick="achievements()"><h2>🏆 Наши достижения</h2><p class="small">Нежные награды открываются по мере приключения.</p><div class="metric">${unlocked().length} / 7</div></article></div>`); tickTimers(); const id=setInterval(tickTimers,1000); timers.push(id); }
 function relationshipParts(start, end=new Date()){
   let y=end.getFullYear()-start.getFullYear(), mo=end.getMonth()-start.getMonth(), d=end.getDate()-start.getDate(), h=end.getHours()-start.getHours(), mi=end.getMinutes()-start.getMinutes(), s=end.getSeconds()-start.getSeconds();
@@ -57,7 +71,18 @@ function tickTimers(){ const loveEl=document.querySelector('#loveTimer'); const 
 function game(){ screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="heartWrap"><div class="heartStage"><button class="magicHeart" id="heart" aria-label="Открыть испытание"><span class="heartAura"></span><svg viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="heartGradient" x1="20%" y1="8%" x2="86%" y2="92%"><stop offset="0%" stop-color="#fff6fb"/><stop offset="22%" stop-color="#ff98c8"/><stop offset="58%" stop-color="#ff3f93"/><stop offset="100%" stop-color="#d81a72"/></linearGradient><radialGradient id="heartShine" cx="31%" cy="24%" r="38%"><stop offset="0%" stop-color="rgba(255,255,255,.95)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><path class="heartShape" d="M256 462C126 347 48 278 48 172 48 91 112 40 181 40c39 0 76 18 99 49 23-31 60-49 99-49 69 0 133 51 133 132 0 106-78 175-208 290l-48 42-48-42Z"/><path class="heartHighlight" d="M160 88c-46 10-76 45-76 91 0 23 7 43 20 63 18-86 76-122 145-113-20-30-53-49-89-41Z"/></svg><span class="heartReflection"></span></button><div class="orbit" aria-hidden="true"><i></i><i></i><i></i></div><h1>Нажми на сердце любви</h1><p class="small">Оно выберет случайное испытание, которое ещё не было выполнено.</p></div></div>`); document.querySelector('#heart').onclick=pick; }
 function pick(){ const left=challenges.map((_,i)=>i).filter(i=>!state.done.includes(i)); if(!left.length) return completeAll(); const heartEl=document.querySelector('#heart'); heartEl.classList.add('activated'); burst(54,{x:50,y:45}); sparkles(28); setTimeout(()=>showChallenge(left[Math.floor(Math.random()*left.length)]),1250); }
 function showChallenge(i){ screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="center"><div class="glass challenge"><div class="kicker">испытание ${i+1}</div><p>${challenges[i]}</p><div class="actions"><button class="btn" id="done">Выполнено ❤️</button><button class="btn secondary" onclick="game()">Выбрать позже</button></div></div></div>`); done.onclick=()=>complete(i); }
-function complete(i){ if(!state.done.includes(i)){ state.done.push(i); state.memories.unshift({text:challenges[i],date:new Date().toISOString(),number:i+1}); save(); } document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>'); burst(78); sparkles(30); screen(`<div class="center"><div class="glass hero"><h1>✨ Поздравляю!</h1><p class="subtitle">❤️ Еще одно воспоминание создано.</p><div class="kicker">Пройдено:</div><div class="metric">${state.done.length} / 50</div></div></div>`); setTimeout(()=>{document.querySelector('.dark')?.remove();menu();},3200); }
+function complete(i){
+  if(!state.done.includes(i)){
+    state.done.push(i);
+    state.memories.unshift({text:challenges[i],date:new Date().toISOString(),number:i+1});
+    save();
+  }
+  document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>');
+  burst(64);
+  sparkles(24);
+  screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="center"><div class="glass hero completionCard"><h1>✨ Поздравляю!</h1><p class="subtitle">❤️ Еще одно воспоминание создано.</p><div class="kicker">Пройдено:</div><div class="metric">${state.done.length} / 50</div><button class="btn nextChallenge" onclick="game()">Открыть следующее испытание ❤️</button></div></div>`);
+  setTimeout(()=>document.querySelector('.dark')?.remove(),900);
+}
 function memories(){ screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero" style="width:min(760px,100%)"><h1>📷 Наши воспоминания</h1><div class="list">${state.memories.length?state.memories.map(m=>`<div class="memory"><b>❤️ Испытание ${m.number}</b><p>${m.text}</p><span class="small">${fmtDate(m.date)}</span></div>`).join(''):'<p class="small">Пока здесь тихо, но скоро появятся наши первые моменты.</p>'}</div></div>`); }
 function unlocked(){ const d=state.done.length; return [['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]].filter(a=>a[1]).map(a=>a[0]); }
 function achievements(){ const d=state.done.length; const all=[['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]]; screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero" style="width:min(720px,100%)"><h1>🏆 Наши достижения</h1><div class="list">${all.map(a=>`<div class="ach ${a[1]?'':'locked'}">${a[1]?'✨':'🔒'} ${a[0]}</div>`).join('')}</div></div>`); }
