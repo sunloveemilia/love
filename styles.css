@@ -348,3 +348,32 @@ body {
   .sentenceCard p { font-size: clamp(25px, 8vw, 34px); }
   .backHome { width: min(100%, 340px); }
 }
+
+.questionIntro, .questionDone { text-align: center; }
+.questionIntro h1, .questionDone h1 { text-wrap: balance; }
+.questionCard {
+  position: relative;
+  overflow: hidden;
+}
+.questionCard::before {
+  content: "";
+  position: absolute;
+  inset: -30% auto auto -18%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,143,189,.26), transparent 68%);
+  pointer-events: none;
+}
+.questionCard p {
+  position: relative;
+  font-size: clamp(24px, 5.8vw, 38px);
+}
+.questionDone .tinyPulse {
+  animation-duration: 2.6s;
+}
+
+@media (max-width: 760px) {
+  .questionIntro, .questionDone { padding-inline: 18px; }
+  .questionCard p { font-size: clamp(23px, 7vw, 31px); }
+}
