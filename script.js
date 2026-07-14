@@ -266,7 +266,91 @@ function complete(i){
   setTimeout(()=>document.querySelector('.dark')?.remove(),900);
 }
 function completedChallenges(){ screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero historyPanel"><h1>❤️ Пройденные испытания</h1><p class="small">Здесь хранится история нашего прогресса.</p><div class="list">${state.memories.length?state.memories.map(m=>`<div class="memory"><b>✅ Испытание №${m.number}</b><p>${m.text}</p><div class="historyMeta"><span>📅 ${fmtDay(m.date)}</span><span>🕒 ${fmtTime(m.date)}</span></div></div>`).join(''):'<p class="small">Пока нет пройденных испытаний. Нажми на сердце любви, чтобы создать первое.</p>'}</div></div>`); }
-function memories(){ screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero historyPanel"><h1>📷 Наши воспоминания</h1><div class="emptyMemory"><div class="emptyIcon">❤️</div><p>Здесь будут храниться наши самые теплые воспоминания.</p><span class="small">Сюда позже можно будет добавить фото, видео и особенные моменты.</span></div></div>`); }
+const PHOTO_MANIFEST = 'assets/photos/manifest.json';
+let galleryPhotos = [];
+let galleryIndex = 0;
+let galleryTouchStartX = 0;
+const escapeAttr = value => String(value).replace(/[&"<>]/g, char => ({ '&': '&amp;', '"': '&quot;', '<': '&lt;', '>': '&gt;' }[char]));
+const photoTitle = src => decodeURIComponent(src.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' '));
+function normalizePhotoList(photos){
+  return [...new Set(photos)]
+    .filter(src => /\.(jpe?g|png|webp)$/i.test(src))
+    .sort((a, b) => a.localeCompare(b, 'ru', { numeric: true, sensitivity: 'base' }));
+}
+async function loadGalleryPhotos(){
+  const cacheKey = `v=${Date.now()}`;
+  try {
+    const response = await fetch(`${PHOTO_MANIFEST}?${cacheKey}`, { cache: 'no-store' });
+    if(response.ok){
+      const photos = normalizePhotoList(await response.json());
+      if(photos.length) return photos;
+    }
+  } catch {}
+
+  try {
+    const response = await fetch(`assets/photos/?${cacheKey}`, { cache: 'no-store' });
+    if(!response.ok) return [];
+    const html = await response.text();
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    return normalizePhotoList([...doc.querySelectorAll('a')].map(link => `assets/photos/${link.getAttribute('href') || ''}`));
+  } catch {
+    return [];
+  }
+}
+function renderMemoriesGallery(photos){
+  const target = document.querySelector('#photoGallery');
+  if(!target) return;
+  galleryPhotos = photos;
+  if(!photos.length){
+    target.innerHTML = `<div class="emptyMemory photoEmpty"><div class="tinyPulse big">❤️</div><p>❤️ Здесь совсем скоро появятся наши самые тёплые воспоминания.</p></div>`;
+    return;
+  }
+  target.innerHTML = `<div class="photoGrid">${photos.map((src, index) => `<button class="photoFrame" onclick="openPhotoViewer(${index})" aria-label="Открыть фото ${index + 1}"><img src="${escapeAttr(src)}" alt="${escapeAttr(photoTitle(src))}" loading="lazy"><span>❤️</span></button>`).join('')}</div>`;
+  sparkles(12, target);
+}
+async function memories(){
+  screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero historyPanel memoriesPanel"><h1>❤️ Наши воспоминания</h1><p class="small">Романтичный альбом для самых тёплых моментов, которые хочется пересматривать снова и снова.</p><div id="photoGallery"><div class="emptyMemory"><div class="tinyPulse">❤️</div><p>Загружаю наши воспоминания...</p></div></div></div>`);
+  renderMemoriesGallery(await loadGalleryPhotos());
+}
+function openPhotoViewer(index){
+  if(!galleryPhotos.length) return;
+  galleryIndex = (index + galleryPhotos.length) % galleryPhotos.length;
+  closePhotoViewer();
+  document.body.insertAdjacentHTML('beforeend', `<div class="photoViewer" id="photoViewer" role="dialog" aria-modal="true" aria-label="Просмотр воспоминания"><button class="viewerClose" onclick="closePhotoViewer()" aria-label="Закрыть">×</button><button class="viewerNav viewerPrev" onclick="showPhoto(-1)" aria-label="Предыдущее фото">‹</button><img id="viewerImage" src="${escapeAttr(galleryPhotos[galleryIndex])}" alt="${escapeAttr(photoTitle(galleryPhotos[galleryIndex]))}"><button class="viewerNav viewerNext" onclick="showPhoto(1)" aria-label="Следующее фото">›</button><div class="viewerCount" id="viewerCount"></div></div>`);
+  updatePhotoViewer();
+  document.addEventListener('keydown', photoViewerKeys);
+  const viewer = document.querySelector('#photoViewer');
+  viewer.addEventListener('touchstart', e => galleryTouchStartX = e.touches[0].clientX, { passive: true });
+  viewer.addEventListener('touchend', e => {
+    const diff = e.changedTouches[0].clientX - galleryTouchStartX;
+    if(Math.abs(diff) > 42) showPhoto(diff > 0 ? -1 : 1);
+  }, { passive: true });
+}
+function updatePhotoViewer(){
+  const image = document.querySelector('#viewerImage');
+  const count = document.querySelector('#viewerCount');
+  if(!image || !count) return;
+  image.classList.remove('viewerZoom');
+  void image.offsetWidth;
+  image.src = galleryPhotos[galleryIndex];
+  image.alt = photoTitle(galleryPhotos[galleryIndex]);
+  image.classList.add('viewerZoom');
+  count.textContent = `${galleryIndex + 1} / ${galleryPhotos.length} ❤️`;
+}
+function showPhoto(direction){
+  if(!galleryPhotos.length) return;
+  galleryIndex = (galleryIndex + direction + galleryPhotos.length) % galleryPhotos.length;
+  updatePhotoViewer();
+}
+function photoViewerKeys(event){
+  if(event.key === 'Escape') closePhotoViewer();
+  if(event.key === 'ArrowLeft') showPhoto(-1);
+  if(event.key === 'ArrowRight') showPhoto(1);
+}
+function closePhotoViewer(){
+  document.querySelector('#photoViewer')?.remove();
+  document.removeEventListener('keydown', photoViewerKeys);
+}
 
 function stripDurak(){ screen(`<div class="center"><div class="glass hero placeholderPage"><div class="placeholderIcon">🃏❤️</div><h1>Дурак на раздевание</h1><p class="subtitle">Пока рано. ❤️</p><div class="tinyPulse">❤️</div><button class="btn backHome" onclick="menu()">← Вернуться назад</button></div></div>`); }
 function sentenceIntro(){
@@ -426,4 +510,4 @@ function thisOrThatComplete(levelKey, withEffects = true){
 function unlocked(){ const d=state.done.length; return [['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]].filter(a=>a[1]).map(a=>a[0]); }
 function achievements(){ const d=state.done.length; const all=[['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]]; screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero" style="width:min(720px,100%)"><h1>🏆 Наши достижения</h1><div class="list">${all.map(a=>`<div class="ach ${a[1]?'':'locked'}">${a[1]?'✨':'🔒'} ${a[0]}</div>`).join('')}</div></div>`); }
 function completeAll(){ screen(`<div class="center"><div class="glass hero"><h1>❤️ Всё пройдено</h1><p class="subtitle">Все 50 воспоминаний уже созданы. Это только начало нашей истории.</p><button class="btn" onclick="menu()">Вернуться в наш мир</button></div></div>`); }
-window.intro=intro; window.menu=menu; window.game=game; window.memories=memories; window.completedChallenges=completedChallenges; window.stripDurak=stripDurak; window.sentenceIntro=sentenceIntro; window.sentenceGame=sentenceGame; window.nextSentence=nextSentence; window.thisOrThatIntro=thisOrThatIntro; window.selectThisOrThatLevel=selectThisOrThatLevel; window.startThisOrThatLevel=startThisOrThatLevel; window.nextThisOrThatQuestion=nextThisOrThatQuestion; window.soulTalkIntro=soulTalkIntro; window.sunshineIntro=sunshineIntro; window.questionGame=questionGame; window.nextQuestion=nextQuestion; window.achievements=achievements; intro();
+window.intro=intro; window.menu=menu; window.game=game; window.memories=memories; window.openPhotoViewer=openPhotoViewer; window.closePhotoViewer=closePhotoViewer; window.showPhoto=showPhoto; window.completedChallenges=completedChallenges; window.stripDurak=stripDurak; window.sentenceIntro=sentenceIntro; window.sentenceGame=sentenceGame; window.nextSentence=nextSentence; window.thisOrThatIntro=thisOrThatIntro; window.selectThisOrThatLevel=selectThisOrThatLevel; window.startThisOrThatLevel=startThisOrThatLevel; window.nextThisOrThatQuestion=nextThisOrThatQuestion; window.soulTalkIntro=soulTalkIntro; window.sunshineIntro=sunshineIntro; window.questionGame=questionGame; window.nextQuestion=nextQuestion; window.achievements=achievements; intro();

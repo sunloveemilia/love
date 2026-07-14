@@ -458,3 +458,153 @@ body {
   .levelCard { min-height: 260px; }
   .thisOrThatQuestion { min-height: 390px; }
 }
+
+.memoriesPanel { width: min(920px, 100%); }
+.memoriesPanel .small b { color: var(--hot); }
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+  position: relative;
+}
+.photoFrame {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(255,255,255,.76);
+  border-radius: 26px;
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(145deg, rgba(255,255,255,.74), rgba(255,214,232,.36));
+  box-shadow: 0 24px 46px rgba(211,76,137,.18), inset 0 1px 0 rgba(255,255,255,.86);
+  transition: transform .5s var(--spring), box-shadow .5s var(--spring), filter .5s ease;
+}
+.photoFrame:hover,
+.photoFrame:focus-visible {
+  transform: translate3d(0,-7px,0) scale(1.018) rotate(-.5deg);
+  box-shadow: 0 34px 70px rgba(211,76,137,.27), 0 0 32px rgba(255,143,189,.2), inset 0 1px 0 rgba(255,255,255,.9);
+  outline: 0;
+}
+.photoFrame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+  background: rgba(255,255,255,.46);
+}
+.photoFrame span {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 10px 24px rgba(211,76,137,.2);
+  animation: tinyHeartPulse 3s ease-in-out infinite;
+}
+.photoEmpty { min-height: 310px; margin-top: 18px; }
+.photoViewer {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: clamp(18px, 4vw, 46px);
+  background: rgba(55, 12, 36, .54);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  animation: softFade .28s ease both;
+}
+.photoViewer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255,143,189,.2), transparent 28%),
+    radial-gradient(circle at 82% 76%, rgba(233,221,255,.22), transparent 30%);
+  pointer-events: none;
+}
+.photoViewer img {
+  position: relative;
+  z-index: 1;
+  max-width: min(1120px, 92vw);
+  max-height: 82dvh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,.72);
+  box-shadow: 0 30px 90px rgba(24, 5, 18, .48), 0 0 40px rgba(255,143,189,.2);
+  background: rgba(255,255,255,.24);
+}
+.viewerZoom { animation: viewerZoom .34s var(--spring) both; }
+.viewerClose,
+.viewerNav,
+.viewerCount {
+  position: fixed;
+  z-index: 2;
+  border: 1px solid rgba(255,255,255,.62);
+  color: #fff;
+  background: rgba(255,255,255,.18);
+  box-shadow: 0 14px 30px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.viewerClose,
+.viewerNav {
+  cursor: pointer;
+  transition: transform .36s var(--spring), background .36s ease;
+}
+.viewerClose:hover,
+.viewerNav:hover,
+.viewerClose:focus-visible,
+.viewerNav:focus-visible { transform: scale(1.08); background: rgba(255,143,189,.32); outline: 0; }
+.viewerClose {
+  top: 18px;
+  right: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 34px;
+  line-height: 1;
+}
+.viewerNav {
+  top: 50%;
+  width: 52px;
+  height: 72px;
+  border-radius: 999px;
+  font-size: 48px;
+  transform: translateY(-50%);
+}
+.viewerNav:hover,
+.viewerNav:focus-visible { transform: translateY(-50%) scale(1.08); }
+.viewerPrev { left: 18px; }
+.viewerNext { right: 18px; }
+.viewerCount {
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 850;
+}
+@keyframes viewerZoom { from { opacity: 0; transform: translate3d(0,16px,0) scale(.92); } to { opacity: 1; transform: translate3d(0,0,0) scale(1); } }
+
+@media (max-width: 640px) {
+  .photoGrid { grid-template-columns: repeat(auto-fit, minmax(136px, 1fr)); gap: 12px; }
+  .photoFrame { border-radius: 22px; padding: 6px; }
+  .photoFrame img { border-radius: 17px; }
+  .photoViewer { padding: 14px; }
+  .photoViewer img { max-width: 94vw; max-height: 78dvh; border-radius: 22px; }
+  .viewerNav { width: 44px; height: 58px; font-size: 38px; }
+  .viewerPrev { left: 8px; }
+  .viewerNext { right: 8px; }
+  .viewerClose { top: 10px; right: 10px; }
+}

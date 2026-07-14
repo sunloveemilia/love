@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build": "node scripts/generate-photo-manifest.mjs",
+    "start": "node scripts/generate-photo-manifest.mjs && python3 -m http.server 4173"
+  }
+}
