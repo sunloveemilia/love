@@ -377,3 +377,84 @@ body {
   .questionIntro, .questionDone { padding-inline: 18px; }
   .questionCard p { font-size: clamp(23px, 7vw, 31px); }
 }
+
+.thisOrThatShell { width: min(1040px, 100%); }
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.levelCard {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-height: 330px;
+  padding: 26px;
+  position: relative;
+  overflow: hidden;
+  animation: cardFloat 7s ease-in-out infinite;
+}
+.levelCard:nth-child(2) { animation-delay: -2.4s; }
+.levelCard:nth-child(3) { animation-delay: -4.1s; }
+.levelCard::before {
+  content: "";
+  position: absolute;
+  inset: -40% -20% auto auto;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.62), rgba(255,143,189,.18) 55%, transparent 72%);
+}
+.levelIcon {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+  font-size: 34px;
+  background: linear-gradient(145deg, rgba(255,255,255,.78), rgba(255,214,232,.38));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.88), 0 18px 34px rgba(211,76,137,.16);
+}
+.levelCard h2 { margin: 0; font-size: clamp(24px, 4vw, 32px); }
+.levelCard .btn { margin-top: auto; width: 100%; }
+.confirmDialog { max-width: 620px; }
+.thisOrThatQuestion {
+  width: min(720px, 100%);
+  min-height: 430px;
+  padding: clamp(26px, 5vw, 46px);
+  display: grid;
+  place-items: center;
+  gap: 22px;
+  text-align: center;
+  transform-style: preserve-3d;
+  animation: questionRise .72s var(--spring) both;
+}
+.thisOrThatQuestion p {
+  margin: 0;
+  font-size: clamp(25px, 5vw, 42px);
+  font-weight: 850;
+  line-height: 1.24;
+  text-wrap: balance;
+}
+.thisOrThatFlip { animation: thisOrThatFlip .42s var(--spring) both; }
+.thisOrThatDone { position: relative; overflow: hidden; }
+.thisOrThatDone::before,
+.thisOrThatDone::after {
+  content: "✦";
+  position: absolute;
+  color: rgba(255,255,255,.92);
+  text-shadow: 0 0 18px rgba(255,63,147,.46);
+  animation: sparkleFloat 3.2s ease-in-out infinite;
+}
+.thisOrThatDone::before { left: 18%; top: 18%; font-size: 26px; }
+.thisOrThatDone::after { right: 16%; bottom: 22%; font-size: 20px; animation-delay: -1.2s; }
+
+@keyframes questionRise { from { opacity: 0; transform: translate3d(0,28px,0) rotateX(7deg) scale(.97); } to { opacity: 1; transform: translate3d(0,0,0) rotateX(0) scale(1); } }
+@keyframes thisOrThatFlip { 0% { opacity: 1; transform: translate3d(0,0,0) rotateY(0) scale(1); } 55% { opacity: .25; transform: translate3d(0,-16px,0) rotateY(9deg) scale(.985); } 100% { opacity: 0; transform: translate3d(0,-24px,0) rotateY(-7deg) scale(.96); } }
+@keyframes sparkleFloat { 50% { transform: translate3d(0,-12px,0) scale(1.2) rotate(12deg); opacity: .58; } }
+
+@media (max-width: 860px) {
+  .levelGrid { grid-template-columns: 1fr; }
+  .levelCard { min-height: 260px; }
+  .thisOrThatQuestion { min-height: 390px; }
+}

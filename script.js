@@ -52,6 +52,38 @@ const soulTalkQuestions = [
 'Если бы я научился делать что-то одно ради тебя (не ради себя) — что бы ты попросила?',
 'Что для тебя тяжелее: когда я слишком много говорю, или когда я слишком долго молчу в переписке?'
 ];
+
+
+// Вопросы для мини-игры «Это или то».
+// Заполните массивы строками из блока EASY QUESTIONS / MEDIUM QUESTIONS / DEEP QUESTIONS.
+const thisOrThatEasyQuestions = [];
+const thisOrThatMediumQuestions = [];
+const thisOrThatDeepQuestions = [];
+
+const thisOrThatLevels = {
+  easy: {
+    icon: '🌸',
+    title: 'Лёгкий',
+    description: 'Немного романтики, улыбок и лёгкого флирта.',
+    storageKey: 'easy-progress',
+    questions: thisOrThatEasyQuestions
+  },
+  medium: {
+    icon: '💞',
+    title: 'Средний',
+    description: 'Более личные вопросы о чувствах, доверии и ваших отношениях.',
+    storageKey: 'medium-progress',
+    questions: thisOrThatMediumQuestions
+  },
+  deep: {
+    icon: '🌙',
+    title: 'Глубокий',
+    description: 'Самые искренние вопросы, которые требуют доверия.',
+    storageKey: 'deep-progress',
+    questions: thisOrThatDeepQuestions
+  }
+};
+
 const sunshineQuestions = [
 'Что ты чувствуешь, когда я прикасаюсь к твоей спине случайно проходя мимо? Это просто приятно или у тебя внутри что-то переворачивается?',
 'Опиши, как ты видишь наш идеальный выходной через пять лет, если у нас уже есть своё пространство, нет спешки и есть свободное время.',
@@ -78,8 +110,20 @@ let state = JSON.parse(localStorage.getItem(STORE) || '{"done":[],"memories":[]}
 state.sentenceGame ||= { index: 0, completed: false };
 state.soulTalk ||= { index: 0, completed: false };
 state.sunshineQuestions ||= { index: 0, completed: false };
+Object.keys(thisOrThatLevels).forEach(initThisOrThatProgress);
 let visitStarted = Date.now();
 let timers = [];
+function defaultThisOrThatProgress(){ return { index: 0, completed: false }; }
+function initThisOrThatProgress(levelKey){
+  const level = thisOrThatLevels[levelKey];
+  const saved = JSON.parse(localStorage.getItem(level.storageKey) || 'null');
+  const fallback = defaultThisOrThatProgress();
+  state[level.storageKey] = { ...fallback, ...(saved || {}) };
+}
+function saveThisOrThatProgress(levelKey){
+  const level = thisOrThatLevels[levelKey];
+  localStorage.setItem(level.storageKey, JSON.stringify(state[level.storageKey]));
+}
 const save = () => localStorage.setItem(STORE, JSON.stringify(state));
 const sentenceProgressLabel = () => state.sentenceGame.completed ? 'Готово' : `${Math.min((state.sentenceGame.index || 0) + 1, sentencePrompts.length)} / ${sentencePrompts.length}`;
 const miniProgressLabel = (key, total) => state[key].completed ? 'Готово' : `${Math.min((state[key].index || 0) + 1, total)} / ${total}`;
@@ -134,7 +178,7 @@ function floatingHearts(count=34){
 function screen(html){ clearTimers(); app.innerHTML = `<section class="screen">${html}</section>`; }
 function intro(){ screen(`<div class="center"><div class="glass hero"><div class="kicker">маленький секрет</div><h1 class="title">Считаешь ли ты себя красивой? ❤️</h1><p class="subtitle">Ответь честно, моя самая нежная звёздочка.</p><div class="actions"><button class="btn" id="yes">❤️ Да</button><button class="btn secondary" id="no">🙈 Нет</button></div></div></div>`); document.querySelector('#yes').onclick=yesIntro; const no=document.querySelector('#no'); const move=()=>{ const r=no.getBoundingClientRect(), m=20; no.classList.add('runaway'); no.style.left=m+Math.random()*(innerWidth-r.width-m*2)+'px'; no.style.top=m+Math.random()*(innerHeight-r.height-m*2)+'px'; }; ['pointerenter','pointerdown','touchstart','click'].forEach(ev=>no.addEventListener(ev,e=>{e.preventDefault();move();})); }
 function yesIntro(){ document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>'); floatingHearts(42); sparkles(28); screen(`<div class="center"><div class="glass hero"><div class="type" id="type"></div><button class="btn" id="start" hidden>Начать наше приключение ❤️</button></div></div>`); const text='Я тоже так считаю.\n\nДля меня ты самая красивая, любимое солнышко.\n\n❤️ Спасибо, что ты есть у меня.'; let i=0; const t=setInterval(()=>{ type.textContent=text.slice(0,++i); if(i>=text.length){ clearInterval(t); setTimeout(()=>start.hidden=false,650); }},55); timers.push(t); start.onclick=menu; setTimeout(()=>document.querySelector('.dark')?.remove(),1400); }
-function menu(){ const done=state.done.length; const greet=greetings[Math.floor(Math.random()*greetings.length)]; screen(`<div class="menuHead"><div><div class="kicker">${greet}</div><h1>Наш маленький мир</h1></div><button class="btn secondary" onclick="intro()">В начало</button></div><div class="grid"><article class="glass card" onclick="game()"><h2>❤️ Сердце любви</h2><p class="small">Главная магия для нас двоих.</p><div class="metric">${done} / 50 ❤️</div><p>Выполнено</p></article><article class="glass card" onclick="completedChallenges()"><h2>❤️ Пройденные испытания</h2><p class="small">История выполненных заданий с датой и временем.</p><div class="metric">${state.memories.length}</div></article><article class="glass card" onclick="memories()"><h2>📷 Наши воспоминания</h2><p class="small">Тёплое место для будущих фото, видео и общих моментов.</p><div class="metric">♡</div></article><article class="glass card" onclick="stripDurak()"><h2>🃏 Дурак на раздевание</h2><p class="small">Место для будущей онлайн-игры.</p><div class="metric">🃏❤️</div></article><article class="glass card" onclick="sentenceIntro()"><h2>💌 Незаконченные предложения</h2><p class="small">Романтичная игра для честных фраз по очереди.</p><div class="metric">${sentenceProgressLabel()}</div></article><article class="glass card" onclick="soulTalkIntro()"><h2>💞 Разговоры по душам</h2><p class="small">15 вопросов только для нас ❤️</p><div class="metric">${miniProgressLabel('soulTalk', soulTalkQuestions.length)}</div></article><article class="glass card" onclick="sunshineIntro()"><h2>🌹 Вопросы для любимого солнышка</h2><p class="small">20 личных вопросов ❤️</p><div class="metric">${miniProgressLabel('sunshineQuestions', sunshineQuestions.length)}</div></article><article class="glass card"><h2>⏳ Мы вместе</h2><div class="timer" id="loveTimer"></div></article><article class="glass card"><h2>⏱ Время на сайте</h2><p>Ты уже здесь</p><div class="metric" id="siteTimer">0 минут 0 секунд</div></article><article class="glass card" onclick="achievements()"><h2>🏆 Наши достижения</h2><p class="small">Нежные награды открываются по мере приключения.</p><div class="metric">${unlocked().length} / 7</div></article></div>`); tickTimers(); const id=setInterval(tickTimers,1000); timers.push(id); }
+function menu(){ const done=state.done.length; const greet=greetings[Math.floor(Math.random()*greetings.length)]; screen(`<div class="menuHead"><div><div class="kicker">${greet}</div><h1>Наш маленький мир</h1></div><button class="btn secondary" onclick="intro()">В начало</button></div><div class="grid"><article class="glass card" onclick="game()"><h2>❤️ Сердце любви</h2><p class="small">Главная магия для нас двоих.</p><div class="metric">${done} / 50 ❤️</div><p>Выполнено</p></article><article class="glass card" onclick="completedChallenges()"><h2>❤️ Пройденные испытания</h2><p class="small">История выполненных заданий с датой и временем.</p><div class="metric">${state.memories.length}</div></article><article class="glass card" onclick="memories()"><h2>📷 Наши воспоминания</h2><p class="small">Тёплое место для будущих фото, видео и общих моментов.</p><div class="metric">♡</div></article><article class="glass card" onclick="stripDurak()"><h2>🃏 Дурак на раздевание</h2><p class="small">Место для будущей онлайн-игры.</p><div class="metric">🃏❤️</div></article><article class="glass card" onclick="sentenceIntro()"><h2>💌 Незаконченные предложения</h2><p class="small">Романтичная игра для честных фраз по очереди.</p><div class="metric">${sentenceProgressLabel()}</div></article><article class="glass card" onclick="soulTalkIntro()"><h2>💞 Разговоры по душам</h2><p class="small">15 вопросов только для нас ❤️</p><div class="metric">${miniProgressLabel('soulTalk', soulTalkQuestions.length)}</div></article><article class="glass card" onclick="sunshineIntro()"><h2>🌹 Вопросы для любимого солнышка</h2><p class="small">20 личных вопросов ❤️</p><div class="metric">${miniProgressLabel('sunshineQuestions', sunshineQuestions.length)}</div></article><article class="glass card" onclick="thisOrThatIntro()"><h2>❤️ Это или то</h2><p class="small">Выбирай сердцем ❤️</p><div class="metric">${thisOrThatMenuMetric()}</div></article><article class="glass card"><h2>⏳ Мы вместе</h2><div class="timer" id="loveTimer"></div></article><article class="glass card"><h2>⏱ Время на сайте</h2><p>Ты уже здесь</p><div class="metric" id="siteTimer">0 минут 0 секунд</div></article><article class="glass card" onclick="achievements()"><h2>🏆 Наши достижения</h2><p class="small">Нежные награды открываются по мере приключения.</p><div class="metric">${unlocked().length} / 7</div></article></div>`); tickTimers(); const id=setInterval(tickTimers,1000); timers.push(id); }
 function relationshipParts(start, end=new Date()){
   let y=end.getFullYear()-start.getFullYear(), mo=end.getMonth()-start.getMonth(), d=end.getDate()-start.getDate(), h=end.getHours()-start.getHours(), mi=end.getMinutes()-start.getMinutes(), s=end.getSeconds()-start.getSeconds();
   if(s<0){s+=60;mi--} if(mi<0){mi+=60;h--} if(h<0){h+=24;d--}
@@ -249,7 +293,74 @@ function questionComplete(key, withEffects=true){
 }
 function soulTalkIntro(){ questionIntro('soulTalk'); }
 function sunshineIntro(){ questionIntro('sunshineQuestions'); }
+
+function thisOrThatMenuMetric(){
+  const total = Object.keys(thisOrThatLevels).length;
+  const done = Object.values(thisOrThatLevels).filter(level => state[level.storageKey]?.completed).length;
+  return `${done} / ${total}`;
+}
+function thisOrThatProgressLabel(levelKey){
+  const level = thisOrThatLevels[levelKey];
+  const progress = state[level.storageKey] || defaultThisOrThatProgress();
+  const total = level.questions.length;
+  if(progress.completed) return 'Готово ❤️';
+  return `${Math.min((progress.index || 0) + 1, Math.max(total, 1))} / ${total} ❤️`;
+}
+function thisOrThatIntro(){
+  floatingHearts(16);
+  sparkles(14);
+  screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="thisOrThatShell"><div class="menuHead"><div><div class="kicker">романтичная мини-игра</div><h1>❤️ Это или то</h1><p class="subtitle">Выбирай сердцем ❤️</p></div></div><div class="levelGrid">${Object.entries(thisOrThatLevels).map(([key, level]) => `<article class="glass levelCard"><div class="levelIcon">${level.icon}</div><h2>${level.title}</h2><p class="small">${level.description}</p><div class="gameProgress">${thisOrThatProgressLabel(key)}</div><button class="btn" onclick="selectThisOrThatLevel('${key}')">✨ Начать</button></article>`).join('')}</div></div>`);
+}
+function selectThisOrThatLevel(levelKey){
+  if(levelKey === 'deep') return deepLevelConfirm();
+  startThisOrThatLevel(levelKey);
+}
+function deepLevelConfirm(){
+  screen(`<button class="btn secondary back" onclick="thisOrThatIntro()">← Назад</button><div class="center"><div class="glass hero confirmDialog"><h1>🌙 Глубокий уровень</h1><p class="subtitle">Некоторые вопросы здесь более личные.<br><br>Продолжайте только если вам обоим комфортно отвечать честно. ❤️</p><div class="actions"><button class="btn" onclick="startThisOrThatLevel('deep')">❤️ Да, продолжить</button><button class="btn secondary" onclick="thisOrThatIntro()">← Назад</button></div></div></div>`);
+}
+function startThisOrThatLevel(levelKey){
+  const level = thisOrThatLevels[levelKey];
+  const progress = state[level.storageKey];
+  if(progress.completed) return thisOrThatComplete(levelKey, false);
+  if(!level.questions.length) return thisOrThatEmpty(levelKey);
+  thisOrThatGame(levelKey);
+}
+function thisOrThatEmpty(levelKey){
+  const level = thisOrThatLevels[levelKey];
+  screen(`<button class="btn secondary back" onclick="thisOrThatIntro()">← Назад</button><div class="center"><div class="glass hero questionIntro"><h1>${level.icon} ${level.title}</h1><p class="subtitle">Вопросы для этого уровня пока не добавлены.<br><br>Заполните соответствующий массив, и прогресс автоматически будет считаться по его длине. ❤️</p><button class="btn" onclick="thisOrThatIntro()">← Вернуться к выбору уровней</button></div></div>`);
+}
+function thisOrThatGame(levelKey){
+  const level = thisOrThatLevels[levelKey];
+  const progress = state[level.storageKey];
+  if(progress.completed) return thisOrThatComplete(levelKey, false);
+  const index = Math.min(progress.index || 0, level.questions.length - 1);
+  screen(`<button class="btn secondary back" onclick="thisOrThatIntro()">← Назад</button><div class="center"><div class="glass thisOrThatQuestion" id="thisOrThatQuestion"><div class="kicker">${level.icon} ${level.title}</div><p>${level.questions[index]}</p><div class="sentenceProgress">${index + 1} / ${level.questions.length} ❤️</div><button class="btn" onclick="nextThisOrThatQuestion('${levelKey}')">❤️ Следующий вопрос</button></div></div>`);
+}
+function nextThisOrThatQuestion(levelKey){
+  const card = document.querySelector('#thisOrThatQuestion');
+  card?.classList.add('thisOrThatFlip');
+  setTimeout(() => {
+    const level = thisOrThatLevels[levelKey];
+    const progress = state[level.storageKey];
+    const next = (progress.index || 0) + 1;
+    if(next >= level.questions.length){
+      state[level.storageKey] = { index: level.questions.length, completed: true };
+      saveThisOrThatProgress(levelKey);
+      thisOrThatComplete(levelKey, true);
+      return;
+    }
+    progress.index = next;
+    saveThisOrThatProgress(levelKey);
+    thisOrThatGame(levelKey);
+  }, 390);
+}
+function thisOrThatComplete(levelKey, withEffects = true){
+  if(withEffects){ document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>'); burst(88); sparkles(34); floatingHearts(30); setTimeout(()=>document.querySelector('.dark')?.remove(),1000); }
+  const level = thisOrThatLevels[levelKey];
+  screen(`<div class="center"><div class="glass hero sentenceDone thisOrThatDone"><div class="tinyPulse big">❤️</div><h1>✨ Поздравляю!</h1><p class="subtitle">❤️ Вы прошли этот уровень.<br><br>Спасибо за честность и время, проведённое вместе.</p><div class="gameProgress">${level.icon} ${level.title}</div><button class="btn backHome" onclick="thisOrThatIntro()">← Вернуться к выбору уровней</button></div></div>`);
+}
+
 function unlocked(){ const d=state.done.length; return [['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]].filter(a=>a[1]).map(a=>a[0]); }
 function achievements(){ const d=state.done.length; const all=[['❤️ Первый шаг',d>=0],['❤️ Первое испытание',d>=1],['❤️ Уже 10 испытаний',d>=10],['❤️ Половина пути',d>=25],['❤️ Осталось совсем немного',d>=45],['❤️ Все испытания завершены',d>=50],['❤️ Самая красивая девушка',true]]; screen(`<button class="btn secondary back" onclick="menu()">← Назад</button><div class="glass hero" style="width:min(720px,100%)"><h1>🏆 Наши достижения</h1><div class="list">${all.map(a=>`<div class="ach ${a[1]?'':'locked'}">${a[1]?'✨':'🔒'} ${a[0]}</div>`).join('')}</div></div>`); }
 function completeAll(){ screen(`<div class="center"><div class="glass hero"><h1>❤️ Всё пройдено</h1><p class="subtitle">Все 50 воспоминаний уже созданы. Это только начало нашей истории.</p><button class="btn" onclick="menu()">Вернуться в наш мир</button></div></div>`); }
-window.intro=intro; window.menu=menu; window.game=game; window.memories=memories; window.completedChallenges=completedChallenges; window.stripDurak=stripDurak; window.sentenceIntro=sentenceIntro; window.sentenceGame=sentenceGame; window.nextSentence=nextSentence; window.soulTalkIntro=soulTalkIntro; window.sunshineIntro=sunshineIntro; window.questionGame=questionGame; window.nextQuestion=nextQuestion; window.achievements=achievements; intro();
+window.intro=intro; window.menu=menu; window.game=game; window.memories=memories; window.completedChallenges=completedChallenges; window.stripDurak=stripDurak; window.sentenceIntro=sentenceIntro; window.sentenceGame=sentenceGame; window.nextSentence=nextSentence; window.thisOrThatIntro=thisOrThatIntro; window.selectThisOrThatLevel=selectThisOrThatLevel; window.startThisOrThatLevel=startThisOrThatLevel; window.nextThisOrThatQuestion=nextThisOrThatQuestion; window.soulTalkIntro=soulTalkIntro; window.sunshineIntro=sunshineIntro; window.questionGame=questionGame; window.nextQuestion=nextQuestion; window.achievements=achievements; intro();
