@@ -240,7 +240,25 @@ function floatingHearts(count=34){
 }
 function screen(html){ clearTimers(); app.innerHTML = `<section class="screen">${html}</section>`; }
 function intro(){ screen(`<div class="center"><div class="glass hero"><div class="kicker">маленький секрет</div><h1 class="title">Считаешь ли ты себя красивой? ❤️</h1><p class="subtitle">Ответь честно, моя самая нежная звёздочка.</p><div class="actions"><button class="btn" id="yes">❤️ Да</button><button class="btn secondary" id="no">🙈 Нет</button></div></div></div>`); document.querySelector('#yes').onclick=yesIntro; const no=document.querySelector('#no'); const move=()=>{ const r=no.getBoundingClientRect(), m=20; no.classList.add('runaway'); no.style.left=m+Math.random()*(innerWidth-r.width-m*2)+'px'; no.style.top=m+Math.random()*(innerHeight-r.height-m*2)+'px'; }; ['pointerenter','pointerdown','touchstart','click'].forEach(ev=>no.addEventListener(ev,e=>{e.preventDefault();move();})); }
-function yesIntro(){ document.body.insertAdjacentHTML('beforeend','<div class="dark"></div>'); floatingHearts(42); sparkles(28); screen(`<div class="center"><div class="glass hero"><div class="type" id="type"></div><button class="btn" id="start" hidden>Начать наше приключение ❤️</button></div></div>`); const text='Я тоже так считаю.\n\nДля меня ты самая красивая, любимое солнышко.\n\n❤️ Спасибо, что ты есть у меня.'; let i=0; const t=setInterval(()=>{ type.textContent=text.slice(0,++i); if(i>=text.length){ clearInterval(t); setTimeout(()=>start.hidden=false,650); }},55); timers.push(t); start.onclick=menu; setTimeout(()=>document.querySelector('.dark')?.remove(),1400); }
+function yesIntro() {
+    document.body.insertAdjacentHTML('beforeend', '<div class="dark"></div>');
+
+    floatingHearts(42);
+    sparkles(28);
+
+    screen(`
+        <div class="center">
+            <div class="glass hero">
+                <h1 class="title">💖 Золотце моё любимое ❤️</h1>
+                <button class="btn" id="continue">Продолжить ❤️</button>
+            </div>
+        </div>
+    `);
+
+    document.querySelector('#continue').onclick = menu;
+
+    setTimeout(() => document.querySelector('.dark')?.remove(), 1400);
+}
 function menu(){ const done=state.done.length; const greet=greetings[Math.floor(Math.random()*greetings.length)]; screen(`<div class="menuHead"><div><div class="kicker">${greet}</div><h1>Наш маленький мир</h1></div><button class="btn secondary" onclick="intro()">В начало</button></div><div class="grid"><article class="glass card" onclick="game()"><h2>❤️ Сердце любви</h2><p class="small">Главная магия для нас двоих.</p><div class="metric">${done} / 50 ❤️</div><p>Выполнено</p></article><article class="glass card" onclick="completedChallenges()"><h2>❤️ Пройденные испытания</h2><p class="small">История выполненных заданий с датой и временем.</p><div class="metric">${state.memories.length}</div></article><article class="glass card" onclick="memories()"><h2>📷 Наши воспоминания</h2><p class="small">Тёплое место для будущих фото, видео и общих моментов.</p><div class="metric">♡</div></article><article class="glass card" onclick="stripDurak()"><h2>🃏 Дурак на раздевание</h2><p class="small">Место для будущей онлайн-игры.</p><div class="metric">🃏❤️</div></article><article class="glass card" onclick="sentenceIntro()"><h2>💌 Незаконченные предложения</h2><p class="small">Романтичная игра для честных фраз по очереди.</p><div class="metric">${sentenceProgressLabel()}</div></article><article class="glass card" onclick="soulTalkIntro()"><h2>💞 Разговоры по душам</h2><p class="small">15 вопросов только для нас ❤️</p><div class="metric">${miniProgressLabel('soulTalk', soulTalkQuestions.length)}</div></article><article class="glass card" onclick="sunshineIntro()"><h2>🌹 Вопросы для любимого солнышка</h2><p class="small">20 личных вопросов ❤️</p><div class="metric">${miniProgressLabel('sunshineQuestions', sunshineQuestions.length)}</div></article><article class="glass card" onclick="thisOrThatIntro()"><h2>❤️ Это или то</h2><p class="small">Выбирай сердцем ❤️</p><div class="metric">${thisOrThatMenuMetric()}</div></article><article class="glass card"><h2>⏳ Мы вместе</h2><div class="timer" id="loveTimer"></div></article><article class="glass card"><h2>⏱ Время на сайте</h2><p>Ты уже здесь</p><div class="metric" id="siteTimer">0 минут 0 секунд</div></article><article class="glass card" onclick="achievements()"><h2>🏆 Наши достижения</h2><p class="small">Нежные награды открываются по мере приключения.</p><div class="metric">${unlocked().length} / 7</div></article></div>`); tickTimers(); const id=setInterval(tickTimers,1000); timers.push(id); }
 function relationshipParts(start, end=new Date()){
   let y=end.getFullYear()-start.getFullYear(), mo=end.getMonth()-start.getMonth(), d=end.getDate()-start.getDate(), h=end.getHours()-start.getHours(), mi=end.getMinutes()-start.getMinutes(), s=end.getSeconds()-start.getSeconds();
