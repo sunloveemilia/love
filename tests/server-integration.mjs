@@ -27,5 +27,22 @@ await a.post({op:'capsule',text:'СЕКРЕТ — тест приватност�
 await Promise.all([a.post({op:'prefs',values:[0,0,0,0,0,0,0,0]}),b.post({op:'prefs',values:[1,1,1,1,1,1,1,1]})]);assert.equal((await a.get()).cinema.prefCount,2);
 const failed=await a.post({op:'deck',input:{}},400);assert.match(failed.error,/TMDB/);
 const invalid=await fetch(root+'/api/two',{method:'POST',headers:{'content-type':'application/json',cookie:a.cookie,origin:'https://untrusted.example'},body:JSON.stringify({op:'profile',name:'bad'})});assert.equal(invalid.status,403);
+// Exercise the built Durak route through two independent cookies and real CAS writes.
+r=(await a.post({op:'start',mode:'durak'})).room;
+await b.get();
+const clients={[a.room.me]:a,[b.room.me]:b};
+const attacker=clients[r.game.attacker],defender=clients[r.game.defender];
+const av=await attacker.get(),dv=await defender.get();
+assert.equal(av.game.hand.length,6);assert.equal(dv.game.hand.length,6);
+assert.ok(!('hands' in av.game));assert.ok(!('stock' in dv.game));
+const attack=av.game.hand[0],command={op:'durakAttack',gameId:av.game.id,move:av.game.move,card:attack};
+const duplicates=await Promise.all([0,1].map(()=>fetch(root+'/api/two',{method:'POST',headers:{'content-type':'application/json',cookie:attacker.cookie,origin:root},body:JSON.stringify(command)})));
+assert.deepEqual(duplicates.map(x=>x.status).sort(),[200,400]);
+const defended=await defender.get();assert.equal(defended.game.table.length,1);assert.equal(defended.game.counts[av.me],5);
+await defender.post({op:'durakTake',gameId:defended.game.id,move:defended.game.move});
+const ending=await attacker.get();await attacker.post({op:'durakPass',gameId:ending.game.id,move:ending.game.move});
+const after=await defender.get();assert.equal(after.game.table.length,0);assert.equal(after.game.hand.length,7);assert.equal(after.game.attacker,av.me);assert.equal(after.game.stockCount,23);
+await a.get();await a.post({op:'end',gameId:a.room.game.id});assert.equal((await b.get()).game.abandoned,true);
+await a.post({op:'start',mode:'durak'});assert.equal((await b.get()).game.stage,'playing');
 await mf.dispose();
-console.log('PASS: two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, honest missing-TMDB response.');
+console.log('PASS: Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, honest missing-TMDB response.');

@@ -1,0 +1,34 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {newRoom,addPlayer,act,viewRoom} from '../lib/engine.ts';
+function pair(){const r=newRoom('a','Арсений','h');addPlayer(r,'b','Эмилия','h2');act(r,'a',{op:'start',mode:'durak'});return r;}
+function play(r:any,pid:string,op:string,extra:any={}){return act(r,pid,{op,gameId:r.game.id,move:r.game.move,...extra});}
+function fixture(){const r=pair();Object.assign(r.game,{hands:{a:['c6','h6','s9'],b:['c7','d8','s10']},stock:['h10','s14'],trump:'s',trumpCard:'s14',attacker:'a',defender:'b',table:[],discard:[],limit:3,taking:false,move:0});return r;}
+test('durak deals 36 unique cards and only reveals own hand',()=>{const r=pair(),g=r.game;assert.equal(g.hands.a.length,6);assert.equal(g.hands.b.length,6);assert.equal(g.stock.length,24);assert.equal(new Set([...g.hands.a,...g.hands.b,...g.stock]).size,36);const a=viewRoom(r,'a').game,b=viewRoom(r,'b').game;assert.deepEqual(a.hand,g.hands.a);assert.deepEqual(b.hand,g.hands.b);assert.equal(a.hands,undefined);assert.equal(a.stock,undefined);assert.equal(a.deck,undefined);assert.equal(a.stockCount,24);assert.equal(a.counts.b,6);});
+test('only attacker may lead; defense must beat exact uncovered card',()=>{const r=fixture();assert.throws(()=>play(r,'b','durakAttack',{card:'c7'}));play(r,'a','durakAttack',{card:'c6'});assert.throws(()=>play(r,'b','durakDefend',{card:'d8',target:0}));play(r,'b','durakDefend',{card:'c7',target:0});assert.equal(r.game.table[0].defense,'c7');assert.throws(()=>play(r,'b','durakDefend',{card:'s10',target:0}));});
+test('trump beats ordinary suits, but lower trump cannot beat higher trump',()=>{const r=fixture();play(r,'a','durakAttack',{card:'c6'});play(r,'b','durakDefend',{card:'s10',target:0});play(r,'a','durakAttack',{card:'h6'});assert.throws(()=>play(r,'b','durakDefend',{card:'c7',target:1}));});
+test('throw-ins match table ranks and cannot exceed initial defender hand or six',()=>{const r=fixture();play(r,'a','durakAttack',{card:'c6'});assert.throws(()=>play(r,'a','durakAttack',{card:'s9'}));play(r,'a','durakAttack',{card:'h6'});assert.equal(r.game.table.length,2);r.game.limit=2;r.game.hands.a.push('d6');assert.throws(()=>play(r,'a','durakAttack',{card:'d6'}));});
+test('successful defense discards cards, replenishes attacker first, changes lead',()=>{const r=fixture();play(r,'a','durakAttack',{card:'c6'});assert.throws(()=>play(r,'a','durakPass'));play(r,'b','durakDefend',{card:'c7',target:0});play(r,'a','durakPass');assert.deepEqual(r.game.discard,['c6','c7']);assert.equal(r.game.attacker,'b');assert.equal(r.game.hands.a.includes('s14'),true);assert.equal(r.game.stock.length,0);assert.equal(r.game.table.length,0);});
+test('taking allows final throw-ins, then skips defender next attack',()=>{const r=fixture();play(r,'a','durakAttack',{card:'c6'});play(r,'b','durakTake');assert.equal(r.game.taking,true);assert.throws(()=>play(r,'b','durakDefend',{card:'c7',target:0}));play(r,'a','durakAttack',{card:'h6'});play(r,'a','durakPass');assert.equal(r.game.attacker,'a');assert.equal(r.game.hands.b.includes('h6'),true);assert.equal(r.game.hands.b.includes('c6'),true);});
+test('stale moves and generic game actions cannot mutate durak',()=>{const r=fixture();play(r,'a','durakAttack',{card:'c6'});const before=JSON.stringify(r);assert.throws(()=>act(r,'a',{op:'durakAttack',gameId:r.game.id,move:0,card:'h6'}));for(const op of ['answer','next','hint','completeWheel','rate','spin'])assert.throws(()=>act(r,'a',{op,gameId:r.game.id,round:0,value:0}));assert.equal(JSON.stringify(r),before);});
+test('last cards resolve after the bout, produce a draw and one history record',()=>{const r=fixture();Object.assign(r.game,{hands:{a:['c6'],b:['c7']},stock:[],limit:1});play(r,'a','durakAttack',{card:'c6'});assert.equal(r.game.stage,'playing');play(r,'b','durakDefend',{card:'c7',target:0});play(r,'a','durakPass');assert.equal(r.game.stage,'finished');assert.equal(r.game.draw,true);assert.equal(r.history.length,1);assert.equal(r.stars,5);assert.throws(()=>play(r,'a','durakPass'));assert.equal(r.history.length,1);act(r,'a',{op:'start',mode:'durak'});assert.equal(r.game.stage,'playing');});
+test('taking final card awards attacker victory',()=>{const r=fixture();Object.assign(r.game,{hands:{a:['c6'],b:['c7']},stock:[],limit:1});play(r,'a','durakAttack',{card:'c6'});play(r,'b','durakTake');play(r,'a','durakPass');assert.equal(r.game.winner,'a');assert.equal(r.game.loser,'b');assert.equal(r.history[0].winner,'a');});
+
+test('100 full games conserve all cards and finish using only legal public moves',()=>{
+ for(let n=0;n<100;n++){
+  const r=pair();let steps=0;
+  while(r.game.stage==='playing'&&steps++<3000){
+   const g=r.game,a=g.attacker,d=g.defender,av=viewRoom(r,a).game,dv=viewRoom(r,d).game;
+   const all=[...g.hands.a,...g.hands.b,...g.stock,...g.discard,...g.table.flatMap((p:any)=>p.defense?[p.attack,p.defense]:[p.attack])];
+   assert.equal(all.length,36);assert.equal(new Set(all).size,36);
+   if(g.taking){play(r,a,'durakPass');continue;}
+   const pending=dv.table.findIndex((p:any)=>!p.defense);
+   if(pending>=0){const attack=dv.table[pending].attack;const defense=dv.hand.find((card:string)=>card[0]===attack[0]&&Number(card.slice(1))>Number(attack.slice(1)))||dv.hand.find((card:string)=>card[0]===dv.trump&&attack[0]!==dv.trump);if(defense)play(r,d,'durakDefend',{card:defense,target:pending});else play(r,d,'durakTake');}
+   else{const card=av.hand.find((c:string)=>av.table.length<av.limit&&(!av.table.length||av.table.some((p:any)=>p.attack.slice(1)===c.slice(1)||p.defense?.slice(1)===c.slice(1))));if(card)play(r,a,'durakAttack',{card});else play(r,a,'durakPass');}
+  }
+  assert.equal(r.game.stage,'finished',`game ${n} exceeded move limit`);assert.equal(r.history.length,1);
+ }
+});
+test('abandoning durak has no winner and gives no completion stars',()=>{const r=pair();act(r,'a',{op:'end',gameId:r.game.id});assert.equal(viewRoom(r,'a').game.abandoned,true);assert.equal(viewRoom(r,'b').game.winner,undefined);assert.equal(r.history[0].abandoned,true);assert.equal(r.stars,0);});
+test('higher trump is required against trump and forged cards are rejected',()=>{const r=fixture();r.game.hands.a=['s10'];r.game.hands.b=['s9','h14'];play(r,'a','durakAttack',{card:'s10'});const before=JSON.stringify(r);for(const card of ['s9','h14','s14'])assert.throws(()=>play(r,'b','durakDefend',{card,target:0}));assert.equal(JSON.stringify(r),before);});
+test('the final exposed trump is drawn last and defense hand caps at six',()=>{const r=fixture();r.game.hands.b.push('d6','d7','d9','d10');r.game.limit=6;play(r,'a','durakAttack',{card:'c6'});play(r,'b','durakTake');play(r,'a','durakPass');assert.equal(r.game.hands.a.includes('s14'),true);assert.equal(r.game.limit,6);assert.equal(r.game.stock.length,0);});
