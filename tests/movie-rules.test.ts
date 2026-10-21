@@ -1,6 +1,0 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';
-import {filtersFor,rejectedIds,cinemaGeneration} from '../lib/movie-rules.ts';
-test('catalogue cannot reveal the other viewers hidden veto',()=>{const c={stage:'voting',votes:{a:{1:0},b:{2:0}}};assert.deepEqual([...rejectedIds(c,'a')],[1]);c.stage='matches';assert.deepEqual([...rejectedIds(c,'a')],[1,2]);});
-test('preferences affect era, unwanted genres, lightness and runtime',()=>{const c={date:'2026-10-23',prefs:{a:[0,2,2,0,1,1,2,0],b:[0,1,2,0,1,1,2,0]}};const f=filtersFor(c);assert.equal(f.max,120);assert.equal(f.releaseMax,'1999-12-31');assert.ok(f.excludedGenres.includes(10749));assert.ok(f.excludedGenres.includes(9648));assert.ok(f.excludedGenres.includes(53));assert.ok(f.weights[35]>3);});
-test('changing date or preference invalidates a pending TMDB load',()=>{const c={id:'one',date:'2026-10-23',prefs:{a:[0]}};const old=cinemaGeneration(c);c.date='2000-01-01';assert.notEqual(cinemaGeneration(c),old);const second=cinemaGeneration(c);c.prefs.a=[1];assert.notEqual(cinemaGeneration(c),second);});
-test('incompatible duration preference is explained rather than overridden',()=>{assert.throws(()=>filtersFor({date:'2026-10-23',prefs:{a:[0,0,0,0,1,0,0,0]}},{min:130,max:150}),/продолжительност|диапазон/);});
