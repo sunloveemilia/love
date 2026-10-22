@@ -136,5 +136,12 @@ for(const mode of ['price','auction']){
  assert.deepEqual((await a.get()).game.scores,final.game.scores);
 }
 
+// Shared quote jar uses independent sessions, including an idempotent retry.
+const qa=new Client(),qb=new Client();await qa.post({op:'create',name:'Банка А'});await qb.post({op:'join',name:'Банка Б',code:qa.room.code});await qa.get();
+const quoteId=crypto.randomUUID(),quote={op:'quoteAdd',id:quoteId,text:'Гусь забронировал наш столик.',speaker:qb.room.me,context:'Вечерний план'};
+await qa.post(quote);await qa.post(quote);assert.equal(qa.room.quotes.length,1);assert.equal((await qb.get()).quotes[0].from,qa.room.me);
+await qb.post({op:'quoteLike',id:quoteId,liked:true});assert.ok((await qa.get()).quotes[0].likedBy.includes(qb.room.me));
+await qb.post({op:'quoteDelete',id:quoteId},400);await qa.post({op:'quoteDelete',id:quoteId});assert.equal((await qb.get()).quotes.length,0);
+
 await mf.dispose();
-console.log('PASS: price and auction complete with private bids, secrets, peer scoring and saved history; all six adventures complete through isolated HTTP sessions with private clues/answers and saved memories; Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, builtin movie search/details, both votes, veto, matching, double consent and ticket without external keys.');
+console.log('PASS: shared quote jar with ownership, likes and idempotent retry; price and auction complete with private bids, secrets, peer scoring and saved history; all six adventures complete through isolated HTTP sessions with private clues/answers and saved memories; Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, builtin movie search/details, both votes, veto, matching, double consent and ticket without external keys.');
