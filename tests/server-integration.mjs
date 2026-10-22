@@ -3,12 +3,15 @@ import {createRequire} from 'node:module';
 import {readFileSync,readdirSync} from 'node:fs';
 const req=createRequire(import.meta.url);const {Miniflare}=req(req.resolve('miniflare',{paths:[req.resolve('wrangler/package.json')]}));
 const paths=['index.js',...readdirSync('dist/server',{recursive:true}).filter(p=>p.endsWith('.js')&&p!=='index.js')];
+console.log('Starting isolated Worker integration');
 const mf=new Miniflare({modules:paths.map(p=>({type:'ESModule',path:'dist/server/'+p})),compatibilityDate:'2026-05-15',compatibilityFlags:['nodejs_compat'],d1Databases:{DB:'test-db'},cf:false});
 const db=await mf.getD1Database('DB');
+console.log('Worker ready; checking real D1 sessions');
 for(const sql of readFileSync('drizzle/0000_mushy_owl.sql','utf8').replace(/--> statement-breakpoint/g,'').split(';').filter(s=>s.trim()))await db.prepare(sql).run();
 const fetch=(...args)=>mf.dispatchFetch(...args);
 const root='http://two.test';
-class Client {cookie='';room=null;async get(){const r=await fetch(root+'/api/two',{headers:{cookie:this.cookie}});assert.equal(r.status,200);this.room=(await r.json()).room;return this.room;}async post(b,expected=200){b={cinemaId:this.room?.cinema.id,selectionId:this.room?.cinema.selectionId,...b};const r=await fetch(root+'/api/two',{method:'POST',headers:{'content-type':'application/json',cookie:this.cookie,origin:root},body:JSON.stringify(b)});if(r.headers.get('set-cookie'))this.cookie=r.headers.get('set-cookie').split(';')[0];const d=await r.json();if(d.room)this.room=d.room;assert.equal(r.status,expected,JSON.stringify(d));return d;}}
+let clientIndex=0;
+class Client {ip='192.0.2.'+(++clientIndex);cookie='';room=null;async get(){const r=await fetch(root+'/api/two',{headers:{cookie:this.cookie,'cf-connecting-ip':this.ip}});assert.equal(r.status,200);this.room=(await r.json()).room;return this.room;}async post(b,expected=200){b={cinemaId:this.room?.cinema.id,selectionId:this.room?.cinema.selectionId,...b};const r=await fetch(root+'/api/two',{method:'POST',headers:{'content-type':'application/json',cookie:this.cookie,origin:root,'cf-connecting-ip':this.ip},body:JSON.stringify(b)});if(r.headers.get('set-cookie'))this.cookie=r.headers.get('set-cookie').split(';')[0];const d=await r.json();if(d.room)this.room=d.room;assert.equal(r.status,expected,JSON.stringify(d));return d;}}
 const a=new Client(),b=new Client(),outsider=new Client();
 let {room:r}=await a.post({op:'create',name:'QA — первый'});assert.match(r.code,/^\d{6}$/);assert.equal(r.players.length,1);
 await b.post({op:'join',name:'QA — второй',code:r.code});assert.equal((await a.get()).players.length,2);
@@ -25,7 +28,22 @@ for(let round=0;round<10;round++){
 assert.equal(r.game.stage,'finished');assert.equal(r.history.length,1);assert.equal(r.history[0].score,10);
 await a.post({op:'capsule',text:'СЕКРЕТ — тест приватности',opensAt:Date.now()+120000});const capsule=(await b.get()).capsules[0];assert.ok(!('text'in capsule));assert.equal((await a.get()).capsules[0].text,'СЕКРЕТ — тест приватности');
 await Promise.all([a.post({op:'prefs',values:[0,0,0,0,0,0,0,0]}),b.post({op:'prefs',values:[1,1,1,1,1,1,1,1]})]);assert.equal((await a.get()).cinema.prefCount,2);
-const failed=await a.post({op:'deck',input:{}},400);assert.match(failed.error,/TMDB/);
+await a.post({op:'deck',input:{page:4}});
+const movieDeck=a.room.cinema.deck;assert.ok(movieDeck.length>0&&movieDeck.length<=12);
+for(const m of movieDeck){assert.ok(m.id>=900000001);assert.equal(m.source,'TWO');assert.ok(m.runtime>=90&&m.runtime<=120);assert.ok(!m.genres.some(g=>g.id===28));}
+const detailResponse=await fetch(root+'/api/movies?id='+movieDeck[0].id,{headers:{cookie:a.cookie,'cf-connecting-ip':a.ip}});assert.equal(detailResponse.status,200);assert.equal((await detailResponse.json()).movie.id,movieDeck[0].id);
+const libraryResponse=await fetch(root+'/api/movies?query=About%20Time',{headers:{cookie:a.cookie,'cf-connecting-ip':a.ip}});assert.equal(libraryResponse.status,200);const library=await libraryResponse.json();assert.equal(library.source,'TWO'); // Runtime cap from the questionnaire still applies to search.
+for(const client of [a,b]){
+ await client.get();
+ for(let i=0;i<movieDeck.length;i++)await client.post({op:'vote',movieId:movieDeck[i].id,value:client===a&&i===0?0:2});
+ if(client===a){const privateView=await b.get();assert.equal(privateView.cinema.votes[a.room.me],undefined);}
+ await client.post({op:'votingDone'});
+}
+await a.get();assert.equal(a.room.cinema.stage,'matches');assert.ok(a.room.cinema.matches.length);assert.ok(!a.room.cinema.matches.some(m=>m.id===movieDeck[0].id));
+await a.post({op:'ready'});await b.get();await b.post({op:'ready'});
+await a.get();await a.post({op:'decision',value:'accept'});assert.equal(a.room.archive.length,0);
+await b.get();await b.post({op:'decision',value:'accept'});await a.get();assert.equal(a.room.cinema.stage,'ticket');assert.equal(a.room.archive.length,1);assert.equal(a.room.archive[0].movie.id,a.room.cinema.result.id);
+
 const invalid=await fetch(root+'/api/two',{method:'POST',headers:{'content-type':'application/json',cookie:a.cookie,origin:'https://untrusted.example'},body:JSON.stringify({op:'profile',name:'bad'})});assert.equal(invalid.status,403);
 // Exercise the built Durak route through two independent cookies and real CAS writes.
 r=(await a.post({op:'start',mode:'durak'})).room;
@@ -44,5 +62,45 @@ const ending=await attacker.get();await attacker.post({op:'durakPass',gameId:end
 const after=await defender.get();assert.equal(after.game.table.length,0);assert.equal(after.game.hand.length,7);assert.equal(after.game.attacker,av.me);assert.equal(after.game.stockCount,23);
 await a.get();await a.post({op:'end',gameId:a.room.game.id});assert.equal((await b.get()).game.abandoned,true);
 await a.post({op:'start',mode:'durak'});assert.equal((await b.get()).game.stage,'playing');
+
+await a.get();await a.post({op:'end',gameId:a.room.game.id});
+for(const mode of ['truths','taboo','associations','dilemmas','numbers','story']){
+ await a.post({op:'start',mode});
+ const gameId=a.room.game.id;
+ async function move(client,action,extra={}){await client.get();return client.post({op:'adventure',gameId,move:client.room.game.move,action,...extra});}
+ while((await a.get()).game.stage==='playing'){
+  const g=a.room.game,author=clients[g.author],guesser=author===a?b:a;
+  if(g.phase==='reveal'){await move(a,'next');continue;}
+  if(mode==='truths'){
+   await move(author,'facts',{facts:['Первый факт','Второй факт','Третий факт'],lie:1});
+   assert.equal((await guesser.get()).game.challenge.lie,undefined);
+   await move(guesser,'guessFact',{value:1});
+  }else if(mode==='taboo'){
+   const secret=(await author.get()).game.card.word;
+   assert.equal((await guesser.get()).game.card,undefined);
+   await move(author,'clue',{text:'Необычный предмет из моей мечты'});
+   assert.equal((await guesser.get()).game.card,undefined);
+   await move(guesser,'guessWord',{text:secret});
+  }else if(mode==='numbers'){
+   await move(author,'setNumber',{value:42});
+   assert.equal((await guesser.get()).game.secret,undefined);
+   await move(guesser,'guessNumber',{value:20});
+   assert.equal(guesser.room.game.feedback,'higher');
+   await move(guesser,'guessNumber',{value:42});
+  }else if(mode==='story'){
+   await move(author,'storyLine',{text:'Фрагмент '+(g.round+1)});
+  }else{
+   const answer=mode==='associations'?{text:'Звёзды'}:{value:0};
+   await move(a,'answer',answer);assert.deepEqual((await b.get()).game.answers,{});
+   await move(b,'answer',answer);
+  }
+ }
+ const memory=a.room.history.find(h=>h.id===gameId);
+ assert.ok(memory,mode+' saved memory');assert.ok(memory.details,mode+' memory details');
+ if(mode==='story')assert.equal(memory.details.entries.length,8);
+ else assert.equal(memory.details.rounds.length,a.room.game.total);
+ assert.equal(a.room.history.filter(h=>h.id===gameId).length,1);
+}
+
 await mf.dispose();
-console.log('PASS: Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, honest missing-TMDB response.');
+console.log('PASS: all six adventures complete through isolated HTTP sessions with private clues/answers and saved memories; Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, builtin movie search/details, both votes, veto, matching, double consent and ticket without external keys.');

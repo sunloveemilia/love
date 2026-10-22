@@ -1,4 +1,10 @@
 export const modes = [
+ {id:'truths',name:'Две правды и ложь',desc:'Три факта о тебе. Один — искусная выдумка.',tag:'ЗНАЮ ТЕБЯ ЛИ Я?',icon:'truths',color:'#f0abfc',time:'4 раунда'},
+ {id:'taboo',name:'Запретное слово',desc:'Объясни самое главное, не произнося очевидного.',tag:'МЕЖДУ СТРОК',icon:'taboo',color:'#fda4af',time:'6 слов'},
+ {id:'associations',name:'Ассоциации',desc:'Одно слово. Две мысли. Поймайте совпадение.',tag:'ПЕРВАЯ МЫСЛЬ',icon:'associations',color:'#67e8f9',time:'6 раундов'},
+ {id:'dilemmas',name:'Сложный выбор',desc:'Два невероятных сценария. А что выберете вы?',tag:'А ЕСЛИ ВДРУГ…',icon:'dilemmas',color:'#fdba74',time:'6 дилемм'},
+ {id:'numbers',name:'Угадай число',desc:'Тайное число, семь попыток и немного интуиции.',tag:'ВЫШЕ ИЛИ НИЖЕ',icon:'numbers',color:'#a5b4fc',time:'4 раунда'},
+ {id:'story',name:'История на двоих',desc:'По одному повороту от каждого. Финал только ваш.',tag:'СОАВТОРЫ ПРИКЛЮЧЕНИЯ',icon:'story',color:'#86efac',time:'8 ходов'},
  {id:'durak',name:'Дурак',desc:'Козырь в рукаве. И целый вечер на двоих.',tag:'КАРТЫ НА СТОЛ',icon:'cards',color:'#7dd3c5',time:'36 карт · на двоих'},
  {id:'telepathy',name:'Телепатия',desc:'Одна мысль. Два ответа. Совпадём?',tag:'НА ОДНОЙ ВОЛНЕ',icon:'orbit',color:'#a78bfa',time:'10 раундов'},
  {id:'disaster',name:'Катастрофическое свидание',desc:'Всё идёт не по плану. И это прекрасно.',tag:'СЮЖЕТ С ПОВОРОТОМ',icon:'flame',color:'#fb9479',time:'4 истории'},
