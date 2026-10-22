@@ -102,5 +102,39 @@ for(const mode of ['truths','taboo','associations','dilemmas','numbers','story']
  assert.equal(a.room.history.filter(h=>h.id===gameId).length,1);
 }
 
+// Two new competitive games over independent HttpOnly sessions and D1 CAS.
+for(const mode of ['price','auction']){
+ await a.post({op:'start',mode});const gameId=a.room.game.id;
+ async function move(client,action,extra={}){await client.get();return client.post({op:'duel',gameId,move:client.room.game.move,action,...extra});}
+ if(mode==='price'){
+  for(let i=0;i<6;i++){
+   const g=(await a.get()).game,author=clients[g.author],guesser=author===a?b:a;
+   await move(author,'setPrice',{value:1000+i});
+   assert.equal((await guesser.get()).game.target,undefined);
+   await move(guesser,'guessPrice',{value:1000+i});
+   assert.equal(guesser.room.game.result.points,100);
+   const stale=guesser.room.game.move;
+   await move(a,'next');
+   await b.post({op:'duel',gameId,move:stale,action:'next'},400);
+  }
+ }else{
+  for(let i=0;i<5;i++){
+   await move(a,'bid',{value:10});assert.deepEqual((await b.get()).game.bids,{});
+   await move(b,'bid',{value:5});assert.equal(b.room.game.phase,'lotReveal');
+   await move(a,'next');
+  }
+  assert.equal(a.room.game.balances[a.room.me],50);assert.equal(a.room.game.balances[b.room.me],100);
+  for(let i=0;i<3;i++){
+   for(const client of [a,b]){await client.get();await move(client,'pitch',{text:'Пользуюсь суперсилой, чтобы неожиданно спасти наш вечер.',powers:[client.room.game.owned[client.room.me][0].id]});if(client===a)assert.deepEqual((await b.get()).game.answers,{});}
+   await move(a,'ratePitch',{value:4});assert.deepEqual((await b.get()).game.ratings,{});
+   await move(b,'ratePitch',{value:5});assert.equal(b.room.game.phase,'reveal');
+   await move(a,'next');
+  }
+ }
+ const final=await b.get();assert.equal(final.game.stage,'finished');assert.equal(final.history.filter(h=>h.id===gameId).length,1);
+ assert.equal(final.history.find(h=>h.id===gameId).details.rounds.length,mode==='price'?6:3);
+ assert.deepEqual((await a.get()).game.scores,final.game.scores);
+}
+
 await mf.dispose();
-console.log('PASS: all six adventures complete through isolated HTTP sessions with private clues/answers and saved memories; Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, builtin movie search/details, both votes, veto, matching, double consent and ticket without external keys.');
+console.log('PASS: price and auction complete with private bids, secrets, peer scoring and saved history; all six adventures complete through isolated HTTP sessions with private clues/answers and saved memories; Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, builtin movie search/details, both votes, veto, matching, double consent and ticket without external keys.');

@@ -1,6 +1,8 @@
 'use client';
 import {useEffect,useState} from 'react';
 import {ArrowLeft,ArrowUpRight,BookOpen,Check,CircleHelp,Hash,Link2,MessageCircle,Repeat2,Shuffle,Sparkles,Star,Users} from 'lucide-react';
+import {DuelMemory} from './duels';
+import {isDuel} from '../lib/duel-shared';
 import {modes} from '../lib/content';
 type D=Record<string,any>;
 export const adventureIcons={truths:CircleHelp,taboo:MessageCircle,associations:Link2,dilemmas:Shuffle,numbers:Hash,story:BookOpen};
@@ -14,6 +16,7 @@ const rules:Record<string,string>={
 };
 const nameOf=(players:D[],id:string)=>players.find(p=>p.id===id)?.name||'Ваш человек';
 export function AdventureMemory({memory,players}:{memory:D,players:D[]}){
+ if(isDuel(memory.mode))return <DuelMemory memory={memory} players={players}/>;
  const details=memory.details;if(!details)return null;
  return <div className="adventure-memory">{memory.mode==='story'?<><p className="story-seed">{details.seed}</p>{details.entries?.map((entry:D,i:number)=><div className="story-paragraph" key={i}><small>{nameOf(players,entry.author)} · {i+1}</small><p>{entry.text}</p></div>)}</>:details.rounds?.map((r:D,i:number)=><div className="memory-round" key={i}><span className="eyebrow">РАУНД {i+1}</span>{memory.mode==='truths'?<><p>{nameOf(players,r.author)}: {r.facts?.join(' · ')}</p><p>Выдумка: {r.facts?.[r.lie]} · {r.correct?'Угадали':'Не угадали'}</p></>:memory.mode==='taboo'?<><strong>{r.word}</strong><p>{r.clue||'Раунд пропущен'} · {r.correct?'Угадали':'Не угадали'}</p></>:memory.mode==='numbers'?<p>Число {r.secret} · {r.guesses?.length} попыток · {r.correct?'Угадали':'Число устояло'}</p>:<><strong>{r.prompt?.q}</strong>{players.map(p=><p key={p.id}>{p.name}: {memory.mode==='dilemmas'?r.prompt?.options?.[r.answers?.[p.id]]:r.answers?.[p.id]}</p>)}</>}</div>)}</div>;
 }

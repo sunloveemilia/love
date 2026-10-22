@@ -5,7 +5,7 @@ The catalogue is bundled with TWO. Visitors need no connector, account, token or
 ## Editorial data
 
 - The original 95 local movie IDs remain unchanged, preserving rooms, votes, favourites and archive entries.
-- 207 added entries have Russian editorial titles and original, rewritten plot summaries. Metadata is joined by movie identity, not by approximate title alone. The 1999 version of The Thomas Crown Affair is selected explicitly.
+- 207 added entries have Russian editorial titles and original, rewritten plot summaries. Metadata is joined by movie identity, not by approximate title alone. The 1999 version of The Thomas Crown Affair is selected explicitly. Ocean's Eleven is the 2001 version.
 - Missing posters and ratings remain missing; the interface uses a typographic image fallback and “Нет оценки”. No generated image is presented as a film poster and no rating is invented.
 
 ## TMDB snapshot via CrawlFeeds
