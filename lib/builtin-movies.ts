@@ -9,10 +9,11 @@ export function selectMovies(c:Data,input:Data={},archive:Data[]=[],pid?:string,
  const filters=filtersFor(c,input),query=normalized(String(input.query||'').slice(0,120));
  const watched=new Set(archive.filter(e=>['watched','rewatch'].includes(e.status)).map(e=>e.movie.id)),rejected=rejectedIds(c,pid);
  const weight=(m:Data)=>m.genres.reduce((n:number,g:Data)=>n+(filters.weights[g.id]||0),0);
- const pool=builtinMovies.filter(m=>eligibleMovie(m,filters)&&!watched.has(m.id)&&!rejected.has(m.id)&&(!query||normalized(m.title+' '+m.original_title).includes(query)));
+ const pool=builtinMovies.filter(m=>eligibleMovie(m,filters)&&!watched.has(m.id)&&!rejected.has(m.id)&&(!filters.minRating||Number(m.rating?.value)>=filters.minRating)&&(!query||normalized(m.title+' '+m.original_title).includes(query)));
  pool.sort((a,b)=>{
-  if(input.sort==='primary_release_date.desc')return Number(b.release_date)-Number(a.release_date)||a.id-b.id;
-  if(input.sort==='primary_release_date.asc')return Number(a.release_date)-Number(b.release_date)||a.id-b.id;
+  if(input.sort==='rating.desc'||input.sort==='vote_average.desc')return (Number(b.rating?.value)||0)-(Number(a.rating?.value)||0)||(Number(b.rating?.votes)||0)-(Number(a.rating?.votes)||0)||a.id-b.id;
+  if(input.sort==='primary_release_date.desc')return b.release_date.localeCompare(a.release_date)||a.id-b.id;
+  if(input.sort==='primary_release_date.asc')return a.release_date.localeCompare(b.release_date)||a.id-b.id;
   if(input.sort==='surprise'||input.sort==='popularity.asc')return stableOrder(c.id||'TWO',a.id)-stableOrder(c.id||'TWO',b.id);
   return weight(b)-weight(a)||stableOrder(c.id||'TWO',a.id)-stableOrder(c.id||'TWO',b.id);
  });

@@ -1,0 +1,5229 @@
+[
+  {
+    "id": 910000105,
+    "title": "Назад в будущее",
+    "original_title": "Back to the Future",
+    "release_date": "1985",
+    "release_precision": "year",
+    "runtime": 116,
+    "adult": false,
+    "overview": "Подросток случайно попадает в прошлое и встречает своих ещё юных родителей. Теперь ему нужно вернуть историю на место и найти дорогу домой.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/105-back-to-the-future",
+    "source": "TWO",
+    "director": "Robert Zemeckis",
+    "rating": {
+      "value": 8.327,
+      "votes": 22019,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/105-back-to-the-future"
+    }
+  },
+  {
+    "id": 910000012,
+    "title": "В поисках Немо",
+    "original_title": "Finding Nemo",
+    "release_date": "2003",
+    "release_precision": "year",
+    "runtime": 100,
+    "adult": false,
+    "overview": "Отец отправляется через океан на поиски пропавшего сына. Его спутницей становится забывчивая, но очень смелая рыбка.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5lc6nQc0VhWFYFbNv016xze8Jvy.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/12-finding-nemo",
+    "source": "TWO",
+    "director": "Andrew Stanton",
+    "rating": {
+      "value": 7.8,
+      "votes": 20703,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/12-finding-nemo"
+    }
+  },
+  {
+    "id": 910000862,
+    "title": "История игрушек",
+    "original_title": "Toy Story",
+    "release_date": "1995",
+    "release_precision": "year",
+    "runtime": 81,
+    "adult": false,
+    "overview": "Игрушки оживают, когда хозяина нет рядом. Появление нового любимца заставляет ковбоя Вуди пересмотреть свои привычки.",
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/862-toy-story",
+    "source": "TWO",
+    "director": "John Lasseter",
+    "rating": {
+      "value": 7.984,
+      "votes": 20193,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/862-toy-story"
+    }
+  },
+  {
+    "id": 910000585,
+    "title": "Корпорация монстров",
+    "original_title": "Monsters, Inc.",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 92,
+    "adult": false,
+    "overview": "Монстры добывают энергию из детских криков и сами боятся людей. Маленькая девочка переворачивает их представления о мире.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/585-monsters-inc",
+    "source": "TWO",
+    "director": "Pete Docter",
+    "rating": {
+      "value": 7.9,
+      "votes": 19973,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/585-monsters-inc"
+    }
+  },
+  {
+    "id": 910000808,
+    "title": "Шрэк",
+    "original_title": "Shrek",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 90,
+    "adult": false,
+    "overview": "Нелюдимый огр отправляется спасать принцессу, чтобы вернуть себе спокойную жизнь. Путешествие оказывается совсем не похожим на обычную сказку.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/808-shrek",
+    "source": "TWO",
+    "director": "Andrew Adamson, Vicky Jenson",
+    "rating": {
+      "value": 7.773,
+      "votes": 18993,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/808-shrek"
+    }
+  },
+  {
+    "id": 910000038,
+    "title": "Вечное сияние чистого разума",
+    "original_title": "Eternal Sunshine of the Spotless Mind",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 108,
+    "adult": false,
+    "overview": "После расставания двое решают стереть воспоминания друг о друге. Но самые важные чувства не так просто убрать из памяти.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/38-eternal-sunshine-of-the-spotless-mind",
+    "source": "TWO",
+    "director": "Michel Gondry",
+    "rating": {
+      "value": 8.09,
+      "votes": 16479,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/38-eternal-sunshine-of-the-spotless-mind"
+    }
+  },
+  {
+    "id": 910000077,
+    "title": "Помни",
+    "original_title": "Memento",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 113,
+    "adult": false,
+    "overview": "Человек с нарушением кратковременной памяти ищет виновного в семейной трагедии. Его опорами становятся записки, фотографии и татуировки.",
+    "genres": [
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/nzlv62aC0octS5AklAiWpXLX9Z0.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/77-memento",
+    "source": "TWO",
+    "director": "Christopher Nolan",
+    "rating": {
+      "value": 8.175,
+      "votes": 16429,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/77-memento"
+    }
+  },
+  {
+    "id": 910000118,
+    "title": "Чарли и шоколадная фабрика",
+    "original_title": "Charlie and the Chocolate Factory",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 115,
+    "adult": false,
+    "overview": "Мальчик получает редкую возможность попасть на закрытую фабрику сладостей. Её хозяин приготовил гостям удивительные испытания.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iKP6wg3c6COUe8gYutoGG7qcPnO.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/118-charlie-and-the-chocolate-factory",
+    "source": "TWO",
+    "director": "Tim Burton",
+    "rating": {
+      "value": 7.038,
+      "votes": 16220,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/118-charlie-and-the-chocolate-factory"
+    }
+  },
+  {
+    "id": 910000920,
+    "title": "Тачки",
+    "original_title": "Cars",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 117,
+    "adult": false,
+    "overview": "Гоночная звезда оказывается в забытом городке вдали от больших трасс. Новые друзья помогают ему понять, ради чего стоит побеждать.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/2Touk3m5gzsqr1VsvxypdyHY5ci.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/920-cars",
+    "source": "TWO",
+    "director": "John Lasseter",
+    "rating": {
+      "value": 7.04,
+      "votes": 15261,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/920-cars"
+    }
+  },
+  {
+    "id": 910000078,
+    "title": "Бегущий по лезвию",
+    "original_title": "Blade Runner",
+    "release_date": "1982",
+    "release_precision": "year",
+    "runtime": 118,
+    "adult": false,
+    "overview": "Детектив ищет искусственных людей в мрачном будущем. Расследование заставляет его задуматься, где проходит граница человечности.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/78-blade-runner",
+    "source": "TWO",
+    "director": "Ridley Scott",
+    "rating": {
+      "value": 7.936,
+      "votes": 15143,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/78-blade-runner"
+    }
+  },
+  {
+    "id": 910000863,
+    "title": "История игрушек 2",
+    "original_title": "Toy Story 2",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 92,
+    "adult": false,
+    "overview": "Коллекционер похищает Вуди, и друзья отправляются его спасать. Самому ковбою предстоит выбрать между музеем и настоящей дружбой.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/4rbcp3ng8n1MKHjpeqW0L7Fnpzz.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/863-toy-story-2",
+    "source": "TWO",
+    "director": "John Lasseter",
+    "rating": {
+      "value": 7.617,
+      "votes": 15109,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/863-toy-story-2"
+    }
+  },
+  {
+    "id": 910000425,
+    "title": "Ледниковый период",
+    "original_title": "Ice Age",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 81,
+    "adult": false,
+    "overview": "Мамонт, ленивец и саблезубый тигр пытаются вернуть человеческого малыша его семье. В пути они становятся необычной командой.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/gLhHHZUzeseRXShoDyC4VqLgsNv.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/425-ice-age",
+    "source": "TWO",
+    "director": "Chris Wedge",
+    "rating": {
+      "value": 7.38,
+      "votes": 14420,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/425-ice-age"
+    }
+  },
+  {
+    "id": 910000637,
+    "title": "Жизнь прекрасна",
+    "original_title": "Life Is Beautiful",
+    "release_date": "1997",
+    "release_precision": "year",
+    "runtime": 116,
+    "adult": false,
+    "overview": "Отец старается защитить сына от жестокости окружающего мира силой воображения. Тёплая семейная история постепенно становится трагической.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/637-la-vita-e-bella",
+    "source": "TWO",
+    "director": "Roberto Benigni",
+    "rating": {
+      "value": 8.439,
+      "votes": 14091,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/637-la-vita-e-bella"
+    }
+  },
+  {
+    "id": 910000165,
+    "title": "Назад в будущее 2",
+    "original_title": "Back to the Future Part II",
+    "release_date": "1989",
+    "release_precision": "year",
+    "runtime": 108,
+    "adult": false,
+    "overview": "Марти и Док отправляются в будущее, но меняют собственное прошлое. Исправление ошибки превращается в запутанную гонку по времени.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/hQq8xZe5uLjFzSBt4LanNP7SQjl.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/165-back-to-the-future-part-ii",
+    "source": "TWO",
+    "director": "Robert Zemeckis",
+    "rating": {
+      "value": 7.786,
+      "votes": 14062,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/165-back-to-the-future-part-ii"
+    }
+  },
+  {
+    "id": 910000350,
+    "title": "Дьявол носит Prada",
+    "original_title": "The Devil Wears Prada",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 109,
+    "adult": false,
+    "overview": "Начинающая журналистка получает работу у влиятельного редактора модного журнала. Карьера заставляет её переосмыслить собственные приоритеты.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/350-the-devil-wears-prada",
+    "source": "TWO",
+    "director": "David Frankel",
+    "rating": {
+      "value": 7.441,
+      "votes": 13935,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/350-the-devil-wears-prada"
+    }
+  },
+  {
+    "id": 910000809,
+    "title": "Шрэк 2",
+    "original_title": "Shrek 2",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 92,
+    "adult": false,
+    "overview": "Шрэк знакомится с родителями Фионы и попадает в мир придворных ожиданий. Сказочные правила снова оказываются не такими простыми.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/809-shrek-2",
+    "source": "TWO",
+    "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon",
+    "rating": {
+      "value": 7.326,
+      "votes": 13573,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/809-shrek-2"
+    }
+  },
+  {
+    "id": 910000141,
+    "title": "Донни Дарко",
+    "original_title": "Donnie Darko",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 114,
+    "adult": false,
+    "overview": "Подросток видит загадочного кролика, предсказывающего конец света. Странные события вокруг него складываются в тревожную головоломку.",
+    "genres": [
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/j2AtZFsflxiluaNtajMTI0Avm8C.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/141-donnie-darko",
+    "source": "TWO",
+    "director": "Richard Kelly",
+    "rating": {
+      "value": 7.762,
+      "votes": 13529,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/141-donnie-darko"
+    }
+  },
+  {
+    "id": 910000062,
+    "title": "Космическая одиссея 2001 года",
+    "original_title": "2001: A Space Odyssey",
+    "release_date": "1968",
+    "release_precision": "year",
+    "runtime": 149,
+    "adult": false,
+    "overview": "Исследование загадочного объекта приводит людей к далёкому космическому путешествию. Фильм соединяет научную фантастику и размышления о развитии разума.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey",
+    "source": "TWO",
+    "director": "Stanley Kubrick",
+    "rating": {
+      "value": 8,
+      "votes": 12727,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey"
+    }
+  },
+  {
+    "id": 910000771,
+    "title": "Один дома",
+    "original_title": "Home Alone",
+    "release_date": "1990",
+    "release_precision": "year",
+    "runtime": 103,
+    "adult": false,
+    "overview": "Мальчик случайно остаётся дома, пока семья улетает на каникулы. Ему приходится защищать дом от двух незадачливых воров.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/onTSipZ8R3bliBdKfPtsDuHTdlL.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/771-home-alone",
+    "source": "TWO",
+    "director": "Chris Columbus",
+    "rating": {
+      "value": 7.469,
+      "votes": 12610,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/771-home-alone"
+    }
+  },
+  {
+    "id": 910000115,
+    "title": "Большой Лебовски",
+    "original_title": "The Big Lebowski",
+    "release_date": "1998",
+    "release_precision": "year",
+    "runtime": 117,
+    "adult": false,
+    "overview": "Беззаботного любителя боулинга принимают за другого человека. Попытка вернуть испорченный ковёр затягивает его в нелепую детективную историю.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/3bv6WAp6BSxxYvB5ozKFUYuRA8C.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/115-the-big-lebowski",
+    "source": "TWO",
+    "director": "Joel Coen, Ethan Coen",
+    "rating": {
+      "value": 7.835,
+      "votes": 12298,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/115-the-big-lebowski"
+    }
+  },
+  {
+    "id": 910000812,
+    "title": "Аладдин",
+    "original_title": "Aladdin",
+    "release_date": "1992",
+    "release_precision": "year",
+    "runtime": 91,
+    "adult": false,
+    "overview": "Уличный парень находит лампу с джинном и получает шанс изменить свою жизнь. Но желания не избавляют его от необходимости оставаться собой.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/eLFfl7vS8dkeG1hKp5mwbm37V83.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/812-aladdin",
+    "source": "TWO",
+    "director": "Ron Clements, John Musker",
+    "rating": {
+      "value": 7.656,
+      "votes": 12111,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/812-aladdin"
+    }
+  },
+  {
+    "id": 910000601,
+    "title": "Инопланетянин",
+    "original_title": "E.T. the Extra-Terrestrial",
+    "release_date": "1982",
+    "release_precision": "year",
+    "runtime": 115,
+    "adult": false,
+    "overview": "Мальчик обнаруживает потерявшегося пришельца и прячет его от взрослых. Новые друзья пытаются помочь гостю вернуться домой.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/601-e-t-the-extra-terrestrial",
+    "source": "TWO",
+    "director": "Steven Spielberg",
+    "rating": {
+      "value": 7.5,
+      "votes": 12096,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/601-e-t-the-extra-terrestrial"
+    }
+  },
+  {
+    "id": 910000953,
+    "title": "Мадагаскар",
+    "original_title": "Madagascar",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 86,
+    "adult": false,
+    "overview": "Животные из нью-йоркского зоопарка оказываются далеко от привычного комфорта. На острове им предстоит познакомиться с настоящей дикой природой.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/953-madagascar",
+    "source": "TWO",
+    "director": "Eric Darnell, Tom McGrath",
+    "rating": {
+      "value": 6.927,
+      "votes": 11830,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/953-madagascar"
+    }
+  },
+  {
+    "id": 910000196,
+    "title": "Назад в будущее 3",
+    "original_title": "Back to the Future Part III",
+    "release_date": "1990",
+    "release_precision": "year",
+    "runtime": 119,
+    "adult": false,
+    "overview": "Марти отправляется на Дикий Запад, чтобы спасти Дока. На этот раз на кону не только возвращение домой, но и судьба друга.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/crzoVQnMzIrRfHtQw0tLBirNfVg.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/196-back-to-the-future-part-iii",
+    "source": "TWO",
+    "director": "Robert Zemeckis",
+    "rating": {
+      "value": 7.5,
+      "votes": 11631,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/196-back-to-the-future-part-iii"
+    }
+  },
+  {
+    "id": 910000310,
+    "title": "Брюс Всемогущий",
+    "original_title": "Bruce Almighty",
+    "release_date": "2003",
+    "release_precision": "year",
+    "runtime": 101,
+    "adult": false,
+    "overview": "Тележурналист получает возможность управлять миром по своему усмотрению. Оказывается, исполнить желания всех людей гораздо сложнее, чем кажется.",
+    "genres": [
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/wqkWrOFtYnZSvIMu8Lsmz7WIvKC.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/310-bruce-almighty",
+    "source": "TWO",
+    "director": "Tom Shadyac",
+    "rating": {
+      "value": 6.728,
+      "votes": 11571,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/310-bruce-almighty"
+    }
+  },
+  {
+    "id": 910000453,
+    "title": "Игры разума",
+    "original_title": "A Beautiful Mind",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 135,
+    "adult": false,
+    "overview": "Талантливый математик пытается построить карьеру и семейную жизнь. Ему предстоит научиться отличать реальность от обманчивых убеждений.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/453-a-beautiful-mind",
+    "source": "TWO",
+    "director": "Ron Howard",
+    "rating": {
+      "value": 7.854,
+      "votes": 11181,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/453-a-beautiful-mind"
+    }
+  },
+  {
+    "id": 910001593,
+    "title": "Ночь в музее",
+    "original_title": "Night at the Museum",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 108,
+    "adult": false,
+    "overview": "Новый ночной охранник обнаруживает, что экспонаты после закрытия оживают. Обычная работа превращается в череду невероятных встреч.",
+    "genres": [
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/pDsAAYf6Zn0yiAGJ6lYGs6hoZ4E.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1593-night-at-the-museum",
+    "source": "TWO",
+    "director": "Shawn Levy",
+    "rating": {
+      "value": 6.6,
+      "votes": 11045,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1593-night-at-the-museum"
+    }
+  },
+  {
+    "id": 910000772,
+    "title": "Один дома 2: Затерянный в Нью-Йорке",
+    "original_title": "Home Alone 2: Lost in New York",
+    "release_date": "1992",
+    "release_precision": "year",
+    "runtime": 120,
+    "adult": false,
+    "overview": "Перепутав самолёты, Кевин оказывается один в большом городе. Там его снова встречают старые противники и новые друзья.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/uuitWHpJwxD1wruFl2nZHIb4UGN.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/772-home-alone-2-lost-in-new-york",
+    "source": "TWO",
+    "director": "Chris Columbus",
+    "rating": {
+      "value": 6.791,
+      "votes": 10716,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/772-home-alone-2-lost-in-new-york"
+    }
+  },
+  {
+    "id": 910001402,
+    "title": "В погоне за счастьем",
+    "original_title": "The Pursuit of Happyness",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 117,
+    "adult": false,
+    "overview": "Отец-одиночка пытается выбраться из тяжёлого положения и освоить новую профессию. Ему приходится бороться за будущее, не теряя близости с сыном.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/lBYOKAMcxIvuk9s9hMuecB9dPBV.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1402-the-pursuit-of-happyness",
+    "source": "TWO",
+    "director": "Gabriele Muccino",
+    "rating": {
+      "value": 7.887,
+      "votes": 10695,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1402-the-pursuit-of-happyness"
+    }
+  },
+  {
+    "id": 910000950,
+    "title": "Ледниковый период 2: Глобальное потепление",
+    "original_title": "Ice Age: The Meltdown",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 91,
+    "adult": false,
+    "overview": "Знакомые герои ищут безопасное место, когда их долине грозит наводнение. По дороге их компания становится ещё больше.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/8vNkkk4erLGDg3UfbmSHsTdSNcY.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/950-ice-age-the-meltdown",
+    "source": "TWO",
+    "director": "Carlos Saldanha",
+    "rating": {
+      "value": 6.7,
+      "votes": 10423,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/950-ice-age-the-meltdown"
+    }
+  },
+  {
+    "id": 910000591,
+    "title": "Код да Винчи",
+    "original_title": "The Da Vinci Code",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 149,
+    "adult": false,
+    "overview": "Специалист по символам расследует загадочную смерть в Лувре. Подсказки ведут к тайнам, спрятанным в искусстве и истории.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/9ejKfNk0LBhSI9AahH4f9NJNZNM.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/591-the-da-vinci-code",
+    "source": "TWO",
+    "director": "Ron Howard",
+    "rating": {
+      "value": 6.733,
+      "votes": 10157,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/591-the-da-vinci-code"
+    }
+  },
+  {
+    "id": 910000620,
+    "title": "Охотники за привидениями",
+    "original_title": "Ghostbusters",
+    "release_date": "1984",
+    "release_precision": "year",
+    "runtime": 105,
+    "adult": false,
+    "overview": "Несколько учёных открывают необычную службу по борьбе с призраками. Очень скоро Нью-Йорку понадобится вся их изобретательность.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/620-ghostbusters",
+    "source": "TWO",
+    "director": "Ivan Reitman",
+    "rating": {
+      "value": 7.498,
+      "votes": 9829,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/620-ghostbusters"
+    }
+  },
+  {
+    "id": 910000063,
+    "title": "12 обезьян",
+    "original_title": "Twelve Monkeys",
+    "release_date": "1995",
+    "release_precision": "year",
+    "runtime": 129,
+    "adult": false,
+    "overview": "Путешественник из будущего пытается выяснить происхождение опасной эпидемии. Его воспоминания и наблюдения не всегда складываются в простую картину.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/gt3iyguaCIw8DpQZI1LIN5TohM2.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/63-twelve-monkeys",
+    "source": "TWO",
+    "director": "Terry Gilliam",
+    "rating": {
+      "value": 7.611,
+      "votes": 9216,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/63-twelve-monkeys"
+    }
+  },
+  {
+    "id": 910000114,
+    "title": "Красотка",
+    "original_title": "Pretty Woman",
+    "release_date": "1990",
+    "release_precision": "year",
+    "runtime": 120,
+    "adult": false,
+    "overview": "Случайное знакомство превращается в необычную договорённость между двумя разными людьми. За внешними ролями они начинают замечать настоящие чувства.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/hVHUfT801LQATGd26VPzhorIYza.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/114-pretty-woman",
+    "source": "TWO",
+    "director": "Garry Marshall",
+    "rating": {
+      "value": 7.446,
+      "votes": 9057,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/114-pretty-woman"
+    }
+  },
+  {
+    "id": 910001366,
+    "title": "Рокки",
+    "original_title": "Rocky",
+    "release_date": "1976",
+    "release_precision": "year",
+    "runtime": 120,
+    "adult": false,
+    "overview": "Малоизвестный боксёр получает шанс выйти против чемпиона. Подготовка к поединку становится испытанием достоинства и упорства.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/aYtBYWqCdUqcnoodWJdcTG3pFev.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1366-rocky",
+    "source": "TWO",
+    "director": "John G. Avildsen",
+    "rating": {
+      "value": 7.801,
+      "votes": 8722,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1366-rocky"
+    }
+  },
+  {
+    "id": 910000035,
+    "title": "Симпсоны в кино",
+    "original_title": "The Simpsons Movie",
+    "release_date": "2007",
+    "release_precision": "year",
+    "runtime": 87,
+    "adult": false,
+    "overview": "Ошибка Гомера ставит под угрозу весь Спрингфилд. Семье приходится одновременно спасать город и разбираться в собственных отношениях.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/s3b8TZWwmkYc2KoJ5zk77qB6PzY.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/35-the-simpsons-movie",
+    "source": "TWO",
+    "director": "David Silverman",
+    "rating": {
+      "value": 7.023,
+      "votes": 8610,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/35-the-simpsons-movie"
+    }
+  },
+  {
+    "id": 910000153,
+    "title": "Трудности перевода",
+    "original_title": "Lost in Translation",
+    "release_date": "2003",
+    "release_precision": "year",
+    "runtime": 102,
+    "adult": false,
+    "overview": "Два одиноких иностранца встречаются в Токио. Короткая дружба помогает им по-новому увидеть свою жизнь.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/3jCLmYDIIiSMPujbwygNpqdpM8N.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/153-lost-in-translation",
+    "source": "TWO",
+    "director": "Sofia Coppola",
+    "rating": {
+      "value": 7.38,
+      "votes": 8172,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/153-lost-in-translation"
+    }
+  },
+  {
+    "id": 910000163,
+    "title": "Двенадцать друзей Оушена",
+    "original_title": "Ocean's Twelve",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 125,
+    "adult": false,
+    "overview": "Команде опытных авантюристов приходится выполнять новое сложное задание. На этот раз игра переносится в европейские города.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/pE5anFf7nf6ah7V3VRezQ1KSovi.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/163-ocean-s-twelve",
+    "source": "TWO",
+    "director": "Steven Soderbergh",
+    "rating": {
+      "value": 6.566,
+      "votes": 7987,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/163-ocean-s-twelve"
+    }
+  },
+  {
+    "id": 910000065,
+    "title": "Восьмая миля",
+    "original_title": "8 Mile",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 111,
+    "adult": false,
+    "overview": "Молодой музыкант пытается найти свой голос в рэп-баттлах Детройта. Для этого ему нужно справиться со страхом и обстоятельствами.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/7BmQj8qE1FLuLTf7Xjf9sdIHzoa.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/65-8-mile",
+    "source": "TWO",
+    "director": "Curtis Hanson",
+    "rating": {
+      "value": 7.147,
+      "votes": 7885,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/65-8-mile"
+    }
+  },
+  {
+    "id": 910000621,
+    "title": "Бриолин",
+    "original_title": "Grease",
+    "release_date": "1978",
+    "release_precision": "year",
+    "runtime": 110,
+    "adult": false,
+    "overview": "Летний роман продолжается в школе, где действуют свои правила. Музыкальная история о взрослении, дружбе и желании понравиться.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/2rM7fQKpb7cs1Iq7IBqub9LFDzJ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/621-grease",
+    "source": "TWO",
+    "director": "Randal Kleiser",
+    "rating": {
+      "value": 7.367,
+      "votes": 7719,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/621-grease"
+    }
+  },
+  {
+    "id": 910000380,
+    "title": "Человек дождя",
+    "original_title": "Rain Man",
+    "release_date": "1988",
+    "release_precision": "year",
+    "runtime": 134,
+    "adult": false,
+    "overview": "Молодой предприниматель узнаёт о существовании старшего брата. Совместная поездка постепенно меняет его отношение к семье и ответственности.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/380-rain-man",
+    "source": "TWO",
+    "director": "Barry Levinson",
+    "rating": {
+      "value": 7.752,
+      "votes": 7169,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/380-rain-man"
+    }
+  },
+  {
+    "id": 910000782,
+    "title": "Гаттака",
+    "original_title": "Gattaca",
+    "release_date": "1997",
+    "release_precision": "year",
+    "runtime": 107,
+    "adult": false,
+    "overview": "В обществе, оценивающем людей по генам, мечтатель пытается попасть в космос. Ради этого он берёт чужую личность и живёт с риском разоблачения.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/782-gattaca",
+    "source": "TWO",
+    "director": "Andrew Niccol",
+    "rating": {
+      "value": 7.568,
+      "votes": 6992,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/782-gattaca"
+    }
+  },
+  {
+    "id": 910000298,
+    "title": "Тринадцать друзей Оушена",
+    "original_title": "Ocean's Thirteen",
+    "release_date": "2007",
+    "release_precision": "year",
+    "runtime": 122,
+    "adult": false,
+    "overview": "Друзья объединяются, чтобы защитить своего товарища от владельца казино. Продуманная афера становится делом личной верности.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/pBsZs4zYUiUTemqbikTZ76iQRaU.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/298-ocean-s-thirteen",
+    "source": "TWO",
+    "director": "Steven Soderbergh",
+    "rating": {
+      "value": 6.727,
+      "votes": 6962,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/298-ocean-s-thirteen"
+    }
+  },
+  {
+    "id": 910000644,
+    "title": "Искусственный разум",
+    "original_title": "A.I. Artificial Intelligence",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 146,
+    "adult": false,
+    "overview": "Робот-ребёнок, способный любить, ищет путь к человеческой семье. Его путешествие превращается в необычную сказку о принятии.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/8MZSGX5JORoO72EfuAEcejH5yHn.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence",
+    "source": "TWO",
+    "director": "Steven Spielberg",
+    "rating": {
+      "value": 7.1,
+      "votes": 6729,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence"
+    }
+  },
+  {
+    "id": 910000788,
+    "title": "Миссис Даутфайр",
+    "original_title": "Mrs. Doubtfire",
+    "release_date": "1993",
+    "release_precision": "year",
+    "runtime": 125,
+    "adult": false,
+    "overview": "После развода отец устраивается няней к собственным детям под чужим обликом. Комедийная маскировка помогает ему заново понять семью.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/shHrSmXS5140o6sQzgzXxn3KqSm.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/788-mrs-doubtfire",
+    "source": "TWO",
+    "director": "Chris Columbus",
+    "rating": {
+      "value": 7.2,
+      "votes": 6682,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/788-mrs-doubtfire"
+    }
+  },
+  {
+    "id": 910000235,
+    "title": "Останься со мной",
+    "original_title": "Stand by Me",
+    "release_date": "1986",
+    "release_precision": "year",
+    "runtime": 89,
+    "adult": false,
+    "overview": "Четверо друзей отправляются в небольшое путешествие, которое запомнят на всю жизнь. История о взрослении и хрупкости детской дружбы.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/235-stand-by-me",
+    "source": "TWO",
+    "director": "Rob Reiner",
+    "rating": {
+      "value": 7.835,
+      "votes": 6602,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/235-stand-by-me"
+    }
+  },
+  {
+    "id": 910000088,
+    "title": "Грязные танцы",
+    "original_title": "Dirty Dancing",
+    "release_date": "1987",
+    "release_precision": "year",
+    "runtime": 100,
+    "adult": false,
+    "overview": "На семейном курорте девушка знакомится с миром танца. Занятия и первая любовь помогают ей обрести уверенность.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Jw6jys7q9gjzVX5zm1z0gC8gY9.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/88-dirty-dancing",
+    "source": "TWO",
+    "director": "Emile Ardolino",
+    "rating": {
+      "value": 7.3,
+      "votes": 6567,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/88-dirty-dancing"
+    }
+  },
+  {
+    "id": 910000762,
+    "title": "Монти Пайтон и Священный Грааль",
+    "original_title": "Monty Python and the Holy Grail",
+    "release_date": "1975",
+    "release_precision": "year",
+    "runtime": 91,
+    "adult": false,
+    "overview": "Король Артур и его спутники ищут Грааль в мире абсурдных испытаний. Средневековая легенда превращается в комедию без привычных правил.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/762-monty-python-and-the-holy-grail",
+    "source": "TWO",
+    "director": "Terry Jones, Terry Gilliam",
+    "rating": {
+      "value": 7.806,
+      "votes": 6472,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/762-monty-python-and-the-holy-grail"
+    }
+  },
+  {
+    "id": 910001597,
+    "title": "Знакомство с родителями",
+    "original_title": "Meet the Parents",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 108,
+    "adult": false,
+    "overview": "Молодой человек приезжает знакомиться с семьёй своей девушки. Стремление произвести идеальное впечатление приводит к череде катастроф.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5tXJ9ctuyEOMUFLaeqRisbXowWs.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1597-meet-the-parents",
+    "source": "TWO",
+    "director": "Jay Roach",
+    "rating": {
+      "value": 6.698,
+      "votes": 6457,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1597-meet-the-parents"
+    }
+  },
+  {
+    "id": 910000426,
+    "title": "Головокружение",
+    "original_title": "Vertigo",
+    "release_date": "1958",
+    "release_precision": "year",
+    "runtime": 128,
+    "adult": false,
+    "overview": "Бывший детектив берётся следить за загадочной женщиной. Наблюдение постепенно перерастает в опасную одержимость.",
+    "genres": [
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/426-vertigo",
+    "source": "TWO",
+    "director": "Alfred Hitchcock",
+    "rating": {
+      "value": 8.135,
+      "votes": 6394,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/426-vertigo"
+    }
+  },
+  {
+    "id": 910000856,
+    "title": "Кто подставил кролика Роджера",
+    "original_title": "Who Framed Roger Rabbit",
+    "release_date": "1988",
+    "release_precision": "year",
+    "runtime": 104,
+    "adult": false,
+    "overview": "Детектив расследует преступление в городе, где люди живут рядом с мультгероями. Его главным союзником становится нервный кролик.",
+    "genres": [
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/856-who-framed-roger-rabbit",
+    "source": "TWO",
+    "director": "Robert Zemeckis",
+    "rating": {
+      "value": 7.539,
+      "votes": 6235,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/856-who-framed-roger-rabbit"
+    }
+  },
+  {
+    "id": 910000630,
+    "title": "Волшебник страны Оз",
+    "original_title": "The Wizard of Oz",
+    "release_date": "1939",
+    "release_precision": "year",
+    "runtime": 102,
+    "adult": false,
+    "overview": "Девочка попадает в волшебную страну и ищет дорогу домой. Попутчики помогают ей пройти испытания и поверить в себя.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/uCC3j4pV9eOZwzDUWp2ilbcTf1f.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/630-the-wizard-of-oz",
+    "source": "TWO",
+    "director": "Victor Fleming",
+    "rating": {
+      "value": 7.6,
+      "votes": 6165,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/630-the-wizard-of-oz"
+    }
+  },
+  {
+    "id": 910000015,
+    "title": "Гражданин Кейн",
+    "original_title": "Citizen Kane",
+    "release_date": "1941",
+    "release_precision": "year",
+    "runtime": 119,
+    "adult": false,
+    "overview": "Журналисты пытаются понять последнее слово влиятельного издателя. Из чужих воспоминаний складывается портрет непростой жизни.",
+    "genres": [
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/15-citizen-kane",
+    "source": "TWO",
+    "director": "Orson Welles",
+    "rating": {
+      "value": 7.969,
+      "votes": 6118,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/15-citizen-kane"
+    }
+  },
+  {
+    "id": 910000251,
+    "title": "Привидение",
+    "original_title": "Ghost",
+    "release_date": "1990",
+    "release_precision": "year",
+    "runtime": 127,
+    "adult": false,
+    "overview": "После трагедии влюблённый мужчина пытается защитить близкого человека. Необычной посредницей становится женщина, способная слышать его.",
+    "genres": [
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/w9RaPHov8oM5cnzeE27isnFMsvS.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/251-ghost",
+    "source": "TWO",
+    "director": "Jerry Zucker",
+    "rating": {
+      "value": 7.239,
+      "votes": 6094,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/251-ghost"
+    }
+  },
+  {
+    "id": 910000568,
+    "title": "Аполлон-13",
+    "original_title": "Apollo 13",
+    "release_date": "1995",
+    "release_precision": "year",
+    "runtime": 140,
+    "adult": false,
+    "overview": "Авария превращает лунную миссию в борьбу за возвращение домой. Космонавты и наземная команда ищут решения в условиях жёстких ограничений.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 36,
+        "name": "History"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/tVeKscCm2fY1xDXZk8PgnZ87h9S.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/568-apollo-13",
+    "source": "TWO",
+    "director": "Ron Howard",
+    "rating": {
+      "value": 7.464,
+      "votes": 5989,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/568-apollo-13"
+    }
+  },
+  {
+    "id": 910000879,
+    "title": "Капитан Крюк",
+    "original_title": "Hook",
+    "release_date": "1991",
+    "release_precision": "year",
+    "runtime": 142,
+    "adult": false,
+    "overview": "Повзрослевший Питер Пэн вынужден вернуться в страну своего детства. Чтобы помочь детям, ему нужно вспомнить, как верить в невозможное.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/a6rB1lGXoGms7gWxRfJneQmAjNV.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/879-hook",
+    "source": "TWO",
+    "director": "Steven Spielberg",
+    "rating": {
+      "value": 6.8,
+      "votes": 5799,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/879-hook"
+    }
+  },
+  {
+    "id": 910000634,
+    "title": "Дневник Бриджит Джонс",
+    "original_title": "Bridget Jones's Diary",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 97,
+    "adult": false,
+    "overview": "Бриджит начинает вести дневник и решает изменить свою жизнь. Между карьерными неурядицами её ждёт непростой романтический выбор.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/olMTi7uCaec9Yr3Ar07D2SIja1G.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/634-bridget-jones-s-diary",
+    "source": "TWO",
+    "director": "Sharon Maguire",
+    "rating": {
+      "value": 6.743,
+      "votes": 5552,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/634-bridget-jones-s-diary"
+    }
+  },
+  {
+    "id": 910000544,
+    "title": "Все без ума от Мэри",
+    "original_title": "There's Something About Mary",
+    "release_date": "1998",
+    "release_precision": "year",
+    "runtime": 120,
+    "adult": false,
+    "overview": "Мужчина пытается разыскать свою школьную любовь. Оказывается, он далеко не единственный, кто хочет добиться её внимания.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/slJD1Dvnsf15LoeqhERsyzisAdn.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/544-there-s-something-about-mary",
+    "source": "TWO",
+    "director": "Bobby Farrelly, Peter Farrelly",
+    "rating": {
+      "value": 6.634,
+      "votes": 5409,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/544-there-s-something-about-mary"
+    }
+  },
+  {
+    "id": 910000454,
+    "title": "Ромео + Джульетта",
+    "original_title": "Romeo + Juliet",
+    "release_date": "1996",
+    "release_precision": "year",
+    "runtime": 120,
+    "adult": false,
+    "overview": "История шекспировских влюблённых перенесена в современный яркий город. Семейная вражда по-прежнему мешает им быть вместе.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/eLf4jclPijOqfEp6bDAmezRFxk5.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/454-romeo-juliet",
+    "source": "TWO",
+    "director": "Baz Luhrmann",
+    "rating": {
+      "value": 6.781,
+      "votes": 5383,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/454-romeo-juliet"
+    }
+  },
+  {
+    "id": 910001265,
+    "title": "Мост в Терабитию",
+    "original_title": "Bridge to Terabithia",
+    "release_date": "2007",
+    "release_precision": "year",
+    "runtime": 95,
+    "adult": false,
+    "overview": "Двое школьников придумывают собственный волшебный мир. Дружба помогает им справляться с трудностями, но история содержит тяжёлые переживания.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1265-bridge-to-terabithia",
+    "source": "TWO",
+    "director": "Gábor Csupó",
+    "rating": {
+      "value": 7.343,
+      "votes": 5359,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1265-bridge-to-terabithia"
+    }
+  },
+  {
+    "id": 910000813,
+    "title": "Аэроплан!",
+    "original_title": "Airplane!",
+    "release_date": "1980",
+    "release_precision": "year",
+    "runtime": 88,
+    "adult": false,
+    "overview": "Неудачливый пилот оказывается среди пассажиров рейса, попавшего в беду. Авиационные фильмы превращаются в бесконечную цепочку абсурдных шуток.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/813-airplane",
+    "source": "TWO",
+    "director": "Jerry Zucker, David Zucker, Jim Abrahams",
+    "rating": {
+      "value": 7.307,
+      "votes": 5132,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/813-airplane"
+    }
+  },
+  {
+    "id": 910000433,
+    "title": "Мэри Поппинс",
+    "original_title": "Mary Poppins",
+    "release_date": "1964",
+    "release_precision": "year",
+    "runtime": 139,
+    "adult": false,
+    "overview": "Необычная няня появляется в лондонской семье и меняет её привычную жизнь. Повседневные заботы соседствуют с музыкой и волшебством.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/o4Wsby4ydIXhWmtmfvb451D5Np1.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/433-mary-poppins",
+    "source": "TWO",
+    "director": "Robert Stevenson",
+    "rating": {
+      "value": 7.546,
+      "votes": 5039,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/433-mary-poppins"
+    }
+  },
+  {
+    "id": 910000824,
+    "title": "Мулен Руж",
+    "original_title": "Moulin Rouge!",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 128,
+    "adult": false,
+    "overview": "Молодой писатель влюбляется в звезду парижского кабаре. Их музыкальная история сталкивается с чужими амбициями и обстоятельствами.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/824-moulin-rouge",
+    "source": "TWO",
+    "director": "Baz Luhrmann",
+    "rating": {
+      "value": 7.526,
+      "votes": 4884,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/824-moulin-rouge"
+    }
+  },
+  {
+    "id": 910000492,
+    "title": "Быть Джоном Малковичем",
+    "original_title": "Being John Malkovich",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 113,
+    "adult": false,
+    "overview": "Кукольник обнаруживает проход в сознание известного актёра. Необычная находка обостряет вопросы о личности и чужой жизни.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/31FGQu3OnwdmS4COquENe0vMZc0.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/492-being-john-malkovich",
+    "source": "TWO",
+    "director": "Spike Jonze",
+    "rating": {
+      "value": 7.422,
+      "votes": 4846,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/492-being-john-malkovich"
+    }
+  },
+  {
+    "id": 910000076,
+    "title": "Перед рассветом",
+    "original_title": "Before Sunrise",
+    "release_date": "1995",
+    "release_precision": "year",
+    "runtime": 101,
+    "adult": false,
+    "overview": "Двое незнакомцев решают провести вместе ночь в Вене. Прогулка и разговоры становятся их маленьким общим миром.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/76-before-sunrise",
+    "source": "TWO",
+    "director": "Richard Linklater",
+    "rating": {
+      "value": 7.968,
+      "votes": 4750,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/76-before-sunrise"
+    }
+  },
+  {
+    "id": 910000840,
+    "title": "Близкие контакты третьей степени",
+    "original_title": "Close Encounters of the Third Kind",
+    "release_date": "1977",
+    "release_precision": "year",
+    "runtime": 137,
+    "adult": false,
+    "overview": "Обычный человек переживает необъяснимую встречу и начинает искать ответы. Его путь пересекается с большой тайной.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/yaPx3cK9zGFX3SbcKwxWM1QIbUh.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/840-close-encounters-of-the-third-kind",
+    "source": "TWO",
+    "director": "Steven Spielberg",
+    "rating": {
+      "value": 7.359,
+      "votes": 4747,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/840-close-encounters-of-the-third-kind"
+    }
+  },
+  {
+    "id": 910000134,
+    "title": "О, где же ты, брат?",
+    "original_title": "O Brother, Where Art Thou?",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 107,
+    "adult": false,
+    "overview": "Трое беглецов путешествуют по американскому Югу в поисках сокровища. Приключение наполнено музыкой и отголосками старинных мифов.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/2YztYilviFCYcEtDAnrOstUWGie.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/134-o-brother-where-art-thou",
+    "source": "TWO",
+    "director": "Joel Coen",
+    "rating": {
+      "value": 7.326,
+      "votes": 4652,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/134-o-brother-where-art-thou"
+    }
+  },
+  {
+    "id": 910000639,
+    "title": "Когда Гарри встретил Салли",
+    "original_title": "When Harry Met Sally...",
+    "release_date": "1989",
+    "release_precision": "year",
+    "runtime": 96,
+    "adult": false,
+    "overview": "Двое знакомых много лет спорят о дружбе и любви. Их отношения меняются вместе с опытом и жизненными обстоятельствами.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/rFOiFUhTMtDetqCGClC9PIgnC1P.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/639-when-harry-met-sally",
+    "source": "TWO",
+    "director": "Rob Reiner",
+    "rating": {
+      "value": 7.405,
+      "votes": 4646,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/639-when-harry-met-sally"
+    }
+  },
+  {
+    "id": 910000164,
+    "title": "Завтрак у Тиффани",
+    "original_title": "Breakfast at Tiffany's",
+    "release_date": "1961",
+    "release_precision": "year",
+    "runtime": 115,
+    "adult": false,
+    "overview": "Молодой писатель знакомится с независимой и загадочной соседкой. За её лёгкостью скрываются тревоги и стремление найти своё место.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/79xm4gXw4l7A5D0XukUOJRocFYQ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/164-breakfast-at-tiffany-s",
+    "source": "TWO",
+    "director": "Blake Edwards",
+    "rating": {
+      "value": 7.621,
+      "votes": 4513,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/164-breakfast-at-tiffany-s"
+    }
+  },
+  {
+    "id": 910001587,
+    "title": "Что гложет Гилберта Грейпа",
+    "original_title": "What's Eating Gilbert Grape",
+    "release_date": "1993",
+    "release_precision": "year",
+    "runtime": 118,
+    "adult": false,
+    "overview": "Юноша заботится о семье в маленьком городе и почти забывает о себе. Неожиданное знакомство заставляет его задуматься о собственном будущем.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/8FxWgsfDNosewo7H65oE4QkOb7g.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1587-what-s-eating-gilbert-grape",
+    "source": "TWO",
+    "director": "Lasse Hallström",
+    "rating": {
+      "value": 7.66,
+      "votes": 4329,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1587-what-s-eating-gilbert-grape"
+    }
+  },
+  {
+    "id": 910001272,
+    "title": "Пекло",
+    "original_title": "Sunshine",
+    "release_date": "2007",
+    "release_precision": "year",
+    "runtime": 108,
+    "adult": false,
+    "overview": "Космический экипаж отправляется к Солнцу с миссией по спасению Земли. По мере приближения к цели испытания становятся всё тяжелее.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1272-sunshine",
+    "source": "TWO",
+    "director": "Danny Boyle",
+    "rating": {
+      "value": 6.974,
+      "votes": 4318,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1272-sunshine"
+    }
+  },
+  {
+    "id": 910000829,
+    "title": "Китайский квартал",
+    "original_title": "Chinatown",
+    "release_date": "1974",
+    "release_precision": "year",
+    "runtime": 130,
+    "adult": false,
+    "overview": "Частный детектив берётся за обычное на первый взгляд дело. Оно приводит его к большой истории обмана и власти.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/829-chinatown",
+    "source": "TWO",
+    "director": "Roman Polanski",
+    "rating": {
+      "value": 7.906,
+      "votes": 4310,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/829-chinatown"
+    }
+  },
+  {
+    "id": 910000703,
+    "title": "Энни Холл",
+    "original_title": "Annie Hall",
+    "release_date": "1977",
+    "release_precision": "year",
+    "runtime": 93,
+    "adult": false,
+    "overview": "Комик вспоминает отношения с необычной молодой женщиной. Разговорная комедия исследует любовь, привычки и несовпадения.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/dEtjPywhDbAXYjoFfhBC4U9unU7.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/703-annie-hall",
+    "source": "TWO",
+    "director": "Woody Allen",
+    "rating": {
+      "value": 7.724,
+      "votes": 4282,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/703-annie-hall"
+    }
+  },
+  {
+    "id": 910000881,
+    "title": "Несколько хороших парней",
+    "original_title": "A Few Good Men",
+    "release_date": "1992",
+    "release_precision": "year",
+    "runtime": 138,
+    "adult": false,
+    "overview": "Молодой военный юрист защищает обвиняемых в гибели сослуживца. Расследование ставит под сомнение приказ и ответственность.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/rLOk4z9zL1tTukIYV56P94aZXKk.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/881-a-few-good-men",
+    "source": "TWO",
+    "director": "Rob Reiner",
+    "rating": {
+      "value": 7.553,
+      "votes": 4215,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/881-a-few-good-men"
+    }
+  },
+  {
+    "id": 910001213,
+    "title": "Талантливый мистер Рипли",
+    "original_title": "The Talented Mr. Ripley",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 140,
+    "adult": false,
+    "overview": "Молодой человек получает поручение вернуть богатого наследника домой. Чужой образ жизни постепенно становится для него опасной мечтой.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/6ojHgqtIR41O2qLKa7LFUVj0cZa.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1213-the-talented-mr-ripley",
+    "source": "TWO",
+    "director": "Anthony Minghella",
+    "rating": {
+      "value": 7.197,
+      "votes": 4190,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1213-the-talented-mr-ripley"
+    }
+  },
+  {
+    "id": 910000582,
+    "title": "Жизнь других",
+    "original_title": "The Lives of Others",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 137,
+    "adult": false,
+    "overview": "Сотрудник спецслужбы следит за драматургом и его окружением. Чужая жизнь начинает менять его собственные убеждения.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/cVUDMnskSc01rdbyH0tLATTJUdP.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/582-das-leben-der-anderen",
+    "source": "TWO",
+    "director": "Florian Henckel von Donnersmarck",
+    "rating": {
+      "value": 8.039,
+      "votes": 4165,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/582-das-leben-der-anderen"
+    }
+  },
+  {
+    "id": 910000071,
+    "title": "Билли Эллиот",
+    "original_title": "Billy Elliot",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 111,
+    "adult": false,
+    "overview": "Сын шахтёра увлекается балетом вопреки ожиданиям семьи. Ему предстоит отстоять право на собственный талант.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/mYtqgWCJiXpDeZwjVcC3OQGD8IR.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/71-billy-elliot",
+    "source": "TWO",
+    "director": "Stephen Daldry",
+    "rating": {
+      "value": 7.594,
+      "votes": 4126,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/71-billy-elliot"
+    }
+  },
+  {
+    "id": 910000252,
+    "title": "Вилли Вонка и шоколадная фабрика",
+    "original_title": "Willy Wonka & the Chocolate Factory",
+    "release_date": "1971",
+    "release_precision": "year",
+    "runtime": 100,
+    "adult": false,
+    "overview": "Бедный мальчик получает билет на загадочную фабрику сладостей. Экскурсия оказывается испытанием характера каждого гостя.",
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/vmpsZkrs4Uvkp9r1atL8B3frA63.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/252-willy-wonka-the-chocolate-factory",
+    "source": "TWO",
+    "director": "Mel Stuart",
+    "rating": {
+      "value": 7.5,
+      "votes": 3988,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/252-willy-wonka-the-chocolate-factory"
+    }
+  },
+  {
+    "id": 910000866,
+    "title": "Волшебная страна",
+    "original_title": "Finding Neverland",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 106,
+    "adult": false,
+    "overview": "Писатель сближается с семьёй, которая вдохновляет его на историю Питера Пэна. Воображение помогает героям переживать непростые времена.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5JyDPH4qdr0I6pF7Bjh1Qrf1Jhh.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/866-finding-neverland",
+    "source": "TWO",
+    "director": "Marc Forster",
+    "rating": {
+      "value": 7.3,
+      "votes": 3765,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/866-finding-neverland"
+    }
+  },
+  {
+    "id": 910000068,
+    "title": "Бразилия",
+    "original_title": "Brazil",
+    "release_date": "1985",
+    "release_precision": "year",
+    "runtime": 143,
+    "adult": false,
+    "overview": "Мечтательный служащий пытается исправить ошибку в абсурдной бюрократической системе. Поиски превращают его жизнь в фантастический лабиринт.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/68-brazil",
+    "source": "TWO",
+    "director": "Terry Gilliam",
+    "rating": {
+      "value": 7.656,
+      "votes": 3747,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/68-brazil"
+    }
+  },
+  {
+    "id": 910000914,
+    "title": "Великий диктатор",
+    "original_title": "The Great Dictator",
+    "release_date": "1940",
+    "release_precision": "year",
+    "runtime": 125,
+    "adult": false,
+    "overview": "Сходство скромного парикмахера с правителем приводит к невероятной путанице. Сатирическая история обращается к человеческому достоинству.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10752,
+        "name": "War"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/914-the-great-dictator",
+    "source": "TWO",
+    "director": "Charlie Chaplin",
+    "rating": {
+      "value": 8.28,
+      "votes": 3742,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/914-the-great-dictator"
+    }
+  },
+  {
+    "id": 910001621,
+    "title": "Поменяться местами",
+    "original_title": "Trading Places",
+    "release_date": "1983",
+    "release_precision": "year",
+    "runtime": 116,
+    "adult": false,
+    "overview": "Богатые братья заключают пари и меняют судьбы двух незнакомых людей. Участники эксперимента постепенно понимают, как устроена игра.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/8mBuLCOcpWnmYtZc4aqtvDXslv6.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1621-trading-places",
+    "source": "TWO",
+    "director": "John Landis",
+    "rating": {
+      "value": 7.234,
+      "votes": 3697,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1621-trading-places"
+    }
+  },
+  {
+    "id": 910000462,
+    "title": "Эрин Брокович",
+    "original_title": "Erin Brockovich",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 131,
+    "adult": false,
+    "overview": "Мать троих детей берётся за дело о загрязнении воды. Настойчивость и внимание к людям становятся её главными инструментами.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/eMs20iUQyZVs05Ck7Q0LNnRsstr.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/462-erin-brockovich",
+    "source": "TWO",
+    "director": "Steven Soderbergh",
+    "rating": {
+      "value": 7.428,
+      "votes": 3686,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/462-erin-brockovich"
+    }
+  },
+  {
+    "id": 910000392,
+    "title": "Шоколад",
+    "original_title": "Chocolat",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 121,
+    "adult": false,
+    "overview": "Приезд женщины с дочерью и открытие шоколадной лавки тревожат спокойный городок. Постепенно новые вкусы меняют привычки жителей.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/lnwPvyj8UR7MetG2pQ92453IIoR.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/392-chocolat",
+    "source": "TWO",
+    "director": "Lasse Hallström",
+    "rating": {
+      "value": 6.971,
+      "votes": 3536,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/392-chocolat"
+    }
+  },
+  {
+    "id": 910000957,
+    "title": "Космические яйца",
+    "original_title": "Spaceballs",
+    "release_date": "1987",
+    "release_precision": "year",
+    "runtime": 96,
+    "adult": false,
+    "overview": "Космический авантюрист помогает принцессе скрыться от нелепой империи. Пародийное приключение играет со знакомыми фантастическими сюжетами.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/aHNeKtkNnyQcietzi2cgiYL8sC9.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/957-spaceballs",
+    "source": "TWO",
+    "director": "Mel Brooks",
+    "rating": {
+      "value": 6.882,
+      "votes": 3463,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/957-spaceballs"
+    }
+  },
+  {
+    "id": 910001542,
+    "title": "Офисное пространство",
+    "original_title": "Office Space",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 90,
+    "adult": false,
+    "overview": "Уставший сотрудник решает перестать жить по офисным правилам. Его неожиданная свобода ведёт к ещё более неожиданным последствиям.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iEmTwOkUaLziMQCUZii5wPQBIAO.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1542-office-space",
+    "source": "TWO",
+    "director": "Mike Judge",
+    "rating": {
+      "value": 7.381,
+      "votes": 3436,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1542-office-space"
+    }
+  },
+  {
+    "id": 910000192,
+    "title": "Имя розы",
+    "original_title": "The Name of the Rose",
+    "release_date": "1986",
+    "release_precision": "year",
+    "runtime": 130,
+    "adult": false,
+    "overview": "Монах и его ученик расследуют загадочные смерти в средневековом монастыре. Подсказки скрываются среди споров и старых книг.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/d6dlbTBb3N7nXDz7tQslDJs2jgv.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/192-the-name-of-the-rose",
+    "source": "TWO",
+    "director": "Jean-Jacques Annaud",
+    "rating": {
+      "value": 7.496,
+      "votes": 3349,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/192-the-name-of-the-rose"
+    }
+  },
+  {
+    "id": 910000756,
+    "title": "Фантазия",
+    "original_title": "Fantasia",
+    "release_date": "1940",
+    "release_precision": "year",
+    "runtime": 124,
+    "adult": false,
+    "overview": "Классическая музыка соединяется с анимационными историями и образами. Фильм предлагает необычное путешествие без единого общего героя.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/756-fantasia",
+    "source": "TWO",
+    "director": "Ben Sharpsteen, Jim Handley, David Hand, Ford Beebe Jr., Norman Ferguson, Samuel Armstrong, Hamilton Luske, Bill Roberts, Wilfred Jackson, T. Hee, Paul Satterfield, James Algar",
+    "rating": {
+      "value": 7.348,
+      "votes": 3341,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/756-fantasia"
+    }
+  },
+  {
+    "id": 910000843,
+    "title": "Любовное настроение",
+    "original_title": "In the Mood for Love",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 99,
+    "adult": false,
+    "overview": "Два соседа начинают подозревать измену своих супругов. Взаимная близость возникает из осторожных разговоров и общих переживаний.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/843",
+    "source": "TWO",
+    "director": "Wong Kar-Wai",
+    "rating": {
+      "value": 8.087,
+      "votes": 3304,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/843"
+    }
+  },
+  {
+    "id": 910000421,
+    "title": "Водная жизнь",
+    "original_title": "The Life Aquatic with Steve Zissou",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 119,
+    "adult": false,
+    "overview": "Знаменитый исследователь собирает необычную команду для новой экспедиции. Путешествие переплетается с семейными вопросами и поиском смысла.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/qZoFLNBC78jzboWeDH6Ha0qavF2.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/421-the-life-aquatic-with-steve-zissou",
+    "source": "TWO",
+    "director": "Wes Anderson",
+    "rating": {
+      "value": 7.076,
+      "votes": 3204,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/421-the-life-aquatic-with-steve-zissou"
+    }
+  },
+  {
+    "id": 910001267,
+    "title": "В гости к Робинсонам",
+    "original_title": "Meet the Robinsons",
+    "release_date": "2007",
+    "release_precision": "year",
+    "runtime": 95,
+    "adult": false,
+    "overview": "Юный изобретатель попадает в будущее и знакомится с необычной семьёй. Путешествие помогает ему взглянуть на свои неудачи иначе.",
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/naya0zF4kT401Sx15AtwB9vpcJr.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1267-meet-the-robinsons",
+    "source": "TWO",
+    "director": "Stephen J. Anderson",
+    "rating": {
+      "value": 6.9,
+      "votes": 3179,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1267-meet-the-robinsons"
+    }
+  },
+  {
+    "id": 910000069,
+    "title": "Переступить черту",
+    "original_title": "Walk the Line",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 136,
+    "adult": false,
+    "overview": "История музыканта Джонни Кэша связывает сценический успех с непростыми личными испытаниями. Особое место занимает его встреча с Джун Картер.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iIXy2T3fIxfKCBCJqkAnVBFPO8o.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/69-walk-the-line",
+    "source": "TWO",
+    "director": "James Mangold",
+    "rating": {
+      "value": 7.5,
+      "votes": 3165,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/69-walk-the-line"
+    }
+  },
+  {
+    "id": 910000978,
+    "title": "Семь лет в Тибете",
+    "original_title": "Seven Years in Tibet",
+    "release_date": "1997",
+    "release_precision": "year",
+    "runtime": 136,
+    "adult": false,
+    "overview": "Путешественник оказывается вдали от привычного мира и знакомится с юным Далай-ламой. Новая жизнь заставляет его пересмотреть себя.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 36,
+        "name": "History"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/qm87HHUew8ICtUCM4asO3gFYvby.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/978-seven-years-in-tibet",
+    "source": "TWO",
+    "director": "Jean-Jacques Annaud",
+    "rating": {
+      "value": 7.168,
+      "votes": 3145,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/978-seven-years-in-tibet"
+    }
+  },
+  {
+    "id": 910000786,
+    "title": "Почти знаменит",
+    "original_title": "Almost Famous",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 124,
+    "adult": false,
+    "overview": "Школьник получает возможность сопровождать рок-группу в турне. Первое журналистское задание становится большим уроком взросления.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/3rrkyLYbgLj84AYvjhdcJot4JPx.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/786-almost-famous",
+    "source": "TWO",
+    "director": "Cameron Crowe",
+    "rating": {
+      "value": 7.5,
+      "votes": 3141,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/786-almost-famous"
+    }
+  },
+  {
+    "id": 910001381,
+    "title": "Фонтан",
+    "original_title": "The Fountain",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 96,
+    "adult": false,
+    "overview": "Несколько историй разных эпох соединяются вокруг любви и попытки победить утрату. Визуальная притча оставляет простор для собственных толкований.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/4XTf8GuCVLWolubANaKkpk62YPq.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1381-the-fountain",
+    "source": "TWO",
+    "director": "Darren Aronofsky",
+    "rating": {
+      "value": 6.905,
+      "votes": 3136,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1381-the-fountain"
+    }
+  },
+  {
+    "id": 910000019,
+    "title": "Метрополис",
+    "original_title": "Metropolis",
+    "release_date": "1927",
+    "release_precision": "year",
+    "runtime": 148,
+    "adult": false,
+    "overview": "В городе будущего жизнь разделена между привилегированными жителями и рабочими. Один человек пытается преодолеть эту пропасть.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/kr9wXRN23zLuWJIelahas1mtnYj.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/19-metropolis",
+    "source": "TWO",
+    "director": "Fritz Lang",
+    "rating": {
+      "value": 8.082,
+      "votes": 3133,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/19-metropolis"
+    }
+  },
+  {
+    "id": 910000533,
+    "title": "Уоллес и Громит: Проклятие кролика-оборотня",
+    "original_title": "Wallace & Gromit: The Curse of the Were-Rabbit",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 85,
+    "adult": false,
+    "overview": "Изобретатель и его пёс защищают овощной конкурс от загадочного существа. Пластилиновая комедия полна маленьких технических катастроф.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 16,
+        "name": "Animation"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/cMQ2lNd7sBe6PCf6zF5QxrKzbRG.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/533-wallace-gromit-the-curse-of-the-were-rabbit",
+    "source": "TWO",
+    "director": "Nick Park, Steve Box",
+    "rating": {
+      "value": 7.131,
+      "votes": 3123,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/533-wallace-gromit-the-curse-of-the-were-rabbit"
+    }
+  },
+  {
+    "id": 910000712,
+    "title": "Четыре свадьбы и одни похороны",
+    "original_title": "Four Weddings and a Funeral",
+    "release_date": "1994",
+    "release_precision": "year",
+    "runtime": 117,
+    "adult": false,
+    "overview": "Компания друзей встречается на важных церемониях и пытается разобраться в чувствах. Один роман развивается совсем не по расписанию.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/qa72G2VS0bpxms6yo0tI9vsHm2e.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/712-four-weddings-and-a-funeral",
+    "source": "TWO",
+    "director": "Mike Newell",
+    "rating": {
+      "value": 6.776,
+      "votes": 3020,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/712-four-weddings-and-a-funeral"
+    }
+  },
+  {
+    "id": 910000599,
+    "title": "Бульвар Сансет",
+    "original_title": "Sunset Boulevard",
+    "release_date": "1950",
+    "release_precision": "year",
+    "runtime": 110,
+    "adult": false,
+    "overview": "Молодой сценарист попадает в дом забытой кинозвезды. Их знакомство становится мрачной историей о славе и зависимости.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/zt8aQ6ksqK6p1AopC5zVTDS9pKT.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/599-sunset-boulevard",
+    "source": "TWO",
+    "director": "Billy Wilder",
+    "rating": {
+      "value": 8.275,
+      "votes": 2969,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/599-sunset-boulevard"
+    }
+  },
+  {
+    "id": 910001574,
+    "title": "Чикаго",
+    "original_title": "Chicago",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 113,
+    "adult": false,
+    "overview": "Две женщины превращают судебные дела в борьбу за внимание публики. Мюзикл соединяет сценические номера с сатирой на известность.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1574-chicago",
+    "source": "TWO",
+    "director": "Rob Marshall",
+    "rating": {
+      "value": 7.136,
+      "votes": 2937,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1574-chicago"
+    }
+  },
+  {
+    "id": 910001607,
+    "title": "Бронкская история",
+    "original_title": "A Bronx Tale",
+    "release_date": "1993",
+    "release_precision": "year",
+    "runtime": 121,
+    "adult": false,
+    "overview": "Подросток оказывается между примером честного отца и влиянием местного криминального авторитета. Ему предстоит выбрать собственные ориентиры.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1607-a-bronx-tale",
+    "source": "TWO",
+    "director": "Robert De Niro",
+    "rating": {
+      "value": 7.892,
+      "votes": 2920,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1607-a-bronx-tale"
+    }
+  },
+  {
+    "id": 910000595,
+    "title": "Убить пересмешника",
+    "original_title": "To Kill a Mockingbird",
+    "release_date": "1962",
+    "release_precision": "year",
+    "runtime": 129,
+    "adult": false,
+    "overview": "Адвокат защищает человека, против которого настроен город. Его дети учатся понимать справедливость и человеческие предубеждения.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/gZycFUMLx2110dzK3nBNai7gfpM.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/595-to-kill-a-mockingbird",
+    "source": "TWO",
+    "director": "Robert Mulligan",
+    "rating": {
+      "value": 7.99,
+      "votes": 2894,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/595-to-kill-a-mockingbird"
+    }
+  },
+  {
+    "id": 910000521,
+    "title": "В случае убийства набирайте «М»",
+    "original_title": "Dial M for Murder",
+    "release_date": "1954",
+    "release_precision": "year",
+    "runtime": 105,
+    "adult": false,
+    "overview": "Мужчина придумывает план идеального преступления. Одна случайность нарушает тщательно рассчитанную схему.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/2gDCAgl2iBQNuJuk6p2xtuS1ewg.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/521-dial-m-for-murder",
+    "source": "TWO",
+    "director": "Alfred Hitchcock",
+    "rating": {
+      "value": 8.002,
+      "votes": 2887,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/521-dial-m-for-murder"
+    }
+  },
+  {
+    "id": 910000167,
+    "title": "Планета Ка-Пэкс",
+    "original_title": "K-PAX",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 120,
+    "adult": false,
+    "overview": "Пациент психиатрической клиники утверждает, что прибыл с другой планеты. Врач пытается разгадать его историю и сам начинает сомневаться.",
+    "genres": [
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/tafXZX0I6rso7EyoEzfygfTqxq6.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/167-k-pax",
+    "source": "TWO",
+    "director": "Iain Softley",
+    "rating": {
+      "value": 7.21,
+      "votes": 2789,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/167-k-pax"
+    }
+  },
+  {
+    "id": 910000338,
+    "title": "Гуд бай, Ленин!",
+    "original_title": "Good Bye, Lenin!",
+    "release_date": "2003",
+    "release_precision": "year",
+    "runtime": 121,
+    "adult": false,
+    "overview": "Сын пытается оградить мать от потрясения после больших перемен в стране. Он создаёт для неё маленькую версию исчезнувшего мира.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/uHk1oGEbnvQGLnyiiYxTslZLoog.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/338-good-bye-lenin",
+    "source": "TWO",
+    "director": "Wolfgang Becker",
+    "rating": {
+      "value": 7.541,
+      "votes": 2651,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/338-good-bye-lenin"
+    }
+  },
+  {
+    "id": 910000696,
+    "title": "Манхэттен",
+    "original_title": "Manhattan",
+    "release_date": "1979",
+    "release_precision": "year",
+    "runtime": 96,
+    "adult": false,
+    "overview": "Житель Нью-Йорка запутывается в собственных романтических отношениях. Город становится частью его размышлений и ошибок.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/k4eT3EvfxW1L9Wmt04UqJqCvCR6.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/696-manhattan",
+    "source": "TWO",
+    "director": "Woody Allen",
+    "rating": {
+      "value": 7.707,
+      "votes": 2642,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/696-manhattan"
+    }
+  },
+  {
+    "id": 910001262,
+    "title": "Персонаж",
+    "original_title": "Stranger Than Fiction",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 113,
+    "adult": false,
+    "overview": "Обычный служащий вдруг слышит голос, рассказывающий о его жизни. Попытка найти автора заставляет его начать жить по-настоящему.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/nCzcepubwShvZ4vbCsygQNgF2Z1.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1262-stranger-than-fiction",
+    "source": "TWO",
+    "director": "Marc Forster",
+    "rating": {
+      "value": 7.295,
+      "votes": 2571,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1262-stranger-than-fiction"
+    }
+  },
+  {
+    "id": 910000926,
+    "title": "В поисках галактики",
+    "original_title": "Galaxy Quest",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 102,
+    "adult": false,
+    "overview": "Актёров старого фантастического сериала принимают за настоящих космических героев. Им приходится подтверждать экранную репутацию на деле.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/926-galaxy-quest",
+    "source": "TWO",
+    "director": "Dean Parisot",
+    "rating": {
+      "value": 7.089,
+      "votes": 2562,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/926-galaxy-quest"
+    }
+  },
+  {
+    "id": 910000522,
+    "title": "Эд Вуд",
+    "original_title": "Ed Wood",
+    "release_date": "1994",
+    "release_precision": "year",
+    "runtime": 127,
+    "adult": false,
+    "overview": "Неутомимый режиссёр снимает фильмы вопреки отсутствию денег и признания. История посвящена упорству и странной красоте неудач.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 36,
+        "name": "History"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/n8SrO3WbyuY2b6KazogqbQF348C.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/522-ed-wood",
+    "source": "TWO",
+    "director": "Tim Burton",
+    "rating": {
+      "value": 7.484,
+      "votes": 2538,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/522-ed-wood"
+    }
+  },
+  {
+    "id": 910000623,
+    "title": "Рыбка по имени Ванда",
+    "original_title": "A Fish Called Wanda",
+    "release_date": "1988",
+    "release_precision": "year",
+    "runtime": 109,
+    "adult": false,
+    "overview": "После ограбления участники команды начинают обманывать друг друга. Любовные интриги делают поиски добычи ещё сложнее.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/hkSGFNVfEEUXFCxRZDITFHVhUlu.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/623-a-fish-called-wanda",
+    "source": "TWO",
+    "director": "Charles Crichton",
+    "rating": {
+      "value": 7.212,
+      "votes": 2456,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/623-a-fish-called-wanda"
+    }
+  },
+  {
+    "id": 910001646,
+    "title": "Писатели свободы",
+    "original_title": "Freedom Writers",
+    "release_date": "2007",
+    "release_precision": "year",
+    "runtime": 123,
+    "adult": false,
+    "overview": "Молодая учительница предлагает сложному классу рассказывать собственные истории. Постепенно дневники меняют отношения учеников друг к другу.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/81AdeUQT99N0xPg3j6RVh0YGOTk.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1646-freedom-writers",
+    "source": "TWO",
+    "director": "Richard LaGravenese",
+    "rating": {
+      "value": 7.929,
+      "votes": 2447,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1646-freedom-writers"
+    }
+  },
+  {
+    "id": 910000921,
+    "title": "Нокдаун",
+    "original_title": "Cinderella Man",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 144,
+    "adult": false,
+    "overview": "Боксёр пытается вернуться на ринг, чтобы обеспечить семью во времена экономического кризиса. Неожиданный шанс проверяет его выдержку.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 36,
+        "name": "History"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/wkeOjIcpuqLMW4GnVowlM9VI0JE.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/921-cinderella-man",
+    "source": "TWO",
+    "director": "Ron Howard",
+    "rating": {
+      "value": 7.58,
+      "votes": 2444,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/921-cinderella-man"
+    }
+  },
+  {
+    "id": 910000245,
+    "title": "Мой мальчик",
+    "original_title": "About a Boy",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 101,
+    "adult": false,
+    "overview": "Беззаботный одиночка знакомится со школьником, которому нужна поддержка. Их дружба заставляет обоих повзрослеть по-своему.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/qoZ1bD0q9EFqcNiEYbEigsRcNCt.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/245-about-a-boy",
+    "source": "TWO",
+    "director": "Paul Weitz, Chris Weitz",
+    "rating": {
+      "value": 6.7,
+      "votes": 2432,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/245-about-a-boy"
+    }
+  },
+  {
+    "id": 910000688,
+    "title": "Мосты округа Мэдисон",
+    "original_title": "The Bridges of Madison County",
+    "release_date": "1995",
+    "release_precision": "year",
+    "runtime": 135,
+    "adult": false,
+    "overview": "Короткая встреча фотографа и замужней женщины меняет их представления о любви. История сосредоточена на выборе и памяти.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/aCBrhOQjhG397GLkEZ49zReQEKX.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/688-the-bridges-of-madison-county",
+    "source": "TWO",
+    "director": "Clint Eastwood",
+    "rating": {
+      "value": 7.708,
+      "votes": 2391,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/688-the-bridges-of-madison-county"
+    }
+  },
+  {
+    "id": 910000795,
+    "title": "Город ангелов",
+    "original_title": "City of Angels",
+    "release_date": "1998",
+    "release_precision": "year",
+    "runtime": 114,
+    "adult": false,
+    "overview": "Наблюдающий за людьми ангел влюбляется в земную женщину. Ради близости ему предстоит сделать необратимый выбор.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iuzxpUjHsbQJXV3kB9ZAdCimM60.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/795-city-of-angels",
+    "source": "TWO",
+    "director": "Brad Silberling",
+    "rating": {
+      "value": 6.814,
+      "votes": 2383,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/795-city-of-angels"
+    }
+  },
+  {
+    "id": 910000378,
+    "title": "Воспитывая Аризону",
+    "original_title": "Raising Arizona",
+    "release_date": "1987",
+    "release_precision": "year",
+    "runtime": 94,
+    "adult": false,
+    "overview": "Супружеская пара принимает совершенно безрассудное решение ради мечты о ребёнке. Оно запускает цепочку абсурдных событий.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/niKyjOqiB4XVl0BqgKTHIlHOCeF.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/378-raising-arizona",
+    "source": "TWO",
+    "director": "Joel Coen",
+    "rating": {
+      "value": 7.054,
+      "votes": 2360,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/378-raising-arizona"
+    }
+  },
+  {
+    "id": 910000864,
+    "title": "Крутые виражи",
+    "original_title": "Cool Runnings",
+    "release_date": "1993",
+    "release_precision": "year",
+    "runtime": 98,
+    "adult": false,
+    "overview": "Спортсмены с Ямайки решают освоить бобслей и попасть на зимнюю Олимпиаду. Необычная команда учится доверять друг другу.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/6fXuGEb7EqGmAeUodxm7l5ELPZ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/864-cool-runnings",
+    "source": "TWO",
+    "director": "Jon Turteltaub",
+    "rating": {
+      "value": 7.027,
+      "votes": 2316,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/864-cool-runnings"
+    }
+  },
+  {
+    "id": 910000655,
+    "title": "Париж, Техас",
+    "original_title": "Paris, Texas",
+    "release_date": "1984",
+    "release_precision": "year",
+    "runtime": 145,
+    "adult": false,
+    "overview": "После долгого исчезновения мужчина пытается восстановить отношения с семьёй. Дорога ведёт его к непростому разговору о прошлом.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/sP27Qm4THyRZyHjHYMfIDtJP6YE.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/655-paris-texas",
+    "source": "TWO",
+    "director": "Wim Wenders",
+    "rating": {
+      "value": 8.1,
+      "votes": 2252,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/655-paris-texas"
+    }
+  },
+  {
+    "id": 910000243,
+    "title": "Фанатик",
+    "original_title": "High Fidelity",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 113,
+    "adult": false,
+    "overview": "Владелец музыкального магазина вспоминает свои расставания и составляет списки любимых песен. Ему предстоит разобраться в причинах собственных неудач.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/243-high-fidelity",
+    "source": "TWO",
+    "director": "Stephen Frears",
+    "rating": {
+      "value": 7.134,
+      "votes": 2207,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/243-high-fidelity"
+    }
+  },
+  {
+    "id": 910000860,
+    "title": "Военные игры",
+    "original_title": "WarGames",
+    "release_date": "1983",
+    "release_precision": "year",
+    "runtime": 114,
+    "adult": false,
+    "overview": "Подросток случайно подключается к системе, которую принимает за компьютерную игру. Ошибка ставит под угрозу гораздо больше, чем счёт на экране.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/860-wargames",
+    "source": "TWO",
+    "director": "John Badham",
+    "rating": {
+      "value": 7.071,
+      "votes": 2197,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/860-wargames"
+    }
+  },
+  {
+    "id": 910001360,
+    "title": "Фрида",
+    "original_title": "Frida",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 123,
+    "adult": false,
+    "overview": "История художницы Фриды Кало соединяет творчество, личную стойкость и сложные отношения. Визуальный мир фильма перекликается с её живописью.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/a4hgR6aKoohB6MHni171jbi9BkU.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1360-frida",
+    "source": "TWO",
+    "director": "Julie Taymor",
+    "rating": {
+      "value": 7.384,
+      "votes": 2190,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1360-frida"
+    }
+  },
+  {
+    "id": 910001092,
+    "title": "Третий человек",
+    "original_title": "The Third Man",
+    "release_date": "1949",
+    "release_precision": "year",
+    "runtime": 105,
+    "adult": false,
+    "overview": "Писатель приезжает в послевоенную Вену после гибели друга. Вскоре обстоятельства смерти начинают вызывать всё больше вопросов.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/rO2Fq0AZZx9obs52KJdx4mRE8p5.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1092-the-third-man",
+    "source": "TWO",
+    "director": "Carol Reed",
+    "rating": {
+      "value": 7.891,
+      "votes": 2134,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1092-the-third-man"
+    }
+  },
+  {
+    "id": 910001648,
+    "title": "Невероятные приключения Билла и Теда",
+    "original_title": "Bill & Ted's Excellent Adventure",
+    "release_date": "1989",
+    "release_precision": "year",
+    "runtime": 90,
+    "adult": false,
+    "overview": "Два школьника путешествуют во времени ради спасения своего учебного доклада. Исторические личности оказываются в очень непривычной компании.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/tV25lGWGWGEqUe3U0xjQTBgilSx.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1648-bill-ted-s-excellent-adventure",
+    "source": "TWO",
+    "director": "Stephen Herek",
+    "rating": {
+      "value": 6.846,
+      "votes": 2131,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1648-bill-ted-s-excellent-adventure"
+    }
+  },
+  {
+    "id": 910000401,
+    "title": "Страна садов",
+    "original_title": "Garden State",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 102,
+    "adult": false,
+    "overview": "Вернувшись в родной город, молодой актёр встречает необычную девушку. Несколько дней помогают ему снова почувствовать связь с собственной жизнью.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/h3iqYiGS6F3y7GxaS4AT8nFxZ2i.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/401-garden-state",
+    "source": "TWO",
+    "director": "Zach Braff",
+    "rating": {
+      "value": 7.075,
+      "votes": 2076,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/401-garden-state"
+    }
+  },
+  {
+    "id": 910000996,
+    "title": "Двойная страховка",
+    "original_title": "Double Indemnity",
+    "release_date": "1944",
+    "release_precision": "year",
+    "runtime": 107,
+    "adult": false,
+    "overview": "Страховой агент увлекается опасной женщиной и планом преступления. Идеальная схема постепенно становится ловушкой.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/996-double-indemnity",
+    "source": "TWO",
+    "director": "Billy Wilder",
+    "rating": {
+      "value": 8.083,
+      "votes": 2059,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/996-double-indemnity"
+    }
+  },
+  {
+    "id": 910000592,
+    "title": "Разговор",
+    "original_title": "The Conversation",
+    "release_date": "1974",
+    "release_precision": "year",
+    "runtime": 115,
+    "adult": false,
+    "overview": "Специалист по прослушиванию пытается понять смысл записанного разговора. Профессиональная отстранённость сменяется тревогой и чувством ответственности.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/dHqVBwcv1SGymOpUueRoKzcmdes.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/592-the-conversation",
+    "source": "TWO",
+    "director": "Francis Ford Coppola",
+    "rating": {
+      "value": 7.5,
+      "votes": 2053,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/592-the-conversation"
+    }
+  },
+  {
+    "id": 910000223,
+    "title": "Ребекка",
+    "original_title": "Rebecca",
+    "release_date": "1940",
+    "release_precision": "year",
+    "runtime": 130,
+    "adult": false,
+    "overview": "Молодая жена приезжает в дом мужа, где всё напоминает о его первой супруге. Прошлое постепенно начинает влиять на настоящее.",
+    "genres": [
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/1qz3qUOHnVy7dL7M7G8jSErxE4b.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/223-rebecca",
+    "source": "TWO",
+    "director": "Alfred Hitchcock",
+    "rating": {
+      "value": 7.881,
+      "votes": 1999,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/223-rebecca"
+    }
+  },
+  {
+    "id": 910000219,
+    "title": "Возвращение",
+    "original_title": "Volver",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 121,
+    "adult": false,
+    "overview": "Женщины одной семьи справляются с тайнами, потерями и неожиданными возвращениями. Драма соединяет бытовые заботы с почти сказочным настроением.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/m1ZUDGTFtVGE3zjTvF8OiQ9um5e.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/219-volver",
+    "source": "TWO",
+    "director": "Pedro Almodóvar",
+    "rating": {
+      "value": 7.462,
+      "votes": 1940,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/219-volver"
+    }
+  },
+  {
+    "id": 910000108,
+    "title": "Три цвета: Синий",
+    "original_title": "Three Colors: Blue",
+    "release_date": "1993",
+    "release_precision": "year",
+    "runtime": 98,
+    "adult": false,
+    "overview": "После личной трагедии женщина пытается оборвать прежние связи. Музыка и случайные встречи заставляют её вновь обратиться к жизни.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/108-trois-couleurs-bleu",
+    "source": "TWO",
+    "director": "Krzysztof Kieślowski",
+    "rating": {
+      "value": 7.615,
+      "votes": 1918,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/108-trois-couleurs-bleu"
+    }
+  },
+  {
+    "id": 910000963,
+    "title": "Мальтийский сокол",
+    "original_title": "The Maltese Falcon",
+    "release_date": "1941",
+    "release_precision": "year",
+    "runtime": 100,
+    "adult": false,
+    "overview": "Частный детектив оказывается среди охотников за загадочной статуэткой. Каждый новый союзник приносит собственную версию правды.",
+    "genres": [
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/963-the-maltese-falcon",
+    "source": "TWO",
+    "director": "John Huston",
+    "rating": {
+      "value": 7.698,
+      "votes": 1904,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/963-the-maltese-falcon"
+    }
+  },
+  {
+    "id": 910000845,
+    "title": "Незнакомцы в поезде",
+    "original_title": "Strangers on a Train",
+    "release_date": "1951",
+    "release_precision": "year",
+    "runtime": 101,
+    "adult": false,
+    "overview": "Случайный попутчик предлагает пугающе простой обмен услугами. Для второго участника разговор неожиданно получает реальное продолжение.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/ihC083U7ef56Ui4x0P0dobojrZ1.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/845-strangers-on-a-train",
+    "source": "TWO",
+    "director": "Alfred Hitchcock",
+    "rating": {
+      "value": 7.658,
+      "votes": 1900,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/845-strangers-on-a-train"
+    }
+  },
+  {
+    "id": 910000590,
+    "title": "Часы",
+    "original_title": "The Hours",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 114,
+    "adult": false,
+    "overview": "Жизни трёх женщин разных эпох соединяются вокруг одной книги. Фильм размышляет о свободе, близости и цене привычных ролей.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/4myDtowDJQPQnkEDB1IWGtJR1Fo.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/590-the-hours",
+    "source": "TWO",
+    "director": "Stephen Daldry",
+    "rating": {
+      "value": 7.253,
+      "votes": 1879,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/590-the-hours"
+    }
+  },
+  {
+    "id": 910000962,
+    "title": "Золотая лихорадка",
+    "original_title": "The Gold Rush",
+    "release_date": "1925",
+    "release_precision": "year",
+    "runtime": 95,
+    "adult": false,
+    "overview": "Маленький бродяга отправляется искать золото на Аляске. Суровые условия становятся основой комедийных испытаний и надежд.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/962-the-gold-rush",
+    "source": "TWO",
+    "director": "Charlie Chaplin",
+    "rating": {
+      "value": 7.968,
+      "votes": 1859,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/962-the-gold-rush"
+    }
+  },
+  {
+    "id": 910000614,
+    "title": "Земляничная поляна",
+    "original_title": "Wild Strawberries",
+    "release_date": "1957",
+    "release_precision": "year",
+    "runtime": 91,
+    "adult": false,
+    "overview": "Пожилой профессор отправляется в поездку и встречается с собственными воспоминаниями. Дорога становится поводом переосмыслить прожитую жизнь.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/614-smultronstallet",
+    "source": "TWO",
+    "director": "Ingmar Bergman",
+    "rating": {
+      "value": 8.074,
+      "votes": 1824,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/614-smultronstallet"
+    }
+  },
+  {
+    "id": 910000404,
+    "title": "Простая история",
+    "original_title": "The Straight Story",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 112,
+    "adult": false,
+    "overview": "Пожилой мужчина едет через несколько штатов на газонокосилке, чтобы навестить брата. Медленное путешествие складывается из небольших человеческих встреч.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/tT9cMiVDdtlcdZxOoFy3VRmEoKk.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/404-the-straight-story",
+    "source": "TWO",
+    "director": "David Lynch",
+    "rating": {
+      "value": 7.741,
+      "votes": 1818,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/404-the-straight-story"
+    }
+  },
+  {
+    "id": 910000403,
+    "title": "Шофёр мисс Дэйзи",
+    "original_title": "Driving Miss Daisy",
+    "release_date": "1989",
+    "release_precision": "year",
+    "runtime": 99,
+    "adult": false,
+    "overview": "Пожилая женщина и её водитель постепенно учатся уважать друг друга. Их долгие отношения отражают перемены вокруг.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iaCzvcY42HihFxQBTZCTKMpsI0P.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/403-driving-miss-daisy",
+    "source": "TWO",
+    "director": "Bruce Beresford",
+    "rating": {
+      "value": 7.242,
+      "votes": 1812,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/403-driving-miss-daisy"
+    }
+  },
+  {
+    "id": 910000654,
+    "title": "В порту",
+    "original_title": "On the Waterfront",
+    "release_date": "1954",
+    "release_precision": "year",
+    "runtime": 108,
+    "adult": false,
+    "overview": "Рабочий доков оказывается перед выбором между молчанием и честностью. Любовь и личные потери помогают ему искать собственную позицию.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/v1RtJ1qR4v9nrnfoBVBl6hjTW9.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/654-on-the-waterfront",
+    "source": "TWO",
+    "director": "Elia Kazan",
+    "rating": {
+      "value": 7.854,
+      "votes": 1811,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/654-on-the-waterfront"
+    }
+  },
+  {
+    "id": 910000303,
+    "title": "Дурная слава",
+    "original_title": "Notorious",
+    "release_date": "1946",
+    "release_precision": "year",
+    "runtime": 103,
+    "adult": false,
+    "overview": "Женщина соглашается помочь в опасной операции и сближается со своим куратором. Чувства осложняют профессиональное задание.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/4RERYb1NIQrJHYY5e8nUlYM7t2z.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/303-notorious",
+    "source": "TWO",
+    "director": "Alfred Hitchcock",
+    "rating": {
+      "value": 7.716,
+      "votes": 1766,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/303-notorious"
+    }
+  },
+  {
+    "id": 910000512,
+    "title": "Сенсация",
+    "original_title": "Scoop",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 96,
+    "adult": false,
+    "overview": "Начинающая журналистка получает необычную подсказку о возможном преступлении. Расследование превращается в романтическую комедию с детективной интригой.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/1nF290EoEn2rs4W9VVercKa4S5o.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/512-scoop",
+    "source": "TWO",
+    "director": "Woody Allen",
+    "rating": {
+      "value": 6.607,
+      "votes": 1759,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/512-scoop"
+    }
+  },
+  {
+    "id": 910001407,
+    "title": "Жизнь в розовом цвете",
+    "original_title": "La Vie en Rose",
+    "release_date": "2007",
+    "release_precision": "year",
+    "runtime": 140,
+    "adult": false,
+    "overview": "История Эдит Пиаф показывает путь от бедного детства к большой сцене. За известными песнями стоят личные потери и настойчивость.",
+    "genres": [
+      {
+        "id": 10402,
+        "name": "Music"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/3b9DAONAsFRhJKu25R33PE3VwDh.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1407-la-mome",
+    "source": "TWO",
+    "director": "Olivier Dahan",
+    "rating": {
+      "value": 7.362,
+      "votes": 1748,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1407-la-mome"
+    }
+  },
+  {
+    "id": 910000705,
+    "title": "Всё о Еве",
+    "original_title": "All About Eve",
+    "release_date": "1950",
+    "release_precision": "year",
+    "runtime": 139,
+    "adult": false,
+    "overview": "Поклонница знаменитой актрисы постепенно входит в её ближайшее окружение. Восхищение оказывается не единственной движущей силой.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/705-all-about-eve",
+    "source": "TWO",
+    "director": "Joseph L. Mankiewicz",
+    "rating": {
+      "value": 8.073,
+      "votes": 1721,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/705-all-about-eve"
+    }
+  },
+  {
+    "id": 910000381,
+    "title": "Поймать вора",
+    "original_title": "To Catch a Thief",
+    "release_date": "1955",
+    "release_precision": "year",
+    "runtime": 106,
+    "adult": false,
+    "overview": "Бывшего похитителя драгоценностей подозревают в новых кражах. На Лазурном Берегу ему приходится защищать репутацию и разбираться в чувствах.",
+    "genres": [
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/cbMRkBGBgo3aLJK2M4MyicvkPLQ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/381-to-catch-a-thief",
+    "source": "TWO",
+    "director": "Alfred Hitchcock",
+    "rating": {
+      "value": 7.267,
+      "votes": 1688,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/381-to-catch-a-thief"
+    }
+  },
+  {
+    "id": 910000713,
+    "title": "Пианино",
+    "original_title": "The Piano",
+    "release_date": "1993",
+    "release_precision": "year",
+    "runtime": 120,
+    "adult": false,
+    "overview": "Женщина приезжает с дочерью в далёкую Новую Зеландию и привозит любимый инструмент. Музыка становится её способом говорить о чувствах.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/rx8RKXn8OtuS6lqloYsjyrGOUp4.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/713-the-piano",
+    "source": "TWO",
+    "director": "Jane Campion",
+    "rating": {
+      "value": 7.37,
+      "votes": 1664,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/713-the-piano"
+    }
+  },
+  {
+    "id": 910000838,
+    "title": "Американские граффити",
+    "original_title": "American Graffiti",
+    "release_date": "1973",
+    "release_precision": "year",
+    "runtime": 112,
+    "adult": false,
+    "overview": "Компания выпускников проводит последнюю летнюю ночь перед большими переменами. Поездки, музыка и встречи складываются в портрет юности.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/1tjLivPad2PX8FAzWko7FPIb8d2.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/838-american-graffiti",
+    "source": "TWO",
+    "director": "George Lucas",
+    "rating": {
+      "value": 7.043,
+      "votes": 1601,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/838-american-graffiti"
+    }
+  },
+  {
+    "id": 910001548,
+    "title": "Мир призраков",
+    "original_title": "Ghost World",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 111,
+    "adult": false,
+    "overview": "Две подруги после школы пытаются понять, чем заняться дальше. Ирония и случайное знакомство обнажают разницу их ожиданий.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/uwKqnUPE4dSM0kKuMW0vXpURh2T.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1548-ghost-world",
+    "source": "TWO",
+    "director": "Terry Zwigoff",
+    "rating": {
+      "value": 7.091,
+      "votes": 1595,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1548-ghost-world"
+    }
+  },
+  {
+    "id": 910000110,
+    "title": "Три цвета: Красный",
+    "original_title": "Three Colors: Red",
+    "release_date": "1994",
+    "release_precision": "year",
+    "runtime": 100,
+    "adult": false,
+    "overview": "Случайная встреча молодой женщины и отставного судьи соединяет чужие судьбы. Фильм исследует доверие и незаметные связи между людьми.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/JHmsBiX1tjCKqAul1lzC20WcAW.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/110-trois-couleurs-rouge",
+    "source": "TWO",
+    "director": "Krzysztof Kieślowski",
+    "rating": {
+      "value": 7.9,
+      "votes": 1564,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/110-trois-couleurs-rouge"
+    }
+  },
+  {
+    "id": 910001090,
+    "title": "Тринадцатый этаж",
+    "original_title": "The Thirteenth Floor",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 100,
+    "adult": false,
+    "overview": "Разработчик виртуального мира пытается разобраться в загадочном убийстве. Расследование ставит под сомнение саму природу его реальности.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/7oaie3ZBc9UuWZLF24crro1pone.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1090-the-thirteenth-floor",
+    "source": "TWO",
+    "director": "Josef Rusnak",
+    "rating": {
+      "value": 7.1,
+      "votes": 1559,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1090-the-thirteenth-floor"
+    }
+  },
+  {
+    "id": 910001245,
+    "title": "На исходе дня",
+    "original_title": "The Remains of the Day",
+    "release_date": "1993",
+    "release_precision": "year",
+    "runtime": 134,
+    "adult": false,
+    "overview": "Пожилой дворецкий вспоминает годы службы и упущенные возможности. История сосредоточена на достоинстве, самообмане и невысказанных чувствах.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/uDGDtqSvuch324WnM7Ukdp1bCAQ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1245-the-remains-of-the-day",
+    "source": "TWO",
+    "director": "James Ivory",
+    "rating": {
+      "value": 7.361,
+      "votes": 1525,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1245-the-remains-of-the-day"
+    }
+  },
+  {
+    "id": 910000144,
+    "title": "Небо над Берлином",
+    "original_title": "Wings of Desire",
+    "release_date": "1987",
+    "release_precision": "year",
+    "runtime": 128,
+    "adult": false,
+    "overview": "Ангел наблюдает за жизнью берлинцев и мечтает ощутить человеческий мир. Встреча с артисткой делает его желание особенно сильным.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/144-der-himmel-uber-berlin",
+    "source": "TWO",
+    "director": "Wim Wenders",
+    "rating": {
+      "value": 7.758,
+      "votes": 1507,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/144-der-himmel-uber-berlin"
+    }
+  },
+  {
+    "id": 910000308,
+    "title": "Сломанные цветы",
+    "original_title": "Broken Flowers",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 106,
+    "adult": false,
+    "overview": "Получив загадочное письмо, мужчина отправляется навестить прежних возлюбленных. Неловкие встречи заставляют его иначе посмотреть на прошлое.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/gd8JNjwgiM6ZgGm6NFAkovQWoYn.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/308-broken-flowers",
+    "source": "TWO",
+    "director": "Jim Jarmusch",
+    "rating": {
+      "value": 6.941,
+      "votes": 1495,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/308-broken-flowers"
+    }
+  },
+  {
+    "id": 910001633,
+    "title": "Жареные зелёные помидоры",
+    "original_title": "Fried Green Tomatoes",
+    "release_date": "1991",
+    "release_precision": "year",
+    "runtime": 130,
+    "adult": false,
+    "overview": "Рассказ о давней дружбе помогает современной женщине обрести уверенность. Две временные линии постепенно освещают друг друга.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/g71l1vbJwyAAYk8zKCkIQQ58qcb.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1633-fried-green-tomatoes",
+    "source": "TWO",
+    "director": "Jon Avnet",
+    "rating": {
+      "value": 7.655,
+      "votes": 1489,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1633-fried-green-tomatoes"
+    }
+  },
+  {
+    "id": 910000177,
+    "title": "Король-рыбак",
+    "original_title": "The Fisher King",
+    "release_date": "1991",
+    "release_precision": "year",
+    "runtime": 138,
+    "adult": false,
+    "overview": "Бывший радиоведущий знакомится с человеком, чью жизнь невольно изменил. Их странная дружба становится попыткой справиться с прошлым.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/hwIYw22HmAUMobV4zsX69MgfVUz.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/177-the-fisher-king",
+    "source": "TWO",
+    "director": "Terry Gilliam",
+    "rating": {
+      "value": 7.311,
+      "votes": 1488,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/177-the-fisher-king"
+    }
+  },
+  {
+    "id": 910001653,
+    "title": "Дневники мотоциклиста",
+    "original_title": "The Motorcycle Diaries",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 126,
+    "adult": false,
+    "overview": "Двое молодых друзей отправляются через Южную Америку. Дорожные встречи меняют их представления о людях и неравенстве.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/qz2aBYT8CAiJYvX4fRZpJ5G0Oz1.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1653-diarios-de-motocicleta",
+    "source": "TWO",
+    "director": "Walter Salles",
+    "rating": {
+      "value": 7.415,
+      "votes": 1439,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1653-diarios-de-motocicleta"
+    }
+  },
+  {
+    "id": 910000850,
+    "title": "Рождественская история",
+    "original_title": "A Christmas Story",
+    "release_date": "1983",
+    "release_precision": "year",
+    "runtime": 93,
+    "adult": false,
+    "overview": "Мальчик мечтает получить особенный подарок и пытается убедить взрослых. Семейные события складываются в ироничное воспоминание о детстве.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/34nSHYqmb7222tiqiuKqKJmZiQa.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/850-a-christmas-story",
+    "source": "TWO",
+    "director": "Bob Clark",
+    "rating": {
+      "value": 7.234,
+      "votes": 1435,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/850-a-christmas-story"
+    }
+  },
+  {
+    "id": 910000913,
+    "title": "Афера Томаса Крауна",
+    "original_title": "The Thomas Crown Affair",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 113,
+    "adult": false,
+    "overview": "Страховой следователь пытается разоблачить состоятельного коллекционера. Профессиональная игра постепенно обретает романтический оттенок.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5yqs1MVlqdIg1DY5adC5jFx3d7j.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/913-the-thomas-crown-affair",
+    "source": "TWO",
+    "director": "John McTiernan",
+    "rating": {
+      "value": 6.764,
+      "votes": 1377,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/913-the-thomas-crown-affair"
+    }
+  },
+  {
+    "id": 910000109,
+    "title": "Три цвета: Белый",
+    "original_title": "Three Colors: White",
+    "release_date": "1994",
+    "release_precision": "year",
+    "runtime": 92,
+    "adult": false,
+    "overview": "После болезненного расставания мужчина возвращается домой и начинает новую жизнь. План восстановить достоинство приводит его к неожиданным решениям.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/fdIet3NSa27gobMbaUml66oCQNT.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/109-trois-couleurs-blanc",
+    "source": "TWO",
+    "director": "Krzysztof Kieślowski",
+    "rating": {
+      "value": 7.4,
+      "votes": 1338,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/109-trois-couleurs-blanc"
+    }
+  },
+  {
+    "id": 910001715,
+    "title": "Правила виноделов",
+    "original_title": "The Cider House Rules",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 126,
+    "adult": false,
+    "overview": "Воспитанник приюта покидает знакомый мир и устраивается на яблочную ферму. Взрослая жизнь ставит перед ним вопросы любви и ответственности.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/qAECAgqjSFRVZzEEGbFAZqZNiDh.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1715-the-cider-house-rules",
+    "source": "TWO",
+    "director": "Lasse Hallström",
+    "rating": {
+      "value": 7.089,
+      "votes": 1304,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1715-the-cider-house-rules"
+    }
+  }
+]

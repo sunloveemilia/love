@@ -1,6 +1,8 @@
 // Built-in editorial catalogue. Years are stored at year precision; no invented release days.
-// Descriptions are original short summaries. No remote API, ratings, or availability claims.
-export const movieGenres:Record<number,string>={35:'Комедия',18:'Драма',9648:'Детектив',878:'Фантастика',10749:'Романтика',14:'Фэнтези',53:'Триллер',16:'Анимация',27:'Ужасы',12:'Приключения',80:'Криминал',10402:'Музыка',10751:'Семейный'};
+// Editorial descriptions and fixed public rating/poster snapshots; no runtime API or key.
+import enrichment from './movie-enrichment.json' with {type:'json'};
+import additions from './movie-additions.json' with {type:'json'};
+export const movieGenres:Record<number,string>={35:'Комедия',18:'Драма',9648:'Детектив',878:'Фантастика',10749:'Романтика',14:'Фэнтези',53:'Триллер',16:'Анимация',27:'Ужасы',12:'Приключения',80:'Криминал',10402:'Музыка',10751:'Семейный',10752:'Военный',36:'История',37:'Вестерн',99:'Документальный',10770:'Телефильм'};
 const rows=`Бойфренд из будущего|About Time|2013|123|35,18,10749,14|Тим умеет возвращаться в прошлое, но учится ценить обычный день рядом с любимыми.
 Отель «Гранд Будапешт»|The Grand Budapest Hotel|2014|99|35,18,80,12|Консьерж и его юный помощник оказываются в центре истории с наследством и пропавшей картиной.
 Амели|Amélie|2001|122|35,10749|Застенчивая парижанка меняет жизнь окружающих маленькими чудесами и ищет собственное счастье.
@@ -96,4 +98,7 @@ const rows=`Бойфренд из будущего|About Time|2013|123|35,18,107
 Операция «Ы» и другие приключения Шурика|Operation Y and Shurik's Other Adventures|1965|95|35|Три комедийные истории о находчивом студенте и его необычных знакомых.
 Любовь и голуби|Love and Pigeons|1984|107|35,18,10749|Семейная история о внезапном увлечении, расставании и возвращении к близким.
 Бриллиантовая рука|The Diamond Arm|1969|100|35,80|Обычный отпускник случайно становится участником дела о контрабандных драгоценностях.`;
-export const movieLibrary=rows.split('\n').map((row,index)=>{const [title,original,year,runtime,genres,overview]=row.split('|');return {id:900000001+index,title,original_title:original,release_date:year,release_precision:'year',runtime:Number(runtime),adult:false,overview,genres:genres.split(',').map(Number).map(id=>({id,name:movieGenres[id]})),poster_path:null,backdrop_path:null,source:'TWO'};});
+const baseMovies=rows.split('\n').map((row,index)=>{const [title,original,year,runtime,genres,overview]=row.split('|');return {id:900000001+index,title,original_title:original,release_date:year,release_precision:'year',runtime:Number(runtime),adult:false,overview,genres:genres.split(',').map(Number).map(id=>({id,name:movieGenres[id]})),poster_path:null,backdrop_path:null,source:'TWO'};});
+
+const metadata:Record<string,Record<string,any>>=enrichment;
+export const movieLibrary:Record<string,any>[]=[...baseMovies.map(m=>({...m,...metadata[m.id]})),...additions.map(m=>({...m,genres:m.genres.map(g=>({id:g.id,name:movieGenres[g.id]||g.name}))}))];

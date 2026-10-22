@@ -1,0 +1,933 @@
+{
+  "900000001": {
+    "rating": {
+      "value": 7.9,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=About%20Time"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/7/7c/About_Time_%282013_film%29_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/About_Time_(2013_film)"
+  },
+  "900000002": {},
+  "900000003": {
+    "rating": {
+      "value": 7.9,
+      "votes": 12492,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/194-le-fabuleux-destin-d-amelie-poulain"
+    },
+    "director": "Jean-Pierre Jeunet",
+    "poster_url": "https://image.tmdb.org/t/p/w500/nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/194-le-fabuleux-destin-d-amelie-poulain"
+  },
+  "900000004": {
+    "rating": {
+      "value": 8.1,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Truman%20Show"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/c/cd/Trumanshow.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Truman_Show"
+  },
+  "900000005": {
+    "rating": {
+      "value": 7.634,
+      "votes": 8988,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/137-groundhog-day"
+    },
+    "director": "Harold Ramis",
+    "poster_url": "https://image.tmdb.org/t/p/w500/gCgt1WARPZaXnq523ySQEUKinCs.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/137-groundhog-day"
+  },
+  "900000006": {
+    "rating": {
+      "value": 7.102,
+      "votes": 5678,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1581-the-holiday"
+    },
+    "director": "Nancy Meyers",
+    "poster_url": "https://image.tmdb.org/t/p/w500/h1ITOpvJN3Tw4Sy60w2QTfYMvdd.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1581-the-holiday"
+  },
+  "900000007": {
+    "rating": {
+      "value": 7.267,
+      "votes": 6782,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/509-notting-hill"
+    },
+    "director": "Roger Michell",
+    "poster_url": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/509-notting-hill"
+  },
+  "900000008": {
+    "rating": {
+      "value": 8.063,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Pride%20%26%20Prejudice"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Prideandprejudiceposter.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Pride_%26_Prejudice_(2005_film)"
+  },
+  "900000009": {
+    "rating": {
+      "value": 7.899,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=La%20La%20Land"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/La_La_Land"
+  },
+  "900000010": {
+    "rating": {
+      "value": 7.523,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Midnight%20in%20Paris"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Midnight_in_Paris"
+  },
+  "900000011": {
+    "rating": {
+      "value": 6.711,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Julie%20%26%20Julia"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/0/00/Julie_and_julia.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Julie_%26_Julia"
+  },
+  "900000012": {
+    "rating": {
+      "value": 7.117,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Chef"
+    }
+  },
+  "900000013": {
+    "rating": {
+      "value": 7.223,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Intern"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/The_Intern_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Intern_(2015_film)"
+  },
+  "900000014": {
+    "rating": {
+      "value": 8.272,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Intouchables"
+    }
+  },
+  "900000015": {
+    "rating": {
+      "value": 8.227,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Green%20Book"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/5/5b/Green_Book_%282018_poster%29.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Green_Book_(film)"
+  },
+  "900000016": {
+    "rating": {
+      "value": 7.754,
+      "votes": 7833,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/587-big-fish"
+    },
+    "director": "Tim Burton",
+    "poster_url": "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/587-big-fish"
+  },
+  "900000017": {
+    "rating": {
+      "value": 7.356,
+      "votes": 8796,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/594-the-terminal"
+    },
+    "director": "Steven Spielberg",
+    "poster_url": "https://image.tmdb.org/t/p/w500/cPB3ZMM4UdsSAhNdS4c7ps5nypY.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/594-the-terminal"
+  },
+  "900000018": {
+    "rating": {
+      "value": 7.978,
+      "votes": 17264,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/640-catch-me-if-you-can"
+    },
+    "director": "Steven Spielberg",
+    "poster_url": "https://image.tmdb.org/t/p/w500/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/640-catch-me-if-you-can"
+  },
+  "900000019": {
+    "rating": {
+      "value": 7.843,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Knives%20Out"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/1/1f/Knives_Out_poster.jpeg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Knives_Out"
+  },
+  "900000020": {
+    "rating": {
+      "value": 7.044,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Glass%20Onion%3A%20A%20Knives%20Out%20Mystery"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/6/62/Glass_Onion_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Glass_Onion:_A_Knives_Out_Mystery"
+  },
+  "900000021": {
+    "rating": {
+      "value": 8.2,
+      "votes": 17769,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1124-the-prestige"
+    },
+    "director": "Christopher Nolan",
+    "poster_url": "https://image.tmdb.org/t/p/w500/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1124-the-prestige"
+  },
+  "900000022": {
+    "rating": {
+      "value": 7.3,
+      "votes": 5373,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1491-the-illusionist"
+    },
+    "director": "Neil Burger",
+    "poster_url": "https://image.tmdb.org/t/p/w500/1O9jUvqkHaGBMVRyOJz1AlkmALW.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1491-the-illusionist"
+  },
+  "900000023": {
+    "rating": {
+      "value": 7.616,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Others"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/4/4c/TheOthers.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Others_(2001_film)"
+  },
+  "900000024": {
+    "rating": {
+      "value": 7.954,
+      "votes": 13016,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/745-the-sixth-sense"
+    },
+    "director": "M. Night Shyamalan",
+    "poster_url": "https://image.tmdb.org/t/p/w500/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/745-the-sixth-sense"
+  },
+  "900000025": {
+    "rating": {
+      "value": 7.6,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Arrival"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Arrival%2C_Movie_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Arrival_(film)"
+  },
+  "900000026": {
+    "rating": {
+      "value": 7.447,
+      "votes": 5063,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/686-contact"
+    },
+    "director": "Robert Zemeckis",
+    "poster_url": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/686-contact"
+  },
+  "900000027": {
+    "rating": {
+      "value": 7.689,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Martian"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Martian_(film)"
+  },
+  "900000028": {
+    "rating": {
+      "value": 7.174,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Hugo"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/7/73/Hugo_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Hugo_(film)"
+  },
+  "900000029": {
+    "rating": {
+      "value": 7.452,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Artist"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/The_Artist_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Artist_(film)"
+  },
+  "900000030": {
+    "rating": {
+      "value": 7.9,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Inside%20Out"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Inside_Out_(2015_film)"
+  },
+  "900000031": {
+    "rating": {
+      "value": 8.203,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Coco"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Coco_(2017_film)"
+  },
+  "900000032": {
+    "rating": {
+      "value": 8.106,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Soul"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/3/39/Soul_%282020_film%29_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Soul_(2020_film)"
+  },
+  "900000033": {
+    "rating": {
+      "value": 8,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Up"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Up_(2009_film)"
+  },
+  "900000034": {
+    "rating": {
+      "value": 7.83,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Ratatouille"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Ratatouille_(film)"
+  },
+  "900000035": {
+    "rating": {
+      "value": 8.102,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=WALL-E"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/c/c2/WALL-Eposter.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/WALL-E"
+  },
+  "900000036": {
+    "rating": {
+      "value": 7.75,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Zootopia"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/9/96/Zootopia_%28movie_poster%29.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Zootopia"
+  },
+  "900000037": {
+    "rating": {
+      "value": 7.798,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Luca"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Luca_%282021_film%29.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Luca_(2021_film)"
+  },
+  "900000038": {
+    "rating": {
+      "value": 7.587,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Encanto"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/8/83/Encanto_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Encanto_(film)"
+  },
+  "900000039": {
+    "rating": {
+      "value": 8.236,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Klaus"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/2/26/Klaus_poster.jpeg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Klaus_(film)"
+  },
+  "900000040": {
+    "rating": {
+      "value": 7.8,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Kiki's%20Delivery%20Service"
+    }
+  },
+  "900000041": {
+    "rating": {
+      "value": 8.5,
+      "votes": 18574,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/129"
+    },
+    "director": "Hayao Miyazaki",
+    "poster_url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/129"
+  },
+  "900000042": {
+    "rating": {
+      "value": 8.397,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Howl's%20Moving%20Castle"
+    }
+  },
+  "900000043": {
+    "rating": {
+      "value": 7.891,
+      "votes": 2296,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/804-roman-holiday"
+    },
+    "director": "William Wyler",
+    "poster_url": "https://image.tmdb.org/t/p/w500/8lI9dmz1RH20FAqltkGelY1v4BE.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/804-roman-holiday"
+  },
+  "900000044": {
+    "rating": {
+      "value": 7.5,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Sabrina"
+    }
+  },
+  "900000045": {
+    "rating": {
+      "value": 8.1,
+      "votes": 3925,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/239-some-like-it-hot"
+    },
+    "director": "Billy Wilder",
+    "poster_url": "https://image.tmdb.org/t/p/w500/hVIKyTK13AvOGv7ICmJjK44DTzp.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/239-some-like-it-hot"
+  },
+  "900000046": {
+    "rating": {
+      "value": 8.2,
+      "votes": 2702,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/284-the-apartment"
+    },
+    "director": "Billy Wilder",
+    "poster_url": "https://image.tmdb.org/t/p/w500/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/284-the-apartment"
+  },
+  "900000047": {
+    "rating": {
+      "value": 8.132,
+      "votes": 3548,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/872-singin-in-the-rain"
+    },
+    "director": "Stanley Donen, Gene Kelly",
+    "poster_url": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/872-singin-in-the-rain"
+  },
+  "900000048": {
+    "rating": {
+      "value": 8.278,
+      "votes": 4956,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1585-it-s-a-wonderful-life"
+    },
+    "director": "Frank Capra",
+    "poster_url": "https://image.tmdb.org/t/p/w500/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1585-it-s-a-wonderful-life"
+  },
+  "900000049": {
+    "rating": {
+      "value": 8.155,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Casablanca"
+    }
+  },
+  "900000050": {
+    "rating": {
+      "value": 7.667,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Charade"
+    }
+  },
+  "900000051": {
+    "rating": {
+      "value": 8.337,
+      "votes": 7233,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/567-rear-window"
+    },
+    "director": "Alfred Hitchcock",
+    "poster_url": "https://image.tmdb.org/t/p/w500/ILVF0eJxHMddjxeQhswFtpMtqx.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/567-rear-window"
+  },
+  "900000052": {
+    "rating": {
+      "value": 8.565,
+      "votes": 10141,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/389-12-angry-men"
+    },
+    "director": "Sidney Lumet",
+    "poster_url": "https://image.tmdb.org/t/p/w500/zhG3vKWyDRaZYoaww1UVAi29T9h.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/389-12-angry-men"
+  },
+  "900000053": {
+    "rating": {
+      "value": 8.465,
+      "votes": 30016,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/13-forrest-gump"
+    },
+    "director": "Robert Zemeckis",
+    "poster_url": "https://image.tmdb.org/t/p/w500/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/13-forrest-gump"
+  },
+  "900000054": {
+    "rating": {
+      "value": 8.2,
+      "votes": 14006,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/489-good-will-hunting"
+    },
+    "director": "Gus Van Sant",
+    "poster_url": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/489-good-will-hunting"
+  },
+  "900000055": {
+    "rating": {
+      "value": 8.299,
+      "votes": 12736,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/207-dead-poets-society"
+    },
+    "director": "Peter Weir",
+    "poster_url": "https://image.tmdb.org/t/p/w500/tNvKkSnnn4Z6RCBThyK1gfCSSvv.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/207-dead-poets-society"
+  },
+  "900000056": {
+    "rating": {
+      "value": 7.672,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=October%20Sky"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/7/73/October_sky_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/October_Sky"
+  },
+  "900000057": {
+    "rating": {
+      "value": 7.734,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20King's%20Speech"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/4/4a/The_King%27s_Speech_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_King%27s_Speech"
+  },
+  "900000058": {
+    "rating": {
+      "value": 7.692,
+      "votes": 7923,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/773-little-miss-sunshine"
+    },
+    "director": "Jonathan Dayton, Valerie Faris",
+    "poster_url": "https://image.tmdb.org/t/p/w500/niNdhTpPHSgw22tK0PLjQMV640v.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/773-little-miss-sunshine"
+  },
+  "900000059": {
+    "rating": {
+      "value": 7.65,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Hunt%20for%20the%20Wilderpeople"
+    }
+  },
+  "900000060": {
+    "rating": {
+      "value": 7.199,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Secret%20Life%20of%20Walter%20Mitty"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/f/f2/The_Secret_Life_of_Walter_Mitty_2013_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Secret_Life_of_Walter_Mitty_(2013_film)"
+  },
+  "900000061": {
+    "rating": {
+      "value": 7.111,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Paddington"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/0/06/PaddingtonPOSTER.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Paddington_(film)"
+  },
+  "900000062": {
+    "rating": {
+      "value": 7.5,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Paddington%202"
+    }
+  },
+  "900000063": {
+    "rating": {
+      "value": 6.248,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Babe"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/6/6f/Babe_ver1.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Babe_(film)"
+  },
+  "900000064": {
+    "rating": {
+      "value": 7.087,
+      "votes": 6248,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/1584-the-school-of-rock"
+    },
+    "director": "Richard Linklater",
+    "poster_url": "https://image.tmdb.org/t/p/w500/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/1584-the-school-of-rock"
+  },
+  "900000065": {
+    "rating": {
+      "value": 6.69,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Yesterday"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Yesterday_%282019_poster%29.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Yesterday_(2019_film)"
+  },
+  "900000066": {
+    "rating": {
+      "value": 7.233,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Begin%20Again"
+    }
+  },
+  "900000067": {
+    "rating": {
+      "value": 6.442,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Music%20and%20Lyrics"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Music_and_lyrics.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Music_and_Lyrics"
+  },
+  "900000068": {
+    "rating": {
+      "value": 6.951,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Serendipity"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/a/a5/Serendipity_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Serendipity_(film)"
+  },
+  "900000069": {
+    "rating": {
+      "value": 6.745,
+      "votes": 2618,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/858-sleepless-in-seattle"
+    },
+    "director": "Nora Ephron",
+    "poster_url": "https://image.tmdb.org/t/p/w500/jAXfku1u1uaLGh4cUmK0ESf1pPu.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/858-sleepless-in-seattle"
+  },
+  "900000070": {
+    "rating": {
+      "value": 6.689,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=You've%20Got%20Mail"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/e/ee/You%27ve_Got_Mail.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/You%27ve_Got_Mail"
+  },
+  "900000071": {
+    "rating": {
+      "value": 7.099,
+      "votes": 7449,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/508-love-actually"
+    },
+    "director": "Richard Curtis",
+    "poster_url": "https://image.tmdb.org/t/p/w500/7QPeVsr9rcFU9Gl90yg0gTOTpVv.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/508-love-actually"
+  },
+  "900000072": {
+    "rating": {
+      "value": 7.3,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Stardust"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/6/6f/Stardust_promo_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Stardust_(2007_film)"
+  },
+  "900000073": {
+    "rating": {
+      "value": 7.7,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Princess%20Bride"
+    }
+  },
+  "900000074": {
+    "rating": {
+      "value": 7.72,
+      "votes": 13870,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/162-edward-scissorhands"
+    },
+    "director": "Tim Burton",
+    "poster_url": "https://image.tmdb.org/t/p/w500/e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/162-edward-scissorhands"
+  },
+  "900000075": {
+    "rating": {
+      "value": 7.038,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Lake%20House"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/b/bc/Poster-lakehouse.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Lake_House_(film)"
+  },
+  "900000076": {
+    "rating": {
+      "value": 7.48,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Age%20of%20Adaline"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/3/33/The_Age_of_Adaline_film_poster.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Age_of_Adaline"
+  },
+  "900000077": {
+    "rating": {
+      "value": 7.426,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=One%20Day"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/a/ad/One_Day_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/One_Day_(2011_film)"
+  },
+  "900000078": {
+    "rating": {
+      "value": 7.296,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=(500)%20Days%20of%20Summer"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/d/d1/Five_hundred_days_of_summer.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/(500)_Days_of_Summer"
+  },
+  "900000079": {
+    "rating": {
+      "value": 7.146,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Silver%20Linings%20Playbook"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/9/9a/Silver_Linings_Playbook_Poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Silver_Linings_Playbook"
+  },
+  "900000080": {
+    "rating": {
+      "value": 8.207,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Help"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/d/d3/The_Help_%282011_film%29.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/The_Help_(film)"
+  },
+  "900000081": {
+    "rating": {
+      "value": 8.052,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Hidden%20Figures"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/4/4f/The_official_poster_for_the_film_Hidden_Figures%2C_2016.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Hidden_Figures"
+  },
+  "900000082": {
+    "rating": {
+      "value": 6.478,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Mr.%20Holmes"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/9/91/Mr._Holmes_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Mr._Holmes"
+  },
+  "900000083": {
+    "rating": {
+      "value": 6.703,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Murder%20on%20the%20Orient%20Express"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/b/bd/Murder_on_the_Orient_Express_teaser_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Murder_on_the_Orient_Express_(2017_film)"
+  },
+  "900000084": {
+    "rating": {
+      "value": 6.426,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Death%20on%20the%20Nile"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/e/e9/Death_on_the_Nile_%282020_film%29_poster.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Death_on_the_Nile_(2022_film)"
+  },
+  "900000085": {
+    "rating": {
+      "value": 6.361,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=See%20How%20They%20Run"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/7/72/See_How_They_Run_%282022_film%29.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/See_How_They_Run_(2022_film)"
+  },
+  "900000086": {
+    "rating": {
+      "value": 7.2,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Clue"
+    }
+  },
+  "900000087": {
+    "rating": {
+      "value": 6.849,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Game%20Night"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Game_Night_%28film%29.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Game_Night_(film)"
+  },
+  "900000088": {
+    "rating": {
+      "value": 7.736,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Past%20Lives"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/d/da/Past_Lives_film_poster.png",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Past_Lives_(film)"
+  },
+  "900000089": {
+    "rating": {
+      "value": 7.763,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Perfect%20Days"
+    }
+  },
+  "900000090": {
+    "rating": {
+      "value": 7.675,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=The%20Holdovers"
+    }
+  },
+  "900000091": {
+    "rating": {
+      "value": 7.609,
+      "source": "TMDB",
+      "date": "2025-08-11",
+      "sourceUrl": "https://www.themoviedb.org/search/movie?query=Elemental"
+    },
+    "poster_url": "https://upload.wikimedia.org/wikipedia/en/a/ac/Elemental_poster.jpg",
+    "poster_source_url": "https://en.wikipedia.org/wiki/Elemental_(2023_film)"
+  },
+  "900000092": {},
+  "900000093": {},
+  "900000094": {},
+  "900000095": {}
+}
