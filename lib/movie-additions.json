@@ -5225,5 +5225,1595 @@
       "date": "2026-07-24",
       "sourceUrl": "https://www.themoviedb.org/movie/1715-the-cider-house-rules"
     }
+  },
+  {
+    "id": 910000005,
+    "title": "Четыре комнаты",
+    "original_title": "Four Rooms",
+    "release_date": "1995",
+    "release_precision": "year",
+    "runtime": 98,
+    "adult": false,
+    "overview": "Первое дежурство коридорного в отеле оборачивается чередой абсурдных происшествий. За каждой дверью его ждёт новая неожиданность.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/75aHn1NOYXh4M7L5shoeQ6NGykP.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/5-four-rooms",
+    "source": "TWO",
+    "director": "Allison Anders, Alexandre Rockwell, Robert Rodriguez, Quentin Tarantino",
+    "rating": {
+      "value": 5.906,
+      "votes": 2868,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/5-four-rooms"
+    }
+  },
+  {
+    "id": 910000014,
+    "title": "Красота по-американски",
+    "original_title": "American Beauty",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 122,
+    "adult": false,
+    "overview": "Житель тихого пригорода решает изменить привычную жизнь. Его бунт вскрывает противоречия семьи и внешне благополучного окружения.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/wby9315QzVKdW9BonAefg8jGTTb.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/14-american-beauty",
+    "source": "TWO",
+    "director": "Sam Mendes",
+    "rating": {
+      "value": 7.999,
+      "votes": 13155,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/14-american-beauty"
+    }
+  },
+  {
+    "id": 910000064,
+    "title": "Поговори с ней",
+    "original_title": "Talk to Her",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 112,
+    "adult": false,
+    "overview": "В больнице встречаются двое мужчин, заботящихся о близких женщинах. Их истории переплетаются в драме об одиночестве и границах любви.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/fWDbQlOWOqjR5jZm98KjGyYmUOw.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/64-hable-con-ella",
+    "source": "TWO",
+    "director": "Pedro Almodóvar",
+    "rating": {
+      "value": 7.572,
+      "votes": 1454,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/64-hable-con-ella"
+    }
+  },
+  {
+    "id": 910000075,
+    "title": "Марс атакует!",
+    "original_title": "Mars Attacks!",
+    "release_date": "1996",
+    "release_precision": "year",
+    "runtime": 106,
+    "adult": false,
+    "overview": "Прибытие марсиан вызывает всеобщее воодушевление. Очень скоро торжественная встреча превращается в гротескную катастрофу.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 878,
+        "name": "Science Fiction"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/hll4O5vSAfnZDb6JbnP06GPtz7b.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/75-mars-attacks",
+    "source": "TWO",
+    "director": "Tim Burton",
+    "rating": {
+      "value": 6.427,
+      "votes": 5929,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/75-mars-attacks"
+    }
+  },
+  {
+    "id": 910000070,
+    "title": "Малышка на миллион",
+    "original_title": "Million Dollar Baby",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 132,
+    "adult": false,
+    "overview": "Настойчивая девушка убеждает опытного тренера помочь ей стать боксёром. Спортивная история постепенно становится драмой о доверии и ответственности.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/jcfEqKdWF1zeyvECPqp3mkWLct2.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/70-million-dollar-baby",
+    "source": "TWO",
+    "director": "Clint Eastwood",
+    "rating": {
+      "value": 7.953,
+      "votes": 10436,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/70-million-dollar-baby"
+    }
+  },
+  {
+    "id": 910000099,
+    "title": "Всё о моей матери",
+    "original_title": "All About My Mother",
+    "release_date": "1999",
+    "release_precision": "year",
+    "runtime": 101,
+    "adult": false,
+    "overview": "После семейной трагедии женщина отправляется в Барселону на поиски человека из прошлого. Новые встречи помогают ей вновь обрести опору.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/hjQhzhkGYXPNM96k0mOgob6HMmn.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/99-todo-sobre-mi-madre",
+    "source": "TWO",
+    "director": "Pedro Almodóvar",
+    "rating": {
+      "value": 7.612,
+      "votes": 2081,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/99-todo-sobre-mi-madre"
+    }
+  },
+  {
+    "id": 910000100,
+    "title": "Карты, деньги, два ствола",
+    "original_title": "Lock, Stock and Two Smoking Barrels",
+    "release_date": "1998",
+    "release_precision": "year",
+    "runtime": 105,
+    "adult": false,
+    "overview": "Четверо приятелей проигрывают крупную сумму и ищут способ рассчитаться. Попытка лёгкой наживы сталкивает их с несколькими преступными компаниями.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/6pJB2t3MbQUy9m5pFIBHXLqnqNd.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/100-lock-stock-and-two-smoking-barrels",
+    "source": "TWO",
+    "director": "Guy Ritchie",
+    "rating": {
+      "value": 8.097,
+      "votes": 7267,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/100-lock-stock-and-two-smoking-barrels"
+    }
+  },
+  {
+    "id": 910000113,
+    "title": "Весна, лето, осень, зима… и снова весна",
+    "original_title": "Spring, Summer, Fall, Winter... and Spring",
+    "release_date": "2003",
+    "release_precision": "year",
+    "runtime": 103,
+    "adult": false,
+    "overview": "На уединённом озере старый монах воспитывает ученика. Смена времён года отражает взросление, ошибки и возвращение к себе.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/6SQQ5REuAz7k0FMQ9mSCT40T2LN.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/113",
+    "source": "TWO",
+    "director": "Kim Ki-duk",
+    "rating": {
+      "value": 7.797,
+      "votes": 1216,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/113"
+    }
+  },
+  {
+    "id": 910000112,
+    "title": "Итальянский для начинающих",
+    "original_title": "Italian for Beginners",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 118,
+    "adult": false,
+    "overview": "Несколько одиноких людей записываются на вечерние курсы языка. Занятия становятся поводом для дружбы и новых чувств.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/yviUKuVb9BXYPqkWvp8JZFj2wVb.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/112-italiensk-for-begyndere",
+    "source": "TWO",
+    "director": "Lone Scherfig",
+    "rating": {
+      "value": 6.411,
+      "votes": 152,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/112-italiensk-for-begyndere"
+    }
+  },
+  {
+    "id": 910000103,
+    "title": "Таксист",
+    "original_title": "Taxi Driver",
+    "release_date": "1976",
+    "release_precision": "year",
+    "runtime": 114,
+    "adult": false,
+    "overview": "Ветеран устраивается ночным водителем в Нью-Йорке. Одиночество и накопленная злость постепенно меняют его восприятие города.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/103-taxi-driver",
+    "source": "TWO",
+    "director": "Martin Scorsese",
+    "rating": {
+      "value": 8.124,
+      "votes": 13563,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/103-taxi-driver"
+    }
+  },
+  {
+    "id": 910000107,
+    "title": "Большой куш",
+    "original_title": "Snatch",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 103,
+    "adult": false,
+    "overview": "Пропавший алмаз связывает судьбы боксёров, посредников и грабителей. Каждый хитрый план сталкивается с ещё более нелепой случайностью.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/kJZoAHq1SLDdWjeNGtlHAnGpmFV.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/107-snatch",
+    "source": "TWO",
+    "director": "Guy Ritchie",
+    "rating": {
+      "value": 7.827,
+      "votes": 10082,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/107-snatch"
+    }
+  },
+  {
+    "id": 910000127,
+    "title": "Случай",
+    "original_title": "Blind Chance",
+    "release_date": "1987",
+    "release_precision": "year",
+    "runtime": 123,
+    "adult": false,
+    "overview": "Попытка молодого человека успеть на поезд открывает три возможных пути его жизни. Незначительная случайность меняет встречи, убеждения и выбор.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/gx84VmJllqvXF3JEqcEdsxBEcbF.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/127-przypadek",
+    "source": "TWO",
+    "director": "Krzysztof Kieślowski",
+    "rating": {
+      "value": 7.51,
+      "votes": 246,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/127-przypadek"
+    }
+  },
+  {
+    "id": 910000116,
+    "title": "Матч-пойнт",
+    "original_title": "Match Point",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 124,
+    "adult": false,
+    "overview": "Бывший теннисист входит в круг состоятельной семьи и получает шанс на новую жизнь. Влечение к другой женщине ставит всё под угрозу.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/vHjEVTD8ucuwKSFOZJeyAnTZYli.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/116-match-point",
+    "source": "TWO",
+    "director": "Woody Allen",
+    "rating": {
+      "value": 7.365,
+      "votes": 4411,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/116-match-point"
+    }
+  },
+  {
+    "id": 910000128,
+    "title": "Принцесса Мононоке",
+    "original_title": "Princess Mononoke",
+    "release_date": "1997",
+    "release_precision": "year",
+    "runtime": 134,
+    "adult": false,
+    "overview": "Юный воин ищет исцеление от проклятия и попадает в конфликт людей с лесными духами. Ему предстоит увидеть правду по обе стороны противостояния.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 16,
+        "name": "Animation"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/128",
+    "source": "TWO",
+    "director": "Hayao Miyazaki",
+    "rating": {
+      "value": 8.322,
+      "votes": 9116,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/128"
+    }
+  },
+  {
+    "id": 910000148,
+    "title": "Тайная жизнь слов",
+    "original_title": "The Secret Life of Words",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 115,
+    "adult": false,
+    "overview": "Замкнутая женщина соглашается ухаживать за раненым на морской платформе. Разговоры двух незнакомцев постепенно открывают тяжёлые тайны прошлого.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/mgffUjCN2jvebZBqvyP0lvAoAhB.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/148-the-secret-life-of-words",
+    "source": "TWO",
+    "director": "Isabel Coixet",
+    "rating": {
+      "value": 6.965,
+      "votes": 230,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/148-the-secret-life-of-words"
+    }
+  },
+  {
+    "id": 910000171,
+    "title": "Бум 2",
+    "original_title": "The Party 2",
+    "release_date": "1982",
+    "release_precision": "year",
+    "runtime": 109,
+    "adult": false,
+    "overview": "Повзрослевшая школьница сталкивается с первой серьёзной любовью. Дружба, ревность и семейные перемены испытывают её уверенность в себе.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/pbkccDoxH1H1VdqWcQYycZxHTIK.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/171-la-boum-2",
+    "source": "TWO",
+    "director": "Claude Pinoteau",
+    "rating": {
+      "value": 6.436,
+      "votes": 660,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/171-la-boum-2"
+    }
+  },
+  {
+    "id": 910000166,
+    "title": "Бум",
+    "original_title": "The Party",
+    "release_date": "1980",
+    "release_precision": "year",
+    "runtime": 110,
+    "adult": false,
+    "overview": "Парижская школьница мечтает о первой вечеринке и влюблённости. Пока родители заняты своими сложностями, её главным союзником становится прабабушка.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/usGV1Q7KWR0Uq4dOIppGZ0ba8kz.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/166-la-boum",
+    "source": "TWO",
+    "director": "Claude Pinoteau",
+    "rating": {
+      "value": 6.596,
+      "votes": 1220,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/166-la-boum"
+    }
+  },
+  {
+    "id": 910000161,
+    "title": "Одиннадцать друзей Оушена",
+    "original_title": "Ocean's Eleven",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 116,
+    "adult": false,
+    "overview": "Дэнни Оушен собирает команду специалистов для дерзкого ограбления казино. Для успеха каждому придётся безупречно сыграть свою роль.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/hQQCdZrsHtZyR6NbKH2YyCqd2fR.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/161-ocean-s-eleven",
+    "source": "TWO",
+    "director": "Steven Soderbergh",
+    "rating": {
+      "value": 7.463,
+      "votes": 12681,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/161-ocean-s-eleven"
+    }
+  },
+  {
+    "id": 910000213,
+    "title": "К северу через северо-запад",
+    "original_title": "North by Northwest",
+    "release_date": "1959",
+    "release_precision": "year",
+    "runtime": 137,
+    "adult": false,
+    "overview": "Рекламщика принимают за тайного агента и втягивают в опасную погоню. Случайная попутчица оказывается частью загадки.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/kNOFPQrel9YFCVzI0DF8FnCEpCw.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/213-north-by-northwest",
+    "source": "TWO",
+    "director": "Alfred Hitchcock",
+    "rating": {
+      "value": 7.964,
+      "votes": 4553,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/213-north-by-northwest"
+    }
+  },
+  {
+    "id": 910000186,
+    "title": "Счастливое число Слевина",
+    "original_title": "Lucky Number Slevin",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 110,
+    "adult": false,
+    "overview": "Приезд в чужую квартиру оборачивается для молодого человека серией опасных поручений. Враждующие преступные боссы считают его совсем другим человеком.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/x21s3p5wPww534nYj1cWakTcqz4.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/186-lucky-number-slevin",
+    "source": "TWO",
+    "director": "Paul McGuigan",
+    "rating": {
+      "value": 7.475,
+      "votes": 4525,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/186-lucky-number-slevin"
+    }
+  },
+  {
+    "id": 910000198,
+    "title": "Быть или не быть",
+    "original_title": "To Be or Not to Be",
+    "release_date": "1942",
+    "release_precision": "year",
+    "runtime": 99,
+    "adult": false,
+    "overview": "Театральная труппа оказывается втянута в сопротивление нацистской оккупации. Актёрские таланты становятся инструментом сложной и рискованной игры.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10752,
+        "name": "War"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/dDQRpEoyjHT4fzw9cNklIvZuXYg.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/198-to-be-or-not-to-be",
+    "source": "TWO",
+    "director": "Ernst Lubitsch",
+    "rating": {
+      "value": 7.81,
+      "votes": 844,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/198-to-be-or-not-to-be"
+    }
+  },
+  {
+    "id": 910000212,
+    "title": "Мышьяк и старые кружева",
+    "original_title": "Arsenic and Old Lace",
+    "release_date": "1944",
+    "release_precision": "year",
+    "runtime": 118,
+    "adult": false,
+    "overview": "Молодой человек узнаёт страшноватый секрет своих милых тётушек. Семейный визит превращается в стремительную чёрную комедию.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/xG1GEEQGgExKl0WT5sRo1Arst5D.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/212-arsenic-and-old-lace",
+    "source": "TWO",
+    "director": "Frank Capra",
+    "rating": {
+      "value": 7.622,
+      "votes": 1053,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/212-arsenic-and-old-lace"
+    }
+  },
+  {
+    "id": 910000236,
+    "title": "Свадьба Мюриэл",
+    "original_title": "Muriel's Wedding",
+    "release_date": "1994",
+    "release_precision": "year",
+    "runtime": 106,
+    "adult": false,
+    "overview": "Неуверенная девушка мечтает о красивой свадьбе как о начале счастливой жизни. Побег из родного городка помогает ей иначе взглянуть на дружбу и собственные желания.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/zJyTr8Fo412a2OIfJGXTRAm4IwX.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/236-muriel-s-wedding",
+    "source": "TWO",
+    "director": "P.J. Hogan",
+    "rating": {
+      "value": 6.832,
+      "votes": 493,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/236-muriel-s-wedding"
+    }
+  },
+  {
+    "id": 910000221,
+    "title": "Бунтарь без причины",
+    "original_title": "Rebel Without a Cause",
+    "release_date": "1955",
+    "release_precision": "year",
+    "runtime": 111,
+    "adult": false,
+    "overview": "Подросток пытается освоиться в новой школе и найти понимание в семье. Дружба с такими же одинокими сверстниками приводит к опасным испытаниям.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/yHStsC8rRRfIjqRN38BQsLh6S7k.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/221-rebel-without-a-cause",
+    "source": "TWO",
+    "director": "Nicholas Ray",
+    "rating": {
+      "value": 7.495,
+      "votes": 1782,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/221-rebel-without-a-cause"
+    }
+  },
+  {
+    "id": 910000255,
+    "title": "Украденные поцелуи",
+    "original_title": "Stolen Kisses",
+    "release_date": "1968",
+    "release_precision": "year",
+    "runtime": 90,
+    "adult": false,
+    "overview": "После армии молодой парижанин пробует разные работы и пытается разобраться в любви. Работа у частного детектива добавляет в его жизнь неожиданные встречи.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5qHh1Vp2TOOX5IaTVt4wyT8OTnR.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/255-baisers-voles",
+    "source": "TWO",
+    "director": "François Truffaut",
+    "rating": {
+      "value": 7.292,
+      "votes": 467,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/255-baisers-voles"
+    }
+  },
+  {
+    "id": 910000248,
+    "title": "Пригоршня чудес",
+    "original_title": "Pocketful of Miracles",
+    "release_date": "1961",
+    "release_precision": "year",
+    "runtime": 136,
+    "adult": false,
+    "overview": "Уличная торговка хочет предстать перед дочерью состоятельной дамой. Знакомые сообща устраивают для неё грандиозный светский спектакль.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/xjXwcGJjT5tE22wazQUYH32HwU8.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/248-pocketful-of-miracles",
+    "source": "TWO",
+    "director": "Frank Capra",
+    "rating": {
+      "value": 7.303,
+      "votes": 188,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/248-pocketful-of-miracles"
+    }
+  },
+  {
+    "id": 910000261,
+    "title": "Кошка на раскалённой крыше",
+    "original_title": "Cat on a Hot Tin Roof",
+    "release_date": "1958",
+    "release_precision": "year",
+    "runtime": 108,
+    "adult": false,
+    "overview": "Семья собирается в большом доме на день рождения отца. За праздничными разговорами скрываются обиды, страхи и борьба за наследство.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/5djZZECgqDGuSI1INmrdAcGRBb0.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/261-cat-on-a-hot-tin-roof",
+    "source": "TWO",
+    "director": "Richard Brooks",
+    "rating": {
+      "value": 7.6,
+      "votes": 847,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/261-cat-on-a-hot-tin-roof"
+    }
+  },
+  {
+    "id": 910000313,
+    "title": "Снежный пирог",
+    "original_title": "Snow Cake",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 112,
+    "adult": false,
+    "overview": "После дорожной трагедии мужчина знакомится с матерью погибшей девушки. Необычная дружба помогает им пережить утрату и принять друг друга.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/dzKNKUqaDu9JCUmjhuoDd8KQBBs.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/313-snow-cake",
+    "source": "TWO",
+    "director": "Marc Evans",
+    "rating": {
+      "value": 7.119,
+      "votes": 193,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/313-snow-cake"
+    }
+  },
+  {
+    "id": 910000339,
+    "title": "Ночь на Земле",
+    "original_title": "Night on Earth",
+    "release_date": "1991",
+    "release_precision": "year",
+    "runtime": 129,
+    "adult": false,
+    "overview": "Пять поездок на такси происходят в разных городах за одну ночь. Короткие встречи водителей и пассажиров складываются в смешные и печальные истории.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/ktejUHCo6c8DekpOtR3uSb6oDXr.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/339-night-on-earth",
+    "source": "TWO",
+    "director": "Jim Jarmusch",
+    "rating": {
+      "value": 7.515,
+      "votes": 1060,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/339-night-on-earth"
+    }
+  },
+  {
+    "id": 910000320,
+    "title": "Бессонница",
+    "original_title": "Insomnia",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 118,
+    "adult": false,
+    "overview": "Опытный детектив приезжает расследовать убийство на Аляске. Полярный день и собственная ошибка лишают его сна и уверенности в себе.",
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/riVXh3EimGO0y5dgQxEWPRy5Itg.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/320-insomnia",
+    "source": "TWO",
+    "director": "Christopher Nolan",
+    "rating": {
+      "value": 6.957,
+      "votes": 5379,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/320-insomnia"
+    }
+  },
+  {
+    "id": 910000337,
+    "title": "Мсье Ибрагим и цветы Корана",
+    "original_title": "Monsieur Ibrahim",
+    "release_date": "2003",
+    "release_precision": "year",
+    "runtime": 91,
+    "adult": false,
+    "overview": "Одинокий парижский подросток сближается с владельцем небольшой лавки. Их дружба открывает мальчику новый взгляд на мир и семью.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/lS4hx9X5v6cpoCzzQohZs7zD881.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/337-monsieur-ibrahim-et-les-fleurs-du-coran",
+    "source": "TWO",
+    "director": "François Dupeyron",
+    "rating": {
+      "value": 6.976,
+      "votes": 168,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/337-monsieur-ibrahim-et-les-fleurs-du-coran"
+    }
+  },
+  {
+    "id": 910000397,
+    "title": "Французский поцелуй",
+    "original_title": "French Kiss",
+    "release_date": "1995",
+    "release_precision": "year",
+    "runtime": 111,
+    "adult": false,
+    "overview": "Женщина летит во Францию, чтобы вернуть жениха, и знакомится с обаятельным авантюристом. Совместная поездка меняет её первоначальные планы.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/q5hXdMfxSwhuOmWmkTJmm5qVijc.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/397-french-kiss",
+    "source": "TWO",
+    "director": "Lawrence Kasdan",
+    "rating": {
+      "value": 6.483,
+      "votes": 808,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/397-french-kiss"
+    }
+  },
+  {
+    "id": 910000343,
+    "title": "Гарольд и Мод",
+    "original_title": "Harold and Maude",
+    "release_date": "1971",
+    "release_precision": "year",
+    "runtime": 92,
+    "adult": false,
+    "overview": "Юноша, одержимый темой смерти, встречает пожилую женщину с неукротимой любовью к жизни. Их необычная дружба бросает вызов привычным представлениям окружающих.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/t7qEuGwDjcYu8ajaKZ68DeDnOxw.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/343-harold-and-maude",
+    "source": "TWO",
+    "director": "Hal Ashby",
+    "rating": {
+      "value": 7.59,
+      "votes": 1221,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/343-harold-and-maude"
+    }
+  },
+  {
+    "id": 910000340,
+    "title": "И всё осветилось",
+    "original_title": "Everything Is Illuminated",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 105,
+    "adult": false,
+    "overview": "Американец приезжает в Украину искать человека, спасшего его родственника. Дорожное путешествие с необычными спутниками постепенно становится поиском семейной памяти.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/gk469Y3fJTlbcAkSNMZc4OtETOK.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/340-everything-is-illuminated",
+    "source": "TWO",
+    "director": "Liev Schreiber",
+    "rating": {
+      "value": 7.252,
+      "votes": 830,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/340-everything-is-illuminated"
+    }
+  },
+  {
+    "id": 910000388,
+    "title": "Не пойман — не вор",
+    "original_title": "Inside Man",
+    "release_date": "2006",
+    "release_precision": "year",
+    "runtime": 129,
+    "adult": false,
+    "overview": "Детектив ведёт переговоры с организатором тщательно спланированного захвата банка. Чем дольше длится противостояние, тем менее очевидной становится цель преступления.",
+    "genres": [
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/ffMUgkDZICNiyaws1Jkv8qG8uFW.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/388-inside-man",
+    "source": "TWO",
+    "director": "Spike Lee",
+    "rating": {
+      "value": 7.409,
+      "votes": 6430,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/388-inside-man"
+    }
+  },
+  {
+    "id": 910000390,
+    "title": "Лиссабонская история",
+    "original_title": "Lisbon Story",
+    "release_date": "1994",
+    "release_precision": "year",
+    "runtime": 100,
+    "adult": false,
+    "overview": "Звукооператор приезжает в Лиссабон по приглашению друга-режиссёра. Поиски пропавшего коллеги превращаются в путешествие по звукам и улицам города.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iqxvLET9q43BxxNXmit9nNiEPPM.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/390-lisbon-story",
+    "source": "TWO",
+    "director": "Wim Wenders",
+    "rating": {
+      "value": 7.194,
+      "votes": 129,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/390-lisbon-story"
+    }
+  },
+  {
+    "id": 910000427,
+    "title": "Мой дядюшка",
+    "original_title": "Mon Oncle",
+    "release_date": "1958",
+    "release_precision": "year",
+    "runtime": 118,
+    "adult": false,
+    "overview": "Добродушный господин Юло навещает племянника в доме, полном модной техники. Его простота постоянно нарушает идеально организованный быт родственников.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/wH6RyPiXFy8INLbViVkchLVOmBc.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/427-mon-oncle",
+    "source": "TWO",
+    "director": "Jacques Tati",
+    "rating": {
+      "value": 7.433,
+      "votes": 623,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/427-mon-oncle"
+    }
+  },
+  {
+    "id": 910000411,
+    "title": "Хроники Нарнии: Лев, колдунья и волшебный шкаф",
+    "original_title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "release_date": "2005",
+    "release_precision": "year",
+    "runtime": 143,
+    "adult": false,
+    "overview": "Четверо детей находят проход в сказочную страну, где царит бесконечная зима. Вместе с новыми друзьями они пытаются вернуть Нарнии надежду.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/411-the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe",
+    "source": "TWO",
+    "director": "Andrew Adamson",
+    "rating": {
+      "value": 7.139,
+      "votes": 11612,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/411-the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe"
+    }
+  },
+  {
+    "id": 910000430,
+    "title": "Один, два, три",
+    "original_title": "One, Two, Three",
+    "release_date": "1961",
+    "release_precision": "year",
+    "runtime": 109,
+    "adult": false,
+    "overview": "Американский менеджер в разделённом Берлине получает поручение присмотреть за дочерью начальника. Её внезапное замужество запускает череду стремительных интриг.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/yWQE227ub1frfnjP5HZy0wLF0wu.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/430-one-two-three",
+    "source": "TWO",
+    "director": "Billy Wilder",
+    "rating": {
+      "value": 7.495,
+      "votes": 426,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/430-one-two-three"
+    }
+  },
+  {
+    "id": 910000455,
+    "title": "Играй, как Бекхэм",
+    "original_title": "Bend It Like Beckham",
+    "release_date": "2002",
+    "release_precision": "year",
+    "runtime": 112,
+    "adult": false,
+    "overview": "Девушка из традиционной семьи мечтает играть в футбол. Ей приходится искать равновесие между ожиданиями близких, дружбой и любимым делом.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/2dzSBmFWWqt8NbnubJKIWU21Y86.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/455-bend-it-like-beckham",
+    "source": "TWO",
+    "director": "Gurinder Chadha",
+    "rating": {
+      "value": 6.329,
+      "votes": 2042,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/455-bend-it-like-beckham"
+    }
+  },
+  {
+    "id": 910000457,
+    "title": "Сисси",
+    "original_title": "Sissi",
+    "release_date": "1955",
+    "release_precision": "year",
+    "runtime": 102,
+    "adult": false,
+    "overview": "Юная баварская принцесса неожиданно привлекает внимание австрийского императора. Романтическое знакомство сталкивается с придворными правилами.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/iGy9j4AdhkiOYRYeTSpq7g3zayL.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/457-sissi",
+    "source": "TWO",
+    "director": "Ernst Marischka",
+    "rating": {
+      "value": 7.277,
+      "votes": 529,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/457-sissi"
+    }
+  },
+  {
+    "id": 910000464,
+    "title": "Как на небесах",
+    "original_title": "As It Is in Heaven",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 132,
+    "adult": false,
+    "overview": "Знаменитый дирижёр возвращается в родную деревню и берётся за местный хор. Совместное пение постепенно меняет отношения жителей и его самого.",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/ygJ6RQQSmXRQLPpUKP9SCdKXSKJ.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/464-sa-som-i-himmelen",
+    "source": "TWO",
+    "director": "Kay Pollak",
+    "rating": {
+      "value": 7.114,
+      "votes": 193,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/464-sa-som-i-himmelen"
+    }
+  },
+  {
+    "id": 910000480,
+    "title": "Свадьба в сезон дождей",
+    "original_title": "Monsoon Wedding",
+    "release_date": "2001",
+    "release_precision": "year",
+    "runtime": 114,
+    "adult": false,
+    "overview": "Большая семья собирается в Дели на пышную свадьбу. В суете приготовлений проявляются новые чувства и давние семейные тайны.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/vCwkv7tYFem0tQ9Duoq2MX7T7Zd.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/480-monsoon-wedding",
+    "source": "TWO",
+    "director": "Mira Nair",
+    "rating": {
+      "value": 6.8,
+      "votes": 222,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/480-monsoon-wedding"
+    }
+  },
+  {
+    "id": 910000526,
+    "title": "Леди-ястреб",
+    "original_title": "Ladyhawke",
+    "release_date": "1985",
+    "release_precision": "year",
+    "runtime": 121,
+    "adult": false,
+    "overview": "Рыцарь и его возлюбленная связаны проклятием, не позволяющим им быть людьми одновременно. Юный беглец помогает им найти путь к освобождению.",
+    "genres": [
+      {
+        "id": 12,
+        "name": "Adventure"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/vJA2Fhw2uBMiVFdBde2kH7kZ2gw.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/526-ladyhawke",
+    "source": "TWO",
+    "director": "Richard Donner",
+    "rating": {
+      "value": 6.996,
+      "votes": 1267,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/526-ladyhawke"
+    }
+  },
+  {
+    "id": 910000510,
+    "title": "Пролетая над гнездом кукушки",
+    "original_title": "One Flew Over the Cuckoo's Nest",
+    "release_date": "1975",
+    "release_precision": "year",
+    "runtime": 135,
+    "adult": false,
+    "overview": "Бунтарь оказывается в психиатрической больнице и вступает в конфликт с её строгими порядками. Его сопротивление пробуждает в других пациентах желание свободы.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/510-one-flew-over-the-cuckoo-s-nest",
+    "source": "TWO",
+    "director": "Miloš Forman",
+    "rating": {
+      "value": 8.409,
+      "votes": 11565,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/510-one-flew-over-the-cuckoo-s-nest"
+    }
+  },
+  {
+    "id": 910000552,
+    "title": "Хлеб и тюльпаны",
+    "original_title": "Bread and Tulips",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 114,
+    "adult": false,
+    "overview": "Домохозяйку забывают во время семейной экскурсии, и она решает отправиться в Венецию. Случайная остановка становится началом самостоятельной жизни.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/ijCBLF08KQsam3cOBAnit05iiV3.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/552-pane-e-tulipani",
+    "source": "TWO",
+    "director": "Silvio Soldini",
+    "rating": {
+      "value": 7.2,
+      "votes": 309,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/552-pane-e-tulipani"
+    }
+  },
+  {
+    "id": 910000583,
+    "title": "Житие Брайана по Монти Пайтон",
+    "original_title": "Life of Brian",
+    "release_date": "1979",
+    "release_precision": "year",
+    "runtime": 94,
+    "adult": false,
+    "overview": "Обычного человека в древней Иудее ошибочно принимают за мессию. Нелепые совпадения превращают его жизнь в сатиру на слепое следование за лидерами.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/583-life-of-brian",
+    "source": "TWO",
+    "director": "Terry Jones",
+    "rating": {
+      "value": 7.76,
+      "votes": 4975,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/583-life-of-brian"
+    }
+  },
+  {
+    "id": 910000693,
+    "title": "Знакомство с Факерами",
+    "original_title": "Meet the Fockers",
+    "release_date": "2004",
+    "release_precision": "year",
+    "runtime": 115,
+    "adult": false,
+    "overview": "Будущие молодожёны устраивают встречу родителей. Противоположные семейные привычки быстро превращают знакомство в комедию неловких ситуаций.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/59fXm6N2x7QSbvt6BaBxTNBXGL8.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/693-meet-the-fockers",
+    "source": "TWO",
+    "director": "Jay Roach",
+    "rating": {
+      "value": 6.254,
+      "votes": 5214,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/693-meet-the-fockers"
+    }
+  },
+  {
+    "id": 910000711,
+    "title": "Найти Форрестера",
+    "original_title": "Finding Forrester",
+    "release_date": "2000",
+    "release_precision": "year",
+    "runtime": 136,
+    "adult": false,
+    "overview": "Одарённый школьник знакомится с писателем-затворником. Неожиданное наставничество помогает обоим преодолеть страх перед чужими ожиданиями.",
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 36,
+        "name": "History"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/chd9bCGNYtzDoJqGw5wUHlhrkOb.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/711-finding-forrester",
+    "source": "TWO",
+    "director": "Gus Van Sant",
+    "rating": {
+      "value": 7.126,
+      "votes": 1233,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/711-finding-forrester"
+    }
+  },
+  {
+    "id": 910000759,
+    "title": "Джентльмены предпочитают блондинок",
+    "original_title": "Gentlemen Prefer Blondes",
+    "release_date": "1953",
+    "release_precision": "year",
+    "runtime": 91,
+    "adult": false,
+    "overview": "Две артистки отправляются в Париж на океанском лайнере. Поклонники, ревность и пропавшая драгоценность превращают путешествие в музыкальную комедию.",
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "poster_url": "https://image.tmdb.org/t/p/w500/fDozhst5HVJJcd3BM8ZOsKniO7Q.jpg",
+    "poster_source_url": "https://www.themoviedb.org/movie/759-gentlemen-prefer-blondes",
+    "source": "TWO",
+    "director": "Howard Hawks",
+    "rating": {
+      "value": 7.336,
+      "votes": 1083,
+      "source": "TMDB",
+      "date": "2026-07-24",
+      "sourceUrl": "https://www.themoviedb.org/movie/759-gentlemen-prefer-blondes"
+    }
   }
 ]
