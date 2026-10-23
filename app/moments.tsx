@@ -1,4 +1,5 @@
 'use client';
+import {clientId} from '../lib/client-id';
 import {useRef,useState} from 'react';
 import {ArrowUpRight,Check,Heart,LockKeyhole,Plus,Quote,Search,Shuffle,Trash2,X} from 'lucide-react';
 import './moments.css';
@@ -7,7 +8,7 @@ export function MomentsTeaser({room,open}:{room:D|null,open:()=>void}){const lat
 export function Moments({room,send,onNeedRoom}:{room:D|null,send:(b:D)=>Promise<any>,onNeedRoom:()=>void}){
  const [text,setText]=useState(''),[context,setContext]=useState(''),[speaker,setSpeaker]=useState(''),[search,setSearch]=useState(''),[favorites,setFavorites]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState(''),[success,setSuccess]=useState(false),[randomId,setRandomId]=useState<string|null>(null);const draftId=useRef<string|null>(null);
  const quotes:D[]=room?.quotes||[],filtered=quotes.filter(q=>(!favorites||q.likedBy.includes(room?.me))&&(q.text+' '+q.context).toLocaleLowerCase('ru-RU').includes(search.toLocaleLowerCase('ru-RU'))),random=quotes.find(q=>q.id===randomId);
- async function save(e:React.FormEvent){e.preventDefault();if(!room){onNeedRoom();return;}setBusy(true);setError('');setSuccess(false);draftId.current??=crypto.randomUUID();try{await send({op:'quoteAdd',id:draftId.current,text,context,speaker:speaker||null});setText('');setContext('');setSpeaker('');draftId.current=null;setSuccess(true);}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ async function save(e:React.FormEvent){e.preventDefault();if(!room){onNeedRoom();return;}setBusy(true);setError('');setSuccess(false);try{draftId.current??=clientId();await send({op:'quoteAdd',id:draftId.current,text,context,speaker:speaker||null});setText('');setContext('');setSpeaker('');draftId.current=null;setSuccess(true);}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
  async function change(b:D){setBusy(true);setError('');try{await send(b);}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
  function draw(){if(!quotes.length)return;const pool=quotes.filter(q=>q.id!==randomId);setRandomId((pool.length?pool:quotes)[Math.floor(Math.random()*(pool.length||quotes.length))].id);}
  const who=(id:string)=>room?.players.find((p:D)=>p.id===id)?.name||'Вы вдвоём';

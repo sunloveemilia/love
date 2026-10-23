@@ -143,5 +143,13 @@ await qa.post(quote);await qa.post(quote);assert.equal(qa.room.quotes.length,1);
 await qb.post({op:'quoteLike',id:quoteId,liked:true});assert.ok((await qa.get()).quotes[0].likedBy.includes(qb.room.me));
 await qb.post({op:'quoteDelete',id:quoteId},400);await qa.post({op:'quoteDelete',id:quoteId});assert.equal((await qb.get()).quotes.length,0);
 
+// Built-in affection survives polling/reload and supports an atomic reply.
+const heartId=crypto.randomUUID();await qa.post({op:'heartSend',id:heartId,kind:'miss'});await qa.post({op:'heartSend',id:heartId,kind:'miss'});
+assert.equal((await qb.get()).affection.incoming.id,heartId);assert.equal(qb.room.hearts,undefined);
+await qa.post({op:'heartSend',id:crypto.randomUUID(),kind:'proud'},400);
+await qb.post({op:'heartSend',id:crypto.randomUUID(),kind:'hug',replyTo:heartId});
+assert.equal((await qa.get()).affection.incoming.kind,'hug');assert.ok(qa.room.affection.outgoing.readAt);assert.equal((await qb.get()).affection.incoming,null);
+await qa.post({op:'heartRead',id:qa.room.affection.incoming.id});assert.equal((await qa.get()).affection.incoming,null);
+
 await mf.dispose();
-console.log('PASS: shared quote jar with ownership, likes and idempotent retry; price and auction complete with private bids, secrets, peer scoring and saved history; all six adventures complete through isolated HTTP sessions with private clues/answers and saved memories; Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, builtin movie search/details, both votes, veto, matching, double consent and ticket without external keys.');
+console.log('PASS: affection send/retry/cooldown/atomic reply/read; shared quote jar with ownership, likes and idempotent retry; price and auction complete with private bids, secrets, peer scoring and saved history; all six adventures complete through isolated HTTP sessions with private clues/answers and saved memories; Durak independent hands, duplicate concurrent moves, take/refill, abandon/rematch; two isolated HTTP sessions, real D1 storage, concurrent round advance ×10, server scoring, privacy, recovery, capacity, CSRF, builtin movie search/details, both votes, veto, matching, double consent and ticket without external keys.');

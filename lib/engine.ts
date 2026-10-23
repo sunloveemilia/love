@@ -4,6 +4,7 @@ import {isAdventure} from './adventure-shared.ts';
 import {createAdventure,adventureAction,adventureView,adventureHistory} from './adventures.ts';
 import {isDuel} from './duel-shared.ts';
 import {createDuel,duelAction,duelView,duelHistory} from './duels.ts';
+import {heartAction,heartView} from './hearts.ts';
 import {quoteAction} from './moments.ts';
 import {missions} from './server-content.ts';
 export type Data=Record<string,any>;
@@ -35,6 +36,7 @@ export function act(r:Data,pid:string,b:Data){const me=r.players.find((p:Data)=>
  if((isAdventure(r.game?.mode)||isDuel(r.game?.mode))&&['answer','rate','hint','spin','completeWheel','next'].includes(b.op))throw new Error('Используйте действия текущего приключения');
  if(r.game?.mode==='durak'&&['answer','rate','hint','spin','completeWheel','next'].includes(b.op))throw new Error('Используйте действия карточной партии');
  switch(b.op){
+ case 'heartSend':case 'heartRead':heartAction(r,pid,b);break;
  case 'quoteAdd':case 'quoteDelete':case 'quoteLike':quoteAction(r,pid,b);break;
  case 'profile':{const name=String(b.name||'').trim();if(!name||name.length>32)throw new Error('Имя: от 1 до 32 символов');me.name=name;me.avatar=Math.max(0,Math.min(5,Number(b.avatar)||0));break;}
  case 'start':{requirePair(r);if(!modes.some(m=>m.id===b.mode)||['capsule','cinema'].includes(b.mode))throw new Error('Неизвестная игра');if(r.game&&r.game.stage!=='finished')throw new Error('Сначала завершите текущее приключение');if(isDuel(b.mode)){r.game=createDuel(b.mode,ids,randomInt);break;}if(isAdventure(b.mode)){r.game=createAdventure(b.mode,ids,randomInt);break;}if(b.mode==='durak'){r.game=createDurak(ids,shuffle(durakDeck()));break;}const size=b.mode==='telepathy'?telepathy.length:b.mode==='who'?who.length:b.mode==='swap'?swapPrompts.length:telepathy.length;const seen=r.seen[b.mode]||[];let pool=Array.from({length:size},(_,i)=>i).filter(i=>!seen.includes(i));if(pool.length<10){pool=Array.from({length:size},(_,i)=>i);r.seen[b.mode]=[];}const deck=shuffle(pool).slice(0,10);r.seen[b.mode]=[...(r.seen[b.mode]||[]),...deck];r.game={id:crypto.randomUUID(),mode:b.mode,round:0,deck,answers:{},ratings:{},score:0,matches:[],stage:'playing',story:randomInt(stories.length),path:[],hints:0};break;}
@@ -76,7 +78,7 @@ export function act(r:Data,pid:string,b:Data){const me=r.players.find((p:Data)=>
  return r;
 }
 export function gamePrompt(r:Data,pid:string){const g=r.game;if(!g)return null;const idx=g.deck[g.round]||0;const ids:string[]=r.players.map((p:Data)=>p.id);if(g.mode==='telepathy')return telepathy[idx];if(g.mode==='who')return {q:who[idx],options:r.players.map((p:Data)=>p.name)};if(g.mode==='quiz')return {...telepathy[idx],subject:ids[g.round%2],q:'Что выберет '+r.players[g.round%2].name+'? '+telepathy[idx].q};if(g.mode==='swap'){const other=r.players.find((p:Data)=>p.id!==pid);return {q:'Ответь от лица '+other.name+': '+swapPrompts[idx]};}if(g.mode==='mission'){const m=missions[g.round];return {q:m.title,clue:ids.indexOf(pid)===0?m.a:m.b,hint:g.hints?m.hint:undefined};}if(g.mode==='wheel')return {q:g.result?wheelTasks[g.result.index][1]:'Случай решит, каким будет ваше следующее приключение.',category:g.result?wheelTasks[g.result.index][0]:undefined};if(g.mode==='disaster'){const s=stories[g.story];return {q:g.stage==='finished'?s.ends[g.ending]:g.round===0?s.intro:s.branches[g.path[0]][g.path[0]],title:s.title,options:g.round===0?s.choices:s.midChoices};}return null;}
-export function viewRoom(r:Data,pid:string):Data{const c=structuredClone(r);c.players=c.players.map(({hash,...p}:Data)=>p);c.me=pid;c.quotes??=[];delete c.seen;
+export function viewRoom(r:Data,pid:string):Data{const c=structuredClone(r);c.players=c.players.map(({hash,...p}:Data)=>p);c.me=pid;c.affection=heartView(r,pid);delete c.hearts;c.quotes??=[];delete c.seen;
  c.capsules=c.capsules.map((x:Data)=>{if(x.from!==pid&&Date.now()<x.opensAt)delete x.text;return x;});
  if(c.game&&isDuel(c.game.mode)){c.game=duelView(r.game,pid);}else if(c.game&&isAdventure(c.game.mode)){c.game=adventureView(r.game,pid);}else if(c.game?.mode==='durak'){c.game=durakView(r.game,pid);}else if(c.game){const g=r.game;const open=revealed(r,g);c.game={id:g.id,mode:g.mode,round:g.round,score:g.score,stage:g.stage,prompt:gamePrompt(r,pid),revealed:open,submitted:Object.hasOwn(roundAnswers(g),pid),answered:Object.keys(roundAnswers(g)).length,answers:open?roundAnswers(g):Object.hasOwn(roundAnswers(g),pid)?{[pid]:roundAnswers(g)[pid]}:{},ratings:g.ratings[g.round]||{},solved:g.solved,result:g.result,matches:g.matches};}
  const cine=c.cinema;cine.prefSubmitted=!!cine.prefs[pid];cine.prefCount=Object.keys(cine.prefs).length;if(cine.prefCount<2)cine.prefs=cine.prefs[pid]?{[pid]:cine.prefs[pid]}:{};cine.votedCount=Object.keys(cine.votes[pid]||{}).length;
