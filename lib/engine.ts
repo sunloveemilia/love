@@ -7,6 +7,7 @@ import {createDuel,duelAction,duelView,duelHistory} from './duels.ts';
 import {heartAction,heartView} from './hearts.ts';
 import {quoteAction} from './moments.ts';
 import {missions} from './server-content.ts';
+import {remoteSurpriseModes} from './game-catalog.ts';
 export type Data=Record<string,any>;
 export function randomInt(n:number){if(n<1)throw new Error('Нет вариантов');const max=4294967296-(4294967296%n);let a;do{a=crypto.getRandomValues(new Uint32Array(1))[0];}while(a>=max);return a%n;}
 export function shuffle<T>(list:T[]){const a=[...list];for(let i=a.length-1;i>0;i--){const j=randomInt(i+1);[a[i],a[j]]=[a[j],a[i]];}return a;}
@@ -71,7 +72,7 @@ export function act(r:Data,pid:string,b:Data){const me=r.players.find((p:Data)=>
  case 'prediction':{const e=r.archive.find((x:Data)=>x.id===b.id);if(!e||e.status==='watched')throw new Error('Прогнозы сохраняются до просмотра');e.predictions[pid]={happy:b.happy===true,twist:b.twist===true,rating:Math.max(1,Math.min(10,Number(b.rating)||7))};break;}
  case 'favorite':{const id=String(b.id);r.favorites=r.favorites.includes(id)?r.favorites.filter((x:string)=>x!==id):[...r.favorites,id];break;}
  case 'decorate':{const options=['moon','planet','comet'];if(!options.includes(b.item))throw new Error('Нет такого украшения');r.decorations??=[];if(r.decorations.includes(b.item))return;if(r.stars<10)throw new Error('Нужно 10 звёзд');r.stars-=10;r.decorations.push(b.item);break;}
- case 'surprise':{requirePair(r);r.invitation={id:crypto.randomUUID(),from:pid,mode:shuffle(['telepathy','who','wheel','swap','disaster'])[0]};break;}
+ case 'surprise':{requirePair(r);r.invitation={id:crypto.randomUUID(),from:pid,mode:shuffle(remoteSurpriseModes)[0]};break;}
  case 'dismissSurprise':r.invitation=null;break;
  default:throw new Error('Неизвестное действие');
  }
