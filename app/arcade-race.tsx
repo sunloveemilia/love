@@ -1,0 +1,16 @@
+'use client';
+import {arcadeColors,raceObstacles,raceStandings,type ArcadeState} from '../lib/arcade';
+// Independent cameras preserve exact simulation positions while keeping every
+// car visible, including tied racers occupying the same place on the course.
+export function paintRace(c:CanvasRenderingContext2D,s:ArcadeState,names:string[]){if(!s.race)return;const standings=raceStandings(s),r=s.race;
+ const label=(t:string,x:number,y:number,size:number,color:string)=>{c.fillStyle=color;c.font=`500 ${size}px system-ui,sans-serif`;c.textAlign='center';c.textBaseline='middle';c.fillText(t,x,y);};
+ label('МИКРО-ГОНКИ · ТРИ КРУГА',500,25,23,'#cde5df');label('У каждого свой обзор. Финиш и соперники — общие.',500,53,16,'#8da5ab');
+ for(let i=0;i<s.count;i++){const ox=i%2===0?20:510,oy=s.count<=2?165:80+Math.floor(i/2)*275;c.save();c.translate(ox,oy);c.fillStyle='#151e2b';c.strokeStyle=arcadeColors[i]+'77';c.lineWidth=2;c.beginPath();c.roundRect(0,0,470,262,14);c.fill();c.stroke();const name=names[i].length>18?names[i].slice(0,17)+'…':names[i];label(name,145,24,19,arcadeColors[i]);label(`${standings[i].rank} место · круг ${standings[i].lap}/3`,351,24,15,'#c4c8d7');
+ const pos=(p:number,lane:number)=>{const a=p*Math.PI*2-Math.PI/2;return{x:235+Math.cos(a)*(174+lane*16),y:139+Math.sin(a)*(78+lane*11),angle:Math.atan2(Math.cos(a)*(78+lane*11),-Math.sin(a)*(174+lane*16))};};
+ c.lineWidth=53;c.strokeStyle='#343c50';c.beginPath();c.ellipse(235,139,174,78,0,0,Math.PI*2);c.stroke();c.lineWidth=2;c.strokeStyle='#d0dce644';c.setLineDash([8,10]);c.beginPath();c.ellipse(235,139,174,78,0,0,Math.PI*2);c.stroke();c.setLineDash([]);
+ for(const lane of [-1.65,1.65]){c.lineWidth=2;c.strokeStyle='#c1ccda77';c.beginPath();c.ellipse(235,139,174+lane*16,78+lane*11,0,0,Math.PI*2);c.stroke();}for(let n=0;n<6;n++){c.fillStyle=n%2?'#10151f':'#e6edeb';c.fillRect(232,35+n*8,7,8);}
+ for(const o of raceObstacles(s.seed)){const p=pos(o.at,o.lane);c.save();c.translate(p.x,p.y);c.rotate(p.angle);c.fillStyle='#df9460';c.fillRect(-5,-11,10,22);c.strokeStyle='#37251e';c.lineWidth=2;c.beginPath();c.moveTo(-3,-9);c.lineTo(3,-2);c.moveTo(-3,2);c.lineTo(3,9);c.stroke();c.restore();}
+ const p=pos(r.progress[i],r.lane[i]);c.save();c.translate(p.x,p.y);c.rotate(p.angle);c.shadowColor=arcadeColors[i];c.shadowBlur=s.actors[i].cooldown>0?18:6;c.fillStyle=arcadeColors[i];c.fillRect(-14,-8,28,16);c.shadowBlur=0;c.fillStyle='#0d1724';c.fillRect(-4,-6,10,12);c.fillStyle='#fce7ac';c.fillRect(10,-6,3,4);c.fillRect(10,2,3,4);c.fillStyle='#060a10';for(const x of [-10,7]){c.fillRect(x,-10,7,3);c.fillRect(x,7,7,3);}c.restore();label(s.actors[i].cooldown>0?'Препятствие!':Math.round(standings[i].percent)+'%',235,137,18,s.actors[i].cooldown>0?'#edab8b':'#bac2d0');
+ c.fillStyle='#ffffff0b';c.fillRect(18,242,434,5);c.fillStyle=arcadeColors[i];c.fillRect(18,242,434*standings[i].percent/100,5);c.restore();}
+ if(s.count===3){const order=[...standings].sort((a,b)=>a.rank-b.rank);label('ГОНКА ЗА ПОБЕДУ',745,440,24,'#d8d5e8');order.forEach((v,i)=>label(`${v.rank}. ${names[v.player].slice(0,18)} · ${Math.round(v.percent)}%`,745,485+i*30,18,arcadeColors[v.player]));}
+}
